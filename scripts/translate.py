@@ -29,9 +29,7 @@ SYSTEM_PROMPT = """你是泰国华文新闻翻译专员。输入是一批英文/
 
 ## 字段规则
 
-### desc_original
-- 直接取输入的 `desc` 字段原文，截断至500字符，原样保留不翻译
-- `desc` 为空则填 ""
+（`desc_original` 由 python 在调用后机械截取 desc 字段，**模型不要输出此字段**）
 
 ### title_cn
 - 信达雅，不要机翻腔
@@ -70,12 +68,6 @@ SYSTEM_PROMPT = """你是泰国华文新闻翻译专员。输入是一批英文/
 - `#泰国`：全国性新闻、或无法确定具体城市
 - 其他城市（如华欣、孔敬、清莱等）：填写具体城市名，如 `#华欣`、`#清莱`
 
-### topic_tag
-- **直接继承输入中的 topic_tag，原样保留，不修改**
-
-### relevance_score
-- **直接继承输入中的 relevance_score，原样保留，不修改**
-
 ### tags
 - 固定输出空数组：[]（已由 city_tag 和 topic_tag 替代）
 
@@ -83,14 +75,25 @@ SYSTEM_PROMPT = """你是泰国华文新闻翻译专员。输入是一批英文/
 - time_sensitive: true = 有明确时效（政策生效日、活动截止日）；false = 时效中性
 - expires_date: time_sensitive=true → added_date+15天；false → added_date+30天
 
-### 固定字段（不变）
-- id, source, url, origin: 保持原值
-- event_id: 生成简洁英文事件ID，如 thailand_visa_overstay_2026_03
-- status: 固定 "pending"
-- added_date: 由调用方注入
+### event_id
+- 生成简洁英文事件ID，如 thailand_visa_overstay_2026_03
+
+### status
+- 固定 "pending"
 
 ## 输出要求
-只输出纯 JSON 数组，与输入条目一一对应，顺序不变。
+**只输出每条的 id 字段 + 新生成的字段**（不要回显原始 title/desc/source/url/origin/topic_tag/relevance_score/lang/date 等任何输入字段，避免转义问题导致 JSON 失败）。
+
+每条只需输出：id, title_cn, summary_cn, importance, section_hint, location_detail, city_tag, tags, time_sensitive, expires_date, event_id, status
+
+格式：{"items": [...]}，与输入条目一一对应，顺序不变。无代码块标记，无说明文字。
+
+## ⚠️ JSON 转义铁律（违反会导致整批失败）
+- **中文引号一律用「」或『』，绝对不要在中文里用 ASCII 双引号 `"`**
+  - 错误：`"title_cn": ""高风险"行业"`（内嵌 `"` 破坏 JSON）
+  - 正确：`"title_cn": "「高风险」行业"`
+- 英文专有名词不需要加引号包裹（如直接写 `Sukhumvit` 不写 `"Sukhumvit"`）
+- 若必须在 JSON 字符串值里出现 ASCII 双引号，必须转义为 `\"`
 """
 
 
@@ -145,7 +148,18 @@ def main():
         else:
             print("✅")
 
-        results.extend(translated)
+        # Model 只回新字段 + id，按 id 查回原 batch item 并 merge 原始字段
+        # desc_original 由 python 机械截取（避免模型回显引号导致 JSON 失败）
+        batch_by_id = {it["id"]: it for it in batch}
+        for new_fields in translated:
+            tid = new_fields.get("id") if isinstance(new_fields, dict) else None
+            if tid and tid in batch_by_id:
+                orig = batch_by_id[tid]
+                desc_original = (orig.get("desc") or "")[:500]
+                merged = {**orig, **new_fields, "desc_original": desc_original, "added_date": args.date}
+                results.append(merged)
+            else:
+                results.append({**new_fields, "added_date": args.date})
         time.sleep(1)
 
     # Fallback: title_cn 为空则用 title 兜底

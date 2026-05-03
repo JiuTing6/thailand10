@@ -115,8 +115,15 @@ def call_claude(
         try:
             return json.loads(cleaned)
         except json.JSONDecodeError as e:
+            # Dump 完整失败响应到 logs/，方便事后排查
+            from pathlib import Path as _P
+            import time as _t
+            dump_dir = _P("logs"); dump_dir.mkdir(exist_ok=True)
+            dump_path = dump_dir / f"claude_bad_json_{int(_t.time())}.txt"
+            dump_path.write_text(result_text)
             raise ClaudeCallError(
-                f"模型回复非合法 JSON: {e}\nresult 前 500 字: {result_text[:500]}"
+                f"模型回复非合法 JSON: {e}\n完整响应已 dump 到 {dump_path}\n"
+                f"result 前 500 字: {result_text[:500]}"
             ) from e
 
     # 不应到达
