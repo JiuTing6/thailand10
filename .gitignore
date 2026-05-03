@@ -1,0 +1,15 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.bak
+*.bak.*
+.env
+.env.*
+data/news_pool.bak.json
+logs/
+data/issues/*-raw.json
+data/issues/*-flat.json
+data/issues/*-pool-excerpt.json
+data/issues/*-filtered.json
+data/issues/*-deduped.json
+# 注意：translated.json 和 news_pool.json 必须 commit

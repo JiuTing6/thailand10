@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thailand10 技术工作流文档</title>
+  <style>
+    :root {
+      --primary: #1a1a2e;
+      --accent: #c0392b;
+      --accent2: #2980b9;
+      --bg: #f7f7f3;
+      --card: #ffffff;
+      --border: #e0e0d8;
+      --text: #1a1a1a;
+      --muted: #666;
+      --code-bg: #1e1e2e;
+      --code-text: #cdd6f4;
+      --font: -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+      --font-mono: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+    /* ── Header ── */
+    .page-header {
+      background: var(--primary);
+      color: #fff;
+      padding: 48px 24px 36px;
+      border-bottom: 4px solid var(--accent);
+    }
+    .page-header-inner {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    .page-kicker {
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #888;
+      margin-bottom: 10px;
+    }
+    .page-title {
+      font-size: 32px;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+    .page-title span { color: #e74c3c; }
+    .page-meta {
+      font-size: 13px;
+      color: #999;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 16px;
+    }
+    .page-meta span { display: flex; align-items: center; gap: 6px; }
+
+    /* ── Layout ── */
+    .content-wrap {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── TOC ── */
+    .toc {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 4px solid var(--accent2);
+      border-radius: 6px;
+      padding: 24px 28px;
+      margin-bottom: 48px;
+    }
+    .toc-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 12px;
+    }
+    .toc ol {
+      padding-left: 20px;
+    }
+    .toc li {
+      margin: 6px 0;
+      font-size: 15px;
+    }
+    .toc a {
+      color: var(--accent2);
+      text-decoration: none;
+    }
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── Section headings ── */
+    .section {
+      margin-bottom: 56px;
+    }
+    .section-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 16px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .section-title .num {
+      background: var(--accent);
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 3px;
+      letter-spacing: 0.5px;
+    }
+    h3 {
+      font-size: 17px;
+      font-weight: 700;
+      color: #333;
+      margin: 24px 0 10px;
+    }
+    p { margin-bottom: 14px; }
+
+    /* ── Cards ── */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px 24px;
+      margin: 16px 0;
+    }
+    .card-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    /* ── Flow diagram ── */
+    .flow {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      margin: 20px 0;
+    }
+    .flow-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .flow-left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      width: 40px;
+    }
+    .flow-dot {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--primary);
+      color: #fff;
+      font-size: 14px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .flow-line {
+      width: 2px;
+      flex: 1;
+      min-height: 24px;
+      background: var(--border);
+      margin: 4px 0;
+    }
+    .flow-body {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin-bottom: 0;
+      flex: 1;
+      margin-bottom: 8px;
+    }
+    .flow-body strong { color: var(--primary); }
+    .flow-body .sub {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    /* ── Table ── */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+    th {
+      background: var(--primary);
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      font-size: 13px;
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #fafaf8; }
+
+    /* ── Code blocks ── */
+    pre {
+      background: var(--code-bg);
+      color: var(--code-text);
+      padding: 18px 20px;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-family: var(--font-mono);
+      font-size: 13px;
+      line-height: 1.7;
+      margin: 16px 0;
+    }
+    code {
+      background: #efefea;
+      color: #c0392b;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: var(--font-mono);
+      font-size: 13px;
+    }
+    pre code {
+      background: none;
+      color: inherit;
+      padding: 0;
+    }
+
+    /* ── Callouts ── */
+    .callout {
+      padding: 14px 18px;
+      border-radius: 6px;
+      margin: 16px 0;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    .callout-info  { background: #e8f4fd; border-left: 4px solid #2980b9; }
+    .callout-warn  { background: #fef9e7; border-left: 4px solid #f39c12; }
+    .callout-tip   { background: #eafaf1; border-left: 4px solid #27ae60; }
+    .callout-title { font-weight: 700; margin-bottom: 4px; }
+
+    /* ── Next steps ── */
+    .roadmap-item {
+      display: flex;
+      gap: 14px;
+      align-items: flex-start;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .roadmap-item:last-child { border-bottom: none; }
+    .roadmap-badge {
+      font-size: 12px;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .badge-high   { background: #fde8e8; color: #c0392b; }
+    .badge-medium { background: #fef9e7; color: #b7860b; }
+    .badge-low    { background: #e8f4fd; color: #2980b9; }
+    .badge-done   { background: #eafaf1; color: #27ae60; }
+    .roadmap-text strong { display: block; margin-bottom: 2px; }
+    .roadmap-text span { font-size: 13px; color: var(--muted); }
+
+    /* ── Footer ── */
+    .page-footer {
+      background: var(--primary);
+      color: #666;
+      padding: 28px 24px;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      .page-title { font-size: 24px; }
+      .section-title { font-size: 19px; }
+      .content-wrap { padding: 32px 16px 60px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <div class="page-kicker">Technical Documentation · Bangkok News Hub</div>
+    <div class="page-title">🇹🇭 Thailand<span>10:00</span> 技术工作流文档</div>
+    <p style="color:#aaa; font-size:15px; margin-top:10px;">从触发到发布的完整技术流程，面向 Ade 自用参考</p>
+    <div class="page-meta">
+      <span>📅 最后更新：2026-03-11</span>
+      <span>🔖 版本：v2.1</span>
+      <span>🌐 <a href="../thailand10/index.html" style="color:#e74c3c;">→ 查看期刊归档</a></span>
+    </div>
+  </div>
+</div>
+
+<div class="content-wrap">
+
+  <!-- TOC -->
+  <div class="toc">
+    <div class="toc-title">目录</div>
+    <ol>
+      <li><a href="#arch">整体架构</a></li>
+      <li><a href="#trigger">触发层：OpenClaw Cron</a></li>
+      <li><a href="#agent">Sub-agent：AI 编辑</a></li>
+      <li><a href="#data">数据层：JSON 记忆文件</a></li>
+      <li><a href="#rss">抓取层：fetch_rss.py</a></li>
+      <li><a href="#render">渲染层：build_html.py</a></li>
+      <li><a href="#feedback">👍👎 反馈机制</a></li>
+      <li><a href="#publish">发布层：GitHub Pages</a></li>
+      <li><a href="#dataflow">完整数据流图</a></li>
+      <li><a href="#roadmap">下一步改进计划</a></li>
+    </ol>
+  </div>
+
+  <!-- 1. 整体架构 -->
+  <div class="section" id="arch">
+    <div class="section-title"><span class="num">01</span> 整体架构</div>
+    <p>Thailand10 是一个<strong>零服务器、零运营成本</strong>的自动化新闻简报系统。除 AI API 调用费用外，所有基础设施完全免费。</p>
+
+    <div class="card">
+      <div class="card-label">核心设计原则（v2.1）</div>
+      <table>
+        <tr><th>层级</th><th>技术</th><th>成本</th></tr>
+        <tr><td>调度触发</td><td>OpenClaw Cron（Mac Mini 后台）× 3 个 job</td><td>免费</td></tr>
+        <tr><td>Ingest 主控</td><td>minimax sub-agent（Orchestrator）</td><td>~$0.0004/次</td></tr>
+        <tr><td>过滤 + 去重</td><td>scanner sub-agent（Gemini Flash）</td><td>~$0.005/次</td></tr>
+        <tr><td>翻译 + 标注</td><td>Python → OpenRouter API（scanner JSON mode）</td><td>~$0.010/次</td></tr>
+        <tr><td>数据入库</td><td>Python pool_merge.py</td><td>免费</td></tr>
+        <tr><td>发布主控</td><td>minimax sub-agent（Publish Prompt）</td><td>~$0.001/次</td></tr>
+        <tr><td>页面渲染</td><td>Python build_html.py（无第三方依赖）</td><td>免费</td></tr>
+        <tr><td>网站托管</td><td>GitHub Pages（全球 CDN）</td><td>免费</td></tr>
+      </table>
+      <p style="margin-top:12px; color:#666; font-size:14px;">📊 每日 Ingest 合计 ~$0.015，每月 ~$0.45（vs v1 每月 $9–12）</p>
+    </div>
+
+    <div class="callout callout-info">
+      <div class="callout-title">💡 架构思路</div>
+      AI 只做一件事：编辑判断。其余所有工作（格式化、存储、发布）都是确定性的管道，不依赖 AI，可靠、可复现、成本可控。
+    </div>
+  </div>
+
+  <!-- 2. 触发层 -->
+  <div class="section" id="trigger">
+    <div class="section-title"><span class="num">02</span> 触发层：OpenClaw Cron</div>
+    <p>OpenClaw Gateway 是运行在 Mac Mini 上的后台守护进程，维护3个 Cron 任务：</p>
+
+    <table>
+      <tr><th>任务名</th><th>时间</th><th>Prompt 文件</th><th>模型</th></tr>
+      <tr><td>每日 Ingest</td><td>每天 08:30 BKK</td><td><code>experiment/prompts/orchestrator.md</code></td><td>minimax</td></tr>
+      <tr><td>Thailand10 周四</td><td>每周四 09:30 BKK</td><td><code>experiment/prompts/publish.md</code></td><td>minimax</td></tr>
+      <tr><td>Thailand10 周一</td><td>每周一 09:30 BKK</td><td><code>experiment/prompts/publish.md</code></td><td>minimax</td></tr>
+    </table>
+
+    <p>Ingest 每天跑，补充素材进 <code>data/news_pool.json</code>；Publish 每周一/四从 pool 选编并发布。两个流程完全解耦。</p>
+  </div>
+
+  <!-- 3. Pipeline -->
+  <div class="section" id="agent">
+    <div class="section-title"><span class="num">03</span> 两阶段流水线：Ingest + Publish</div>
+
+    <h3>🔽 Ingest Pipeline（每天 08:30）</h3>
+    <p>负责将原始新闻素材处理入库，由 minimax Orchestrator 主控，分9步完成：</p>
+
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-left"><div class="flow-dot">1</div><div class="flow-line"></div></div>
+        <div class="flow-body"><strong>确定日期 + 上次入库时间</strong><div class="sub">读取 <code>data/last_ingest.txt</code>，确定抓取时间窗口</div></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-left"><div class="flow-dot">2</div><div class="flow-line"></div></div>
+        <div class="flow-body"><strong>双轨抓取原始素材</strong><div class="sub">fetch_rss.py（6个英文 RSS 源）+ fetch_brave.py（11组关键词）→ <code>TODAY-raw.json</code></div></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-left"><div class="flow-dot">3</div><div class="flow-line"></div></div>
+        <div class="flow-body"><strong>展平 + Pool 摘录</strong><div class="sub">Python 内联：dict → 统一数组 <code>TODAY-flat.json</code>；取最近10天 pool 前100条 → <code>TODAY-pool-excerpt.json</code></div></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-left"><div class="flow-dot">4</div><div class="flow-line"></div></div>
+        <div class="flow-body"><strong>Filter + Dedup（scanner sub-agent）</strong><div class="sub">Layer 1：过滤非泰国内容 → <code>TODAY-filtered.json</code><br>Layer 2：与近期 pool 去重（10天窗口）→ <code>TODAY-deduped.json</code></div></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-left"><div class="flow-dot">5</div><div class="flow-line"></div></div>
+        <div class="flow-body"><strong>Translation（Python → OpenRouter API）</strong><div class="sub"><code>scripts/translate.py</code>：分批调用 scanner JSON mode，生成 title_cn / summary_cn / importance / section_hint 等字段 → <code>TODAY-translated.json</code></div></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-left"><div class="flow-dot">6</div><div class="flow-line"></div></div>
+        <div class="flow-body"><strong>备份 + 入库</strong><div class="sub"><code>cp news_pool.json news_pool.bak.json</code>，然后 pool_merge.py 合并写入 <code>data/news_pool.json</code></div></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-left"><div class="flow-dot">7</div></div>
+        <div class="flow-body"><strong>Telegram 通知</strong><div class="sub">发送入库统计：条数 / P1-P3 分布 / 各板块数量</div></div>
+      </div>
+    </div>
+
+    <h3>📰 Publish Pipeline（周一/四 09:30）</h3>
+    <p>从 pool 中选题编写，由 minimax Publish Agent 执行：</p>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-left"><div class="flow-dot">1</div><div class="flow-line"></div></div>
+        <div class="flow-body"><strong>从 news_pool.json 选题</strong><div class="sub">按 importance + section_hint 选 15-25 条，参考 editorial_feedback.md 编辑规则</div></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-left"><div class="flow-dot">2</div><div class="flow-line"></div></div>
+        <div class="flow-body"><strong>撰写正文 + 生成期数 JSON</strong><div class="sub">AI 编辑：扩写 summary_cn，加编辑视角，输出 <code>thailand10/YYYY-MM-DD-NNN.json</code></div></div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-left"><div class="flow-dot">3</div><div class="flow-line"></div></div>
+        <div class="flow-body"><strong>渲染 HTML + 推送发布</strong><div class="sub">build_html.py → git push → GitHub Pages 上线，Telegram 通知</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. 数据层 -->
+  <div class="section" id="data">
+    <div class="section-title"><span class="num">04</span> 数据层：JSON 文件</div>
+    <p>所有持久化数据存在 <code>data/</code> 目录下，用 JSON 文件模拟轻量级数据库。</p>
+
+    <h3>data/news_pool.json — 核心素材库</h3>
+    <p>Ingest 每天新增的翻译后条目，是 Publish 的唯一原料来源。每条包含完整字段：id、title_cn、summary_cn、importance（P1/P2/P3）、section_hint、tags、expires_date 等。备份文件：<code>data/news_pool.bak.json</code>（每次 ingest 前自动覆盖）。</p>
+
+    <h3>data/buffer.json — 补充储备库</h3>
+    <p>Publish 选题时如 pool 内容不足，从此处补充。按时效性分类：时效性内容（14天）/ 时效中性内容（90天）。</p>
+
+    <h3>data/editorial_feedback.md — 编辑规则</h3>
+    <p>人工维护的编辑偏好文件，Publish Agent 选题时参考。记录哪类内容优先、哪类降权、特殊说明等。</p>
+
+    <h3>data/issues/ — 每日中间产物</h3>
+    <table>
+      <tr><th>文件</th><th>内容</th><th>生命周期</th></tr>
+      <tr><td><code>TODAY-raw.json</code></td><td>RSS + Brave 原始抓取</td><td>永久保留（近期），旧文件归档</td></tr>
+      <tr><td><code>TODAY-flat.json</code></td><td>展平后统一数组</td><td>下次 ingest 后可删</td></tr>
+      <tr><td><code>TODAY-filtered.json</code></td><td>Layer 1 过滤结果</td><td>同上</td></tr>
+      <tr><td><code>TODAY-deduped.json</code></td><td>Layer 2 去重结果</td><td>同上</td></tr>
+      <tr><td><code>TODAY-translated.json</code></td><td>Layer 3 翻译结果</td><td>同上（已入 pool）</td></tr>
+    </table>
+  </div>
+
+  <!-- 5. 抓取层 -->
+  <div class="section" id="rss">
+    <div class="section-title"><span class="num">05</span> 抓取层：fetch_rss.py</div>
+    <p>纯 Python 标准库实现，无第三方依赖。抓取 6 个英文媒体 RSS 源，每个来源有权重评分。</p>
+
+    <table>
+      <tr><th>媒体</th><th>来源 ID</th><th>权重</th><th>特点</th></tr>
+      <tr><td>Bangkok Post（头条）</td><td>bangkokpost_top</td><td>5</td><td>最权威英文媒体</td></tr>
+      <tr><td>Bangkok Post（房产）</td><td>bangkokpost_property</td><td>5</td><td>房产专版，精准</td></tr>
+      <tr><td>The Thaiger</td><td>thaiger</td><td>4</td><td>外籍读者视角，覆盖广</td></tr>
+      <tr><td>Khaosod English</td><td>khaosod</td><td>4</td><td>泰文主流媒体英文版</td></tr>
+      <tr><td>The Nation</td><td>nation</td><td>4</td><td>英文严肃媒体</td></tr>
+      <tr><td>Pattaya Mail</td><td>pattaya_mail</td><td>4</td><td>芭提雅专属</td></tr>
+    </table>
+
+    <p>脚本执行流程：</p>
+    <ol style="padding-left:20px; line-height:2;">
+      <li>HTTP GET 每个 RSS XML，User-Agent 标注为 <code>Bangkok-News-Bot/1.0</code></li>
+      <li>解析 <code>&lt;item&gt;</code> 条目，过滤 N 天内的内容（周四刊4天，周一刊含周末4天）</li>
+      <li>用 <code>md5(title + url)</code> 生成 12 位哈希作为唯一 ID</li>
+      <li>剥离 HTML 标签，提取纯文字摘要（最多600字）</li>
+      <li>跨源去重（同一条新闻被多个源收录时只保留一条）</li>
+      <li>按发布日期倒序排列，输出标准化 JSON</li>
+    </ol>
+
+    <div class="callout callout-warn">
+      <div class="callout-title">⚠️ RSS 只有摘要</div>
+      RSS 条目通常只包含标题和前几句描述，不含全文。Sub-agent 如需撰写详细摘要，还会调用 <code>web_fetch</code> 工具读取原文页面。来源未经人工核实的内容一律以原文为准，不得依赖摘要推断。
+    </div>
+
+    <p>Brave Search 补充搜索（11 组关键词）覆盖 RSS 未收录的内容，包括泰文搜索（<code>เศรษฐกิจไทย ล่าสุด</code>等）和特定地产关键词。中泰板块为触发式，只在有重磅新闻时才搜索。</p>
+  </div>
+
+  <!-- 6. 渲染层 -->
+  <div class="section" id="render">
+    <div class="section-title"><span class="num">06</span> 渲染层：build_html.py</div>
+    <p>纯 Python 标准库，无第三方依赖。输入一个期数 JSON，输出一个完整 HTML 页面。</p>
+
+    <pre><code># 用法
+python3 scripts/build_html.py data/issues/2026-02-26.json
+
+# 输出
+# → thailand10/2026-02-26.html   （期刊正文页）
+# → thailand10/index.html         （归档列表，自动插入新条目）</code></pre>
+
+    <h3>五板块配置</h3>
+    <p>板块定义在脚本顶部的 <code>SECTIONS</code> 列表里，修改这里即可调整所有期刊的板块显示：</p>
+    <table>
+      <tr><th>板块 ID</th><th>图标</th><th>显示名</th><th>配额</th></tr>
+      <tr><td>thailand</td><td>📡</td><td>政经动态</td><td>无上限，兜底板块</td></tr>
+      <tr><td>property</td><td>🏠</td><td>房地产</td><td>动态，可为 0</td></tr>
+      <tr><td>bangkok</td><td>🛺</td><td>曼谷</td><td>动态，严格本地新闻</td></tr>
+      <tr><td>pattaya</td><td>🌅</td><td>芭提雅</td><td>动态，可为 0</td></tr>
+      <tr><td>cn_thai</td><td>🚅</td><td>中泰</td><td>触发式，可为 0</td></tr>
+    </table>
+
+    <p><strong>空板块自动跳过</strong>——<code>section_html()</code> 函数检测到空数组直接返回空字符串，不渲染板块标题，保持页面整洁。</p>
+
+    <h3>样式分离</h3>
+    <p>所有样式存在独立的 <code>assets/style-thailand10.css</code>，HTML 文件只引用外部 CSS。修改样式不需要重新生成所有历史页面——浏览器每次加载时都拉取最新 CSS。</p>
+  </div>
+
+  <!-- 7. 反馈机制 -->
+  <div class="section" id="feedback">
+    <div class="section-title"><span class="num">07</span> 👍🏻👎🏻 反馈机制</div>
+    <p>每条新闻右下角有点赞/踩按钮，用于收集读者对内容质量的反馈，长期影响选题权重。</p>
+
+    <h3>当前实现（v0.3）：纯前端 localStorage</h3>
+    <pre><code>// 点击时存储
+localStorage.setItem('thailand10_feedback', JSON.stringify({
+  "a0": "up",    // 第1条：点赞
+  "a3": "down",  // 第4条：踩
+}))
+
+// 再次点击同一按钮 → 取消投票
+delete fb[article_id]
+
+// 页面加载时恢复按钮状态</code></pre>
+
+    <div class="callout callout-warn">
+      <div class="callout-title">⚠️ 当前局限</div>
+      数据存在<strong>本机浏览器</strong>里，Sub-agent 读不到，换设备后丢失。权重机制目前还没有真正接通。这是整个系统唯一未打通的闭环。
+    </div>
+
+    <h3>权重设计（已定义，待接通）</h3>
+    <ul style="padding-left:20px; line-height:2.2;">
+      <li>👍 / 👎 计数独立累积，存储在新闻库条目的 <code>popularity</code> 字段</li>
+      <li><strong>仅在重要性相近（同 P 级）的候选稿件之间</strong>作为加权 tiebreaker</li>
+      <li>不覆盖 AI 对新闻重要性的判断，编辑判断永远第一</li>
+      <li>长期高 👍 的话题类型，逐步提高同类搜索关键词的优先级</li>
+    </ul>
+
+    <h3>待实现的数据回路</h3>
+    <p>要让反馈真正影响 Sub-agent 的选题，需要一个数据收集中间层。备选方案：</p>
+    <table>
+      <tr><th>方案</th><th>复杂度</th><th>成本</th></tr>
+      <tr><td>Cloudflare Workers + KV</td><td>中</td><td>免费额度够用</td></tr>
+      <tr><td>GitHub Issues API（写入）</td><td>低</td><td>完全免费</td></tr>
+      <tr><td>Supabase 免费层</td><td>中</td><td>免费额度够用</td></tr>
+    </table>
+  </div>
+
+  <!-- 8. 发布层 -->
+  <div class="section" id="publish">
+    <div class="section-title"><span class="num">08</span> 发布层：GitHub Pages</div>
+    <p><code>thailand10/</code> 整个目录是一个 GitHub 仓库（<a href="https://github.com/JiuTing6/thailand10" target="_blank">JiuTing6/thailand10</a>）。每次 <code>git push</code> 后，GitHub 自动检测变化，重新构建静态站点，约 1–2 分钟后新内容全球上线。</p>
+
+    <table>
+      <tr><th>URL 结构</th><th>内容</th></tr>
+      <tr><td><code>/</code></td><td>主页（双刊导航）</td></tr>
+      <tr><td><code>/thailand10/index.html</code></td><td>期刊归档列表</td></tr>
+      <tr><td><code>/thailand10/YYYY-MM-DD.html</code></td><td>每期正文</td></tr>
+      <tr><td><code>/docs/tech-workflow.html</code></td><td>本技术文档</td></tr>
+    </table>
+
+    <div class="callout callout-tip">
+      <div class="callout-title">✅ 为什么选 GitHub Pages</div>
+      全球 CDN、永久免费、版本控制、自动部署、无需维护服务器。唯一限制是静态，但当前架构完全不需要后端。
+    </div>
+  </div>
+
+  <!-- 9. 数据流图 -->
+  <div class="section" id="dataflow">
+    <div class="section-title"><span class="num">09</span> 完整数据流图（v2.1）</div>
+    <pre><code>
+  ┌──────────────────────────────────────────────────────────┐
+  │  OpenClaw Gateway（Mac Mini 后台）                        │
+  │  Cron ×3：Ingest 每天08:30 / Publish 周一/四 09:30       │
+  └──────────────────────┬───────────────────────────────────┘
+                         │
+          ┌──────────────┴──────────────────┐
+          ▼                                 ▼
+  ── INGEST（每日）──                ── PUBLISH（周一/四）──
+          │                                 │
+  Orchestrator（minimax）          Publish Agent（minimax）
+          │                                 │
+  fetch_rss.py + fetch_brave.py    读取 news_pool.json
+          │                        + buffer.json
+  TODAY-raw.json                   + editorial_feedback.md
+          │                                 │
+  Python: flatten                  AI 选题（15-25条）
+  TODAY-flat.json                           │
+          │                        撰写正文 + 期数 JSON
+  scanner sub-agent                         │
+  Filter → TODAY-filtered.json     build_html.py
+  Dedup  → TODAY-deduped.json               │
+          │                        thailand10/YYYY-MM-DD.html
+  Python: translate.py             index.html
+  （OpenRouter JSON mode）                   │
+  TODAY-translated.json            git push → GitHub Pages
+          │                                 │
+  pool_merge.py                    Telegram 通知
+  → news_pool.json（+备份.bak）
+          │
+  Telegram 通知
+</code></pre>
+  </div>
+
+  <!-- 10. 路线图 -->
+  <div class="section" id="roadmap">
+    <div class="section-title"><span class="num">10</span> 下一步改进计划</div>
+
+    <div class="roadmap-item">
+      <span class="roadmap-badge badge-done">✅ 已完成</span>
+      <div class="roadmap-text">
+        <strong>v2.1 架构升级（2026-03-11）</strong>
+        <span>Ingest/Publish 两阶段解耦；news_pool.json 中央素材库；Translation 改用 Python + OpenRouter JSON mode；成本从 $9-12/月降至 ~$0.45/月</span>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <span class="roadmap-badge badge-done">✅ 已完成</span>
+      <div class="roadmap-text">
+        <strong>v0.3 基础改进</strong>
+        <span>板块名/emoji 更新、字体增大、👍👎按钮、buffer.json 结构、弹性配额、issue JSON 永久存档</span>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <span class="roadmap-badge badge-high">🔴 高优先</span>
+      <div class="roadmap-text">
+        <strong>👍👎 数据回路接通</strong>
+        <span>用 Cloudflare Workers + KV 或 GitHub Issues API 收集前端反馈，写入 Sub-agent 可读的权重文件</span>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <span class="roadmap-badge badge-high">🔴 高优先</span>
+      <div class="roadmap-text">
+        <strong>曼谷专属新闻源</strong>
+        <span>增加 Bangkok Metropolitan Administration、BTS 官方、Sukhumvit 本地 RSS 源，提高曼谷板块相关性</span>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <span class="roadmap-badge badge-medium">🟡 中优先</span>
+      <div class="roadmap-text">
+        <strong>原文核实强制流程</strong>
+        <span>Sub-agent 选题后强制 web_fetch 原文，避免基于摘要推断内容（CPN/Em District 类错误）</span>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <span class="roadmap-badge badge-medium">🟡 中优先</span>
+      <div class="roadmap-text">
+        <strong>raw_rss 永久存档</strong>
+        <span>RSS 原始素材目前仍为临时文件，需同步改为存入 data/issues/YYYY-MM-DD-raw.json</span>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <span class="roadmap-badge badge-medium">🟡 中优先</span>
+      <div class="roadmap-text">
+        <strong>来源广告过滤黑名单</strong>
+        <span>维护地产中介/广告网站域名黑名单，fetch_rss.py 和 Brave Search 结果过滤时使用</span>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <span class="roadmap-badge badge-low">🔵 低优先</span>
+      <div class="roadmap-text">
+        <strong>Moments 专栏（素坤逸拾光）</strong>
+        <span>曼谷 Sukhumvit 本地生活专栏，目录已建（moments/），内容待规划启动</span>
+      </div>
+    </div>
+
+    <div class="roadmap-item">
+      <span class="roadmap-badge badge-low">🔵 低优先</span>
+      <div class="roadmap-text">
+        <strong>期数数据统计页</strong>
+        <span>基于 data/issues/ 存档数据，生成每期新闻来源分布、板块比例、选取率等可视化统计</span>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<div class="page-footer">
+  Thailand10 技术文档 · 最后更新 2026-03-11 · 仅供内部参考
+</div>
+
+</body>
+</html>

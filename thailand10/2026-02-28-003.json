@@ -1,0 +1,166 @@
+{
+  "date": "2026-02-28",
+  "issue": 3,
+  "highlights": [3, 5, 9, 0, 16],
+  "sections": {
+    "thailand": [
+      {
+        "title": "🔄 选委会认证完成，新国会须15天内召集、安努廷组阁进入倒计时",
+        "tags": ["#政治动态", "#大选后续"],
+        "body": "泰国选举委员会（Election Commission，EC）已完成2026年大选绝大多数选区席位的认证，正式确认为泰党（Bhumjaithai Party）以193个选区席位赢得大选，随后将加上政党名单（Party-list）席位后总席位数约达500席中的194席。依照泰国法律，当EC认证至少475个席位（即总席位的95%）后，新议会须在15天内召集，届时下议院将投票选举总理。依路透社消息，政党名单席位的认证预计在本周末至下周初完成，意味着安努廷（Anutin Charnvirakul）的第二届政府或于3月中旬正式宣誓就任。现有联合政府框架：为泰党（Bhumjaithai）+为泰党（Pheu Thai）+数个小党，预计合计控制约286至298席，形成稳定多数。",
+        "comment": "🤔 琢磨着：开票后两周，组阁谈判的根本分歧在于部长席位分配，不在意识形态。泰国政治的本质是利益分成，稳定与否取决于蛋糕够不够大分。",
+        "date": "2026-02-25",
+        "source": "Reuters / The Diplomat",
+        "url": "https://www.reuters.com/world/asia-pacific/thailand-edges-closer-new-government-poll-body-certifies-most-election-results-2026-02-25/"
+      },
+      {
+        "title": "🔄 Bhumjaithai锁定15个部委、\"5-19-8-3\"公式曝光，安努廷否认派系纷争",
+        "tags": ["#政治动态", "#内阁组建"],
+        "body": "《民族报》（Nation Thailand）披露，为泰党（Bhumjaithai）已拟定第二届安努廷内阁的分配方案：5席独立专家（含财政部长等技术官僚）、19席留给Bhumjaithai自身、8席给联合伙伴为泰党（Pheu Thai）、3席给其他小党，合计35个内阁席位中Bhumjaithai直接掌握19席。这意味着为泰党（Pheu Thai）争取到8席，其中可能包括商务部或农业部等经济部门。然而《曼谷邮报》周六报道，有消息称Bhumjaithai拒绝了为泰党提出的部分老牌政客人选，安努廷当天公开否认该报道，称媒体报道失实。内阁确定名单预计在选委会完成全部认证后、议会正式召集前公布。",
+        "comment": "👀 看点：为泰党（Pheu Thai）背后是他信（Thaksin Shinawatra），8个席位够不够他信系政治资产的续命？这才是真正的谈判核心。",
+        "date": "2026-02-25",
+        "source": "Nation Thailand",
+        "url": "https://www.nationthailand.com/news/politics/40062946"
+      },
+      {
+        "title": "🔄 选委会起诉6人：含人民党（People's Party）发言人，被控\"破解选票二维码\"意图追踪选民",
+        "tags": ["#政治动态", "#选举争议"],
+        "body": "选委会（EC）向犯罪镇压局（Crime Suppression Division）提起刑事投诉，指控六名人士在曼谷坎纳耀区（Kannayao）第15选区第9投票站2月22日重新投票期间，拍摄选票及存根，并尝试解码选票上打印的二维码（QR Code）与条形码，意图将选票数据与个人选民身份挂钩。被点名者包括：前选委委员颂猜（Somchai Srisutthiyakorn）、人民党（People's Party）发言人帕里特（Parit Wacharasindhu）、诗帕顿大学D-Vote主任、记者、云端公司CEO以及一名社交媒体页面管理员。罪名涵盖加入非法秘密组织（最高10年）、煽动（最高7年）、电脑犯罪法等重罪。",
+        "comment": "⚠️ 请注意：选委会用最重刑事罪名打压质疑选举规范的公民，包括反对党发言人，这在民主政治语境中属于严重的威慑行动。投票二维码本身能否追踪选民身份，EC尚未给出透明技术说明。",
+        "date": "2026-02-28",
+        "source": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/thailand/politics/3206608/ec-under-fire-over-lawsuits"
+      },
+      {
+        "title": "修宪公投结果正式公布：58.6%支持起草新宪法，2017年军版宪法将被取代",
+        "tags": ["#政治动态", "#修宪"],
+        "body": "选委会于2月27日正式公布2月8日宪法修正公投结果：58.64%投票支持起草全新宪法，30.46%主张维持现行宪法，8.34%弃权，投票率69.95%（近5300万合格选民），废票率2.56%。现行2017年宪法由2014年政变后军政府任命的委员会起草，被批评人士认为是军方巩固权力的工具——2016年批准时，公开反对属刑事犯罪，逾百人被捕或起诉。根据公投结果，下一步将先修改现行宪法，增加允许起草新宪法的程序条款，再由制宪大会（Constitutional Drafting Assembly）负责撰写新宪法，整个流程预计历时数年。公民团体iLaw欢迎结果，称这是民意对民主化的明确支持。",
+        "comment": "💬 多一嘴：这是泰国历史上继2016年之后的第二次制宪公投，结果明确反转。但\"修宪\"在泰国历史上走过太多轮，真正落地还要看新政府的政治意愿，以及军方和独立机构的态度。",
+        "date": "2026-02-27",
+        "source": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/thailand/politics/3206445/drafting-of-new-constitution-cruises-to-victory-in-referendum"
+      },
+      {
+        "title": "泰国经济警报：人力资本危机拖累增长，2026年GDP预测仅2%、为东盟末游",
+        "tags": ["#经济动态", "#GDP"],
+        "body": "东亚论坛（East Asia Forum）发表深度分析指出，泰国经济低增长并非周期性波动，而是结构性衰退。2025年人均实际GDP增速为2.2%，2026年预测进一步下滑至1.5%-2.5%区间，中值仅2%，是东盟中最低档次之一。核心问题是人力资本（Human Capital）危机：泰国劳动生产率（Labour Productivity）增速在1997年亚洲金融危机（Asian Financial Crisis，AFC）后持续下滑，固定资产投资占GDP比例仅为危机前的一半；叠加人口负增长（2025年净增长略为负数）、家庭债务高企、消费疲软；缅甸/老挝非技术移民只能部分填补劳动力缺口。此外，中国制造业竞争冲击出口，叠加特朗普关税不确定性，使企业投资预期持续低迷。分析认为，政治动荡是部分原因但非唯一原因，泰国的根本问题在于教育与技能匹配的结构性失败。",
+        "comment": "🤔 琢磨着：如果东盟邻国越南、印尼都能在同样外部压力下保持5%+增长，泰国持续跑输绝非外部因素所能解释。人力资本投资不够、政局不稳、国内消费力弱，是三重内生困境。",
+        "date": "2026-02-24",
+        "source": "East Asia Forum",
+        "url": "https://eastasiaforum.org/2026/02/24/thailands-economy-faces-a-human-capital-problem/"
+      },
+      {
+        "title": "泰国AI基建野心：已吸引5GW数据中心管道、中美科技巨头同台竞跑",
+        "tags": ["#科技动态", "#数据中心", "#AI"],
+        "body": "泰国数字委员会（Digital Council of Thailand，DCT）联合创始人素帕猜（Suphachai Chearavanont）在最新公开声明中表示，泰国已成为全球数据中心和AI基础设施的战略高地——目前已吸引潜在5吉瓦（GW）装机容量的数据中心投资管道，代表数千亿铢的基础设施和超级计算机投入。推动力来源于泰国的地缘政治中立立场：谷歌（Google）、亚马逊（AWS）、微软（Microsoft）、阿里巴巴（Alibaba）、华为（Huawei）等中美科技巨头，因不愿完全站队，纷纷将泰国视为东南亚布局的优选。泰国优势：电网稳定、地理位置可从老挝获取清洁水电、成本低于新加坡和马来西亚。DCT呼吁政府紧急出台AI治理框架（AI Governance Framework）和全国AI总规划，并鼓励外资科技企业设立区域研发中心（R&D Centre），与泰国大学建立深度合作。",
+        "comment": "👀 看点：5GW这个数字是天花板还是真实规划值，目前仍是\"管道潜力\"，并非已落地合约。真正的关键在能源供应——5GW的算力需要大量电力，泰国本地可再生能源能否跟上是最大变数。",
+        "date": "2026-02-28",
+        "source": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/business/general/3206753/thailand-targets-global-ai-hub-status"
+      },
+      {
+        "title": "泰国春节航空流量超越疫情前：旅客总量488.9万人次破2019年纪录",
+        "tags": ["#经济动态", "#旅游航空"],
+        "body": "泰国民航局（Civil Aviation Authority of Thailand，CAAT）数据显示，2026年2月13至22日春节假期期间，泰国各主要机场共接待旅客488.9万人次，超过2019年同期的471.9万，同时高于2025年。期间飞行动态共计28,340班次，气运货量42,280吨，均创疫情后新高。单日峰值：2月15日旅客量达50.1万人次；2月14日国际入境客达14.0万人次、共1,426班次。苏万纳蓬机场（Suvarnabhumi Airport）仍为最繁忙枢纽，2月14日单日旅客达21.7万。普吉国际机场（Phuket International Airport）2月17日创单日新高：4.02万国际旅客、204班次。入境市场：中国居首（日均25,263人次），其次是印度和马来西亚。旅游局（TAT）同日表示，对中国游客整体回升持审慎态度，将于5月后再做全年评估。",
+        "comment": "💬 多一嘴：航空旅客数超越2019年是个重要信号，但TAT对全年持谨慎态度，说明短期节假日流量与全年趋势之间仍有落差。中国游客日均2.5万的数量恢复也不错，但低于2019年峰值。",
+        "date": "2026-02-28",
+        "source": "Pattaya Mail",
+        "url": "https://www.pattayamail.com/news/holiday-flyers-lift-thailands-skies-above-pre-pandemic-levels-caat-reports-537399"
+      },
+      {
+        "title": "GULF Energy 2026年押注数据中心：GSA01满载、GSA02签约、GSA03冲刺1GW目标",
+        "tags": ["#科技动态", "#能源", "#数据中心"],
+        "body": "SET上市能源集团海湾能源（Gulf Development，代码GULF）披露最新数据中心扩张计划：GSA01（25MW）2026年首次全年并表；GSA02（38MW）已签客户合约，预计2027年Q1投运；GSA03（高达100MW）正在开发，计划2027年底上线，客户已全数承诺（fully committed）。GULF设定目标：未来3至5年内将数据中心服务装机扩展至1,000MW（1GW），服务AI计算、云端、数字平台及数据存储客户，辐射泰国及东南亚区域。能源业务方面，GULF公布2026至2030年五年投资预算高达1300亿铢，其中66%聚焦可再生能源扩产、5%用于天然气业务、6%资源业务、其余用于基础设施和数字业务，数据中心和AI被定为公司新增长引擎。另：GULF与谷歌（Google）的战略框架协议（Strategic Framework Agreement）已扩大至联合研发泰国AI基础设施解决方案。",
+        "date": "2026-02-27",
+        "source": "Kaohoon International",
+        "url": "https://www.kaohooninternational.com/markets/578042"
+      },
+      {
+        "title": "泰柬外交继续暗战：泰国外长在日内瓦游说，称国际社会未回应柬埔寨领土主张",
+        "tags": ["#政治动态", "#泰柬关系"],
+        "body": "泰国外长西哈萨克（Sihasak Phuangketkeow）2月27日向曼谷驻泰外交团（Diplomatic Corps）汇报日内瓦之行成果，称其在联合国人权理事会（UN Human Rights Council，HRC）高级别会议期间，分别与联合国教科文组织（UNESCO）总干事、法国外长及联合国人权事务高级专员会面，重点就泰柬边境争端向国际社会说明泰方立场。西哈萨克称，就柬方提出的领土主张，目前国际社会\"尚未作出回应\"，间接暗示柬埔寨一方的外交主张未能获得第三方背书。泰柬近期关系因边境领土争议再度升温，2026年大选后新政府的对柬政策立场尚待明确。",
+        "comment": "🤔 琢磨着：外交博弈里\"国际社会沉默\"是外交语言，不代表没有动作。泰国大选变局后，边境政策方向对有Pattaya/芭提雅-柬埔寨双边经济走廊概念的投资者有一定参考价值。",
+        "date": "2026-02-27",
+        "source": "Khaosod English",
+        "url": "https://www.khaosodenglish.com/news/2026/02/27/thai-fm-says-global-community-silent-on-cambodias-claims/"
+      },
+      {
+        "title": "🔄 签证政策新动向：免签停留期或从60天压缩至30天，数字化管控持续收紧",
+        "tags": ["#外国人事务", "#签证政策"],
+        "body": "多方来源2月下旬报道，泰国政府正在讨论将外国人落地免签停留期限（Visa Exemption）从目前的60天缩短为30天；目前仍处审议阶段，尚无正式决定，但相关法规草案已在移民部门内部流传。与此同时，泰国移民数字化管理系统（Thailand Digital Arrival Card，TDAC）已自2025年5月1日起全面强制使用，取代纸质TM6出入境卡；系统将跨境停留记录自动汇总入中央数据库，无需移民官员人工核查。相关报道指出，泰国当局已明确表态：以反复使用短期免签长期居留的外籍人士（所谓\"签证跑\"方式），自2026年起将依数据库记录自动识别并拒绝入境。建议持普通旅游免签长居泰国的外籍人士尽快申请合规签证（LTR长期签证、退休签证O-A、数字游民签DESTINATION Thailand Visa等）。",
+        "comment": "⚠️ 请注意：60天变30天尚未确定，但趋势已明——泰国移民管控的数字化基础设施建设基本完成，政策收紧只是时间问题。最高风险群体：长期靠免签续签的非工作目的外籍居民。",
+        "date": "2026-02-24",
+        "source": "GoNoGuide / Geosthai / Popular Migrant",
+        "url": "https://www.gonoguide.com/thailand-visa-2026-stay-in-thailand/"
+      }
+    ],
+    "property": [
+      {
+        "title": "🔄 泰国楼市确认触底反弹：REIC报告Q4供需趋于平衡，住宅开发商战略收缩",
+        "tags": ["#房地产", "#市场数据"],
+        "body": "泰国房地产信息中心（Real Estate Information Center，REIC）最新报告确认，泰国住宅市场已走过低谷，供需正向平衡状态转移。2025年Q4住宅转让量与转让价值环比双升，为近年来首次出现明显反弹信号。开发商层面：Frasers Property Thailand（FPT）正整合旗下公寓子公司管理团队，统一接管Grand Unity Development的管理权，同时承接曼谷超级综合体\"One Bangkok\"的运营管理职能，折射出行业在整合缩表中寻找长期价值的策略取向。分析师提示，中高档公寓部分区域仍存在供给过剩，本地买家依旧审慎；市场真正持续复苏的前提是宏观经济改善和外国买家需求稳步增长。",
+        "date": "2026-02-26",
+        "source": "Bangkok Post Property",
+        "url": "https://www.bangkokpost.com/property/3205280/thai-property-market-rebounds"
+      },
+      {
+        "title": "荣威集团（Reignwood Group）加码海外买家：以外国购买力对冲泰国国内楼市低迷",
+        "tags": ["#房地产", "#外国买家"],
+        "body": "彭博社（Bloomberg）2月24日报道，中资背景的荣威集团（Reignwood Group）正全面加速在泰国豪华住宅综合体项目的国际买家拓展力度，以境外需求对冲泰国本地楼市的持续低迷。荣威在泰国持有大型豪华房产综合体项目，主要面向曼谷及周边高端客群，目前正将销售重心向中东、欧洲及东北亚高净值个人（HNWI）倾斜。该集团押注的逻辑是：泰国作为中立的东南亚中心，加上外国购房配额（公寓楼外国名义配额49%）和相对宽松的资产转移框架，对规避地缘政治风险的外国资本具有吸引力。",
+        "comment": "💬 多一嘴：荣威此举是整个泰国开发商行业2026年的缩影——内需不振，转头靠外资。但\"拉外国买家\"的能力，最终还是取决于宏观政策（签证政策、外资持有规则）是否配套，而这正是目前的不确定因素。",
+        "date": "2026-02-24",
+        "source": "Bloomberg",
+        "url": "https://www.bloomberg.com/news/articles/2026-02-24/luxury-property-complex-in-thailand-seeks-more-overseas-buyers"
+      },
+      {
+        "title": "CBRE 2026泰国房产展望：曼谷市区豪宅均价年涨最高15%，超豪华项目主导供应端",
+        "tags": ["#房地产", "#市场展望"],
+        "body": "全球房地产顾问公司世邦魏理仕（CBRE）2026年泰国年度展望报告指出，曼谷市区（Downtown）高端住宅均价预计年增最高15%，主要由大量超豪华（Super-luxury）新项目集中入市推动，这些项目普遍主打私密性、专属感和高端服务配套。Pattaya方面，CBRE报告暂无专项数据，但整体泰国楼市二季度后若激励政策退出，下半年存在回调风险。外国买家趋势：中东、欧洲及中国内地高净值买家持续活跃，尤其集中于曼谷Silom/Sathorn、素坤逸Sukhumvit高层地段，以及普吉岛Cherng Talay板块。",
+        "date": "2026-02-25",
+        "source": "Thailand Property / CBRE",
+        "url": "https://www.thailand-property.com/blog/cbre-thailands-2026-outlook-strategic-balance-risk-reward-evolving-market"
+      }
+    ],
+    "bangkok": [
+      {
+        "title": "曼谷推出AI自适应交通信号灯：CCTV实时识别车流、动态调整红绿灯配时",
+        "tags": ["#曼谷", "#科技", "#交通"],
+        "body": "曼谷市政府（Bangkok Metropolitan Administration，BMA）2月下旬宣布，已在多个主要交叉路口完成AI自适应交通信号灯（Adaptive Signal Control System）的安装升级，系统通过CCTV摄像头实时读取路口车辆密度，由AI自动调整各方向绿灯时长，取代传统固定配时模式。据BMA公告，系统旨在减少高峰期拥堵、提升路口通行效率，计划在2026年内持续扩大覆盖路口数量。这是曼谷智慧城市（Smart City）建设的重要组成部分，也与泰国整体AI基础设施投资热潮形成呼应。",
+        "comment": "💬 多一嘴：技术方向对，但曼谷堵车的核心是道路结构性不足+摩托车/嘟嘟车无序，AI调灯能优化的空间有限。不过作为城市AI基建落地案例，值得关注后续效果数据。",
+        "date": "2026-02-26",
+        "source": "The Thaiger Bangkok",
+        "url": "https://thethaiger.com/news/national/bangkok-rolls-out-adaptive-cctv-ai-traffic-lights-to-tackle-traffic"
+      },
+      {
+        "title": "曼谷Soi Sukhumvit 50金店劫匪DNA比中：2013年旧案十年破获",
+        "tags": ["#曼谷", "#治安"],
+        "body": "泰国警方2月27日披露，通过DNA检测，将今年1月31日在曼谷Soi Sukhumvit 50一家购物中心内金店抢劫约1500万铢（现金+黄金）的嫌疑人，与一起2013年悬案挂钩。嫌疑人贾勒（Jalor，又名Tew，28岁），于2月19日在清莱府（Chiang Rai）落网。监控录像显示，其于店员准备打烊时持械进入金店，威胁在场人员称将纵火烧毁商场，迫使店员缴出财物后逃跑。警方随后通过DNA比对，发现其生物特征与2013年一起类似金店劫案嫌疑人一致，由此关闭这起历时十余年的冷案（Cold Case）。",
+        "date": "2026-02-27",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/news/bangkok/bangkok-gold-shop-robbers-dna-matches-2013-suspect"
+      }
+    ],
+    "pattaya": [
+      {
+        "title": "Tomorrowland 2026年12月首登亚洲：芭提雅智慧谷（Wisdom Valley）、日均5万人、三天六舞台",
+        "tags": ["#芭提雅", "#活动", "#旅游"],
+        "body": "旅游局（Tourism Authority of Thailand，TAT）、WE Are One World公司、春武里府及比利时大使馆于2月27日联合宣布：全球顶级电子音乐节Tomorrowland将于2026年12月11至13日在芭提雅智慧谷（Wisdom Valley Pattaya）举行亚洲首场完整规模演出，这也是该比利时品牌节庆首次全面登陆亚洲。组织方预计每日吸引约5万名参与者，三天总人次达15万，现场设六座主题舞台（Six Stages）及Tomorrowland标志性全球制作（Iconic Global Productions）。TAT将此次活动定位为\"世界级活动目的地（World Class Event Hub Destination）\"战略落地的重要节点。对芭提雅旅游经济而言，12月本为旅游旺季尾部，Tomorrowland的导流效应有望拉动酒店、餐饮及高端住宿需求。",
+        "comment": "🎉 芭提雅的文化活动升级有目共睹。Tomorrowland的亚洲首秀花落芭提雅，而非曼谷或普吉，有一定战略意义——也侧面说明智慧谷这个大型场地项目终于开始创造回报。",
+        "date": "2026-02-27",
+        "source": "Pattaya Mail / TAT",
+        "url": "https://www.pattayamail.com/latestnews/news/tomorrowland-to-make-asian-debut-in-pattaya-this-december-expecting-50000-fans-daily-537390"
+      }
+    ],
+    "cn_thai": [
+      {
+        "title": "中国EV军团落地EEC：BYD、长城、长安建厂，芭提雅/Si Racha成中国高管新聚居地",
+        "tags": ["#中泰关系", "#EEC", "#电动车"],
+        "body": "《芭提雅邮报》（Pattaya Mail）一篇深度报道指出，在2026年的双极世界格局中，泰国东部经济走廊（Eastern Economic Corridor，EEC）已成为中美战略博弈的前沿工业平台。比亚迪（BYD）、长城汽车（Great Wall Motor）和长安汽车（Changan Automobile）均已在EEC建立电动车（EV）及电池系统生产基地，带来的不只是工厂产线——大量中国工程师、管理人员和供应链主管随之移居泰国，在芭提雅（Pattaya）和西拉差（Si Racha）一带形成一个新兴中国外派高管社群（Chinese Expatriate Community）。这批新中产客群与过去的观光客截然不同：他们是长期居民，有购买力，寻求现代公寓、国际学校，并主导了在EEC周边对中小型高端住宅的需求。与此同时，中国游客模式也在进化：Alipay、微Chat支付渗透到芭提雅街边摊；\"零元团\"已成历史，独立数字旅行者正在取代。",
+        "comment": "🤔 琢磨着：对Pattaya/Si Racha板块的中长期房产投资者而言，中国外派高管聚居是一个实质性的需求支撑变量。这批人要求高标准居住环境，但买房的多还是租房，以及汇款政策是否稳定，需要持续跟踪。",
+        "date": "2026-02-27",
+        "source": "Pattaya Mail",
+        "url": "https://www.pattayamail.com/latestnews/news/thailand-between-giants-living-in-a-world-where-china-wants-to-lead-and-america-refuses-to-yield-537387"
+      }
+    ]
+  }
+}

@@ -1,0 +1,916 @@
+[
+  {
+    "id": "9f6863761673",
+    "event_id": "iran_strait_hormuz_2026_03",
+    "title_cn": "美国打击伊朗布雷船只 中东战争扰乱全球油市",
+    "desc_original": "TEHRAN - The United States said Tuesday it was striking Iranian ships capable of mining the crucial Strait of Hormuz and threatened escalation if Tehran presses ahead, as the Middle East war wreaks havoc on global oil markets.",
+    "summary_cn": "美国周二表示正在打击伊朗具有布雷能力的船只，并威胁如果伊朗继续前进将升级行动。中东冲突导致全球油市波动加剧，油价大幅上升。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#经济",
+      "#安全"
+    ],
+    "source": "Bangkok Post",
+    "url": "https://www.bangkokpost.com/world/3214449/us-targets-iran-minelaying-as-war-causes-oil-market-havoc",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-03-26",
+    "time_sensitive": true,
+    "status": "pending"
+  },
+  {
+    "id": "9c796786e03e",
+    "event_id": "sansiri_construction_costs_2026_03",
+    "title_cn": "尚思瑞地产在全球不确定性中保持乐观",
+    "desc_original": "Construction costs for housing and condo projects already launched remain largely unaffected by global uncertainties, although a prolonged rise in oil prices could push up building costs for new developments, says SET-listed developer Sansiri.",
+    "summary_cn": "上市房地产开发商尚思瑞表示，已启动的住房和公寓项目建筑成本基本不受全球不确定性影响，但油价持续上升可能推高新项目建筑成本。",
+    "importance": "P2",
+    "section_hint": "property",
+    "location_detail": "",
+    "tags": [
+      "#房产",
+      "#经济"
+    ],
+    "source": "Bangkok Post Property",
+    "url": "https://www.bangkokpost.com/property/3214129/sansiri-confident-amid-global-turmoil",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "a88adde70798",
+    "event_id": "thailand_mule_accounts_2026_03",
+    "title_cn": "泰国银行加强数字审查以遏制骗子账户",
+    "desc_original": "Banks are tightening monitoring of digital transactions to prevent the use of mule accounts, as fraudsters shift their activities after stricter controls were imposed on conventional bank accounts.",
+    "summary_cn": "泰国银行加强数字交易监控，以防止骗子账户被使用。诈骗者在传统账户受到更严格控制后转向数字渠道进行非法活动。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#安全",
+      "#政策"
+    ],
+    "source": "Bangkok Post",
+    "url": "https://www.bangkokpost.com/business/general/3214264/banks-tighten-digital-checks-to-curb-mule-accounts",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "9732838be844",
+    "event_id": "geopolitical_risks_market_2026_03",
+    "title_cn": "地缘政治风险笼罩股市前景",
+    "desc_original": "Escalating tensions between Iran, the US and Israel could trigger a major military confrontation within 3-4 months, potentially driving crude oil prices as high as US$135 per barrel in a worst-case scenario, pundits warn.",
+    "summary_cn": "伊朗、美国和以色列之间的紧张局势可能在3-4个月内引发重大军事对抗，在最坏情况下可能将原油价格推高至每桶135美元。",
+    "importance": "P1",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#经济",
+      "#安全"
+    ],
+    "source": "Bangkok Post",
+    "url": "https://www.bangkokpost.com/business/investment/3214269/geopolitical-risks-cloud-equity-market-outlook",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-03-26",
+    "time_sensitive": true,
+    "status": "pending"
+  },
+  {
+    "id": "db428fec39ca",
+    "event_id": "kunlavut_badminton_world_2026_03",
+    "title_cn": "昆拉武特·维迪沙恩重夺羽毛球世界排名第一",
+    "desc_original": "Kunlavut Vitidsarn was officially confirmed as world No.1 after the latest world rankings were announced by the Badminton World Federation (BWF) on Tuesday.",
+    "summary_cn": "泰国羽毛球选手昆拉武特·维迪沙恩在羽毛球世界联合会最新发布的世界排名中被确认为世界排名第一。",
+    "importance": "P3",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Bangkok Post",
+    "url": "https://www.bangkokpost.com/sports/3214119/kunlavut-reclaims-top-spot-in-the-world",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "351a040d8e30",
+    "event_id": "cambodia_migrant_workers_ban_2026_03",
+    "title_cn": "泰国禁止新的柬埔寨移工入境",
+    "desc_original": "The government has reaffirmed that no new Cambodian migrant workers will be allowed into the country due to security concerns, despite pressure from the private sector.",
+    "summary_cn": "泰国政府重申，由于安全顾虑，不允许新的柬埔寨移工进入该国，尽管私营部门施压要求放宽限制。",
+    "importance": "P1",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#移民",
+      "#政策",
+      "#安全"
+    ],
+    "source": "Bangkok Post",
+    "url": "https://www.bangkokpost.com/thailand/general/3214199/no-new-cambodian-workers-allowed-in",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-03-26",
+    "time_sensitive": true,
+    "status": "pending"
+  },
+  {
+    "id": "1bd2f77a20d0",
+    "event_id": "thailand_cambodia_border_talks_2026_03",
+    "title_cn": "新政府必须主导泰柬边界谈判：西哈萨克",
+    "desc_original": "Foreign Minister Sihasak Phuangketkeow said Cambodia's proposal to convene a meeting of the Thai&ndash;Cambodian Joint Boundary Commission (JBC) to discuss territorial demarcation must wait until a new government assumes office.",
+    "summary_cn": "泰国外交部长西哈萨克表示，柬埔寨提议召开泰柬联合边界委员会会议讨论领土划分一事必须等待新政府上台。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#政策"
+    ],
+    "source": "Bangkok Post",
+    "url": "https://www.bangkokpost.com/thailand/general/3214179/new-govt-must-lead-border-talks-sihasak",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "bc0559a3c81a",
+    "event_id": "pattaya_summer_storms_2026_03",
+    "title_cn": "泰国气象部预警夏季风暴将袭击芭提雅地区",
+    "desc_original": "A foreign tourist embraces the afternoon sun while walking along the Pattaya Beach Road walkway, as hot weather continues across the region ahead of forecast summer storms. (Photo by Jetsada Homklin) PATTAYA, Thailand – The Thai Meteorological Department (TMD) has issued a warning of summer storms expected to affect large parts of Thailand from March 11 to 13, with unstable weather conditions likely to reach Pattaya and surrounding areas later in the period. According to the forecast, the storm ",
+    "summary_cn": "泰国气象部门警告3月11-13日夏季风暴将影响泰国大部分地区。风暴系统3月11日从泰国北部开始，之后向南扩展，预计将在该时期稍后到达芭提雅及周边地区。",
+    "importance": "P2",
+    "section_hint": "pattaya",
+    "location_detail": "芭提雅 Pattaya",
+    "tags": [
+      "#环境"
+    ],
+    "source": "Pattaya Mail",
+    "url": "https://www.pattayamail.com/news/summer-storms-forecast-to-reach-pattaya-as-thailand-braces-for-unstable-weather-538835",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-03-26",
+    "time_sensitive": true,
+    "status": "pending"
+  },
+  {
+    "id": "c00304fc1c43",
+    "event_id": "extreme_heat_global_2026_03",
+    "title_cn": "极端高温\"让生活日益无法忍受\"",
+    "desc_original": "The number of days when extreme heat makes it too dangerously hot to walk the dog, sweep the porch and engage in other ordinary pursuits has doubled around the world over the past 75 years, according to new research.",
+    "summary_cn": "根据最新研究，全球极端高温天数在过去75年中翻倍，导致遛狗、扫地等日常活动在许多地区变得过于危险。",
+    "importance": "P3",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#环保"
+    ],
+    "source": "Bangkok Post",
+    "url": "https://www.bangkokpost.com/world/3214029/extreme-heat-making-life-increasingly-unliveable",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "a065bbf0c825",
+    "event_id": "hanuman_guardian_exercise_2026_03",
+    "title_cn": "泰美启动\"汉瑞恩守护2026\"联合军事演习",
+    "desc_original": "Troops from the Royal Thai Army and the United States Army take part in the opening of the Hanuman Guardian 2026 joint training exercise at the Ban Di Lang training area in Phatthana Nikhom District, Lopburi, Thailand, aimed at strengthening operational coordination and military readiness. LOPBURI, Thailand – The Royal Thai Army and the United States Army have launched the joint military exercise “Hanuman Guardian 2026” at the Ban Di Lang training area in the Phatthana Nikhom district, Lopburi p",
+    "summary_cn": "泰国皇家陆军和美国陆军在廊开府帕达那尼空区启动联合军事演习\"汉瑞恩守护2026\"，旨在加强作战协调和军事准备。演习从3月9日至20日进行，约2500人参与。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "廊开府 Lopburi",
+    "tags": [
+      "#政策"
+    ],
+    "source": "Pattaya Mail",
+    "url": "https://www.pattayamail.com/thailandnews/thailand-and-u-s-launch-hanuman-guardian-2026-joint-military-exercise-in-lopburi-538828",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "05c4f9a5aaeb",
+    "event_id": "cryptocurrency_fraud_thailand_2026_03",
+    "title_cn": "通缉商人涉7600万元加密投资诈骗案",
+    "desc_original": "Police are pressing ahead with a case against fugitive businessman Worawat &ldquo;Acme&rdquo; Narknawdee, the husband of a TV actress, over a cryptocurrency investment scheme that has left dozens of victims out of pocket, with losses estimated at 76 million baht.",
+    "summary_cn": "警方正在追捕涉嫌加密货币投资诈骗的通缉商人沃拉瓦特\"艾克米\"纳克纳威迪（某电视女演员的丈夫）。该诈骗案受害者众多，总损失估计达7600万泰铢。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#安全"
+    ],
+    "source": "Bangkok Post",
+    "url": "https://www.bangkokpost.com/thailand/general/3214018/fugitive-businessman-sought-in-b76m-crypto-fraud",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "cebb8e98cf63",
+    "event_id": "scg_petrochemical_shutdown_2026_03",
+    "title_cn": "荷美尔兹海峡中断迫使泰国石化巨头减产提价",
+    "desc_original": "Thammasak Sethaudom, President of SCG Chemicals, announces force majeure at the company’s Rayong Olefins plant after disruptions to naphtha and propane supplies linked to instability around the Strait of Hormuz. BANGKOK, Thailand – Major petrochemical producers in Thailand, the world’s eighth-largest petrochemical hub, have begun notifying customers of production cuts and price hikes as the closure of the Strait of Hormuz disrupts global feedstock supplies. SCG Chemicals (SCGC) announced it has ",
+    "summary_cn": "作为全球第八大石化中心的泰国，多家石化生产商因荷美尔兹海峡关闭导致石脑油和丙烷供应中断，已开始通知客户减产和涨价。SCG化学公司宣布在劳颂烯烃工厂启动不可抗力条款。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "罗勇 Rayong",
+    "tags": [
+      "#经济",
+      "#基建"
+    ],
+    "source": "Pattaya Mail",
+    "url": "https://www.pattayamail.com/thailandnews/strait-of-hormuz-disruption-forces-thai-petrochemical-giants-to-cut-production-raise-prices-538831",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-03-26",
+    "time_sensitive": true,
+    "status": "pending"
+  },
+  {
+    "id": "6032140a505d",
+    "event_id": "thailand_marine_conservation_2026_03",
+    "title_cn": "泰国启动五年合作计划应对海洋垃圾保护海洋生态",
+    "desc_original": "Suchart Chomklin presides over a cooperation signing between the Thai Coral Reefs and Marine Life Conservation Foundation and the Department of Marine and Coastal Resources to combat marine waste and promote sustainable ocean management under the royal guidance of Princess Sirivannavari Nariratana Rajakanya. BANGKOK, Thailand – Deputy Prime Minister and Minister of Natural Resources and Environment Suchart Chomklin has presided over a signing ceremony establishing a cooperation framework to addr",
+    "summary_cn": "泰国副总理素查特主持签字仪式，建立合作框架以解决海洋垃圾问题，支持泰国海洋资源的可持续管理。该努力得到公主诗琳通的皇家指导。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#环保"
+    ],
+    "source": "Pattaya Mail",
+    "url": "https://www.pattayamail.com/thailandnews/thailand-launches-five-year-partnership-to-tackle-marine-waste-and-protect-ocean-ecosystems-538825",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "c0c352b05ee8",
+    "event_id": "energy_conservation_campaign_2026_03",
+    "title_cn": "泰国启动全国能源节约宣传活动",
+    "desc_original": "The Public Relations Department of Thailand has been tasked with leading a nationwide campaign across television, radio, and social media to encourage households and businesses to reduce energy consumption amid the current energy situation. BANGKOK, Thailand – The government has assigned the Public Relations Department (PRD) to coordinate an energy conservation campaign across television, radio, and social media platforms amid the current energy situation, seeking nationwide cooperation to reduc",
+    "summary_cn": "泰国政府公关部被任命领导一项全国宣传活动，利用电视、广播和社交媒体鼓励家庭和企业减少能源消耗。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#政策",
+      "#经济"
+    ],
+    "source": "Pattaya Mail",
+    "url": "https://www.pattayamail.com/thailandnews/thai-government-launches-nationwide-media-campaign-to-promote-energy-conservation-538822",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "59698f1ac5c6",
+    "event_id": "nam_hom_coconut_prices_2026_03",
+    "title_cn": "泰国采取措施稳定香椰枣价格",
+    "desc_original": "Poonpong Naiyanapakorn, Director-General of the Department of Business Development, meets executives from Harmless Harvest in Samut Sakhon, Thailand to discuss measures aimed at stabilizing prices and expanding export opportunities for Thai aromatic “Nam Hom” coconuts. BANGKOK, Thailand – Department of Business Development (DBD) officials have visited Samut Sakhon province to address falling prices of Thai aromatic coconuts, commonly known as Nam Hom coconuts. Officials held discussions with a m",
+    "summary_cn": "泰国商业发展部官员视察沙没他空府，应对泰国芳香椰枣价格下跌问题。官员与主要椰枣加工公司进行讨论，探索稳定价格和扩大出口机会的商业方案。",
+    "importance": "P3",
+    "section_hint": "thailand",
+    "location_detail": "沙没他空府 Samut Sakhon",
+    "tags": [
+      "#经济"
+    ],
+    "source": "Pattaya Mail",
+    "url": "https://www.pattayamail.com/thailandnews/thailand-moves-to-stabilize-nam-hom-coconut-prices-amid-farmer-concerns-538819",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "6027779d9fdc",
+    "event_id": "embassy_bahrain_relief_2026_03",
+    "title_cn": "泰国驻巴林大使馆启动救济包登记",
+    "desc_original": "The Royal Thai Embassy in Manama has opened an online registration system for Thai nationals in Bahrain to receive relief kits, with distribution coordinated through community volunteers during the ongoing regional unrest. BANGKOK, Thailand – The Royal Thai Embassy in Manama will distribute relief kits to Thai nationals in Bahrain affected by the ongoing regional unrest. To facilitate this, the Embassy has launched an online registration system available through a Google Form and QR codes on its",
+    "summary_cn": "泰国驻美那玛大使馆为受地区局势影响的巴林泰国籍公民分配救济包，已开放在线登记系统，通过社区志愿者进行分配。",
+    "importance": "P1",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#安全"
+    ],
+    "source": "Pattaya Mail",
+    "url": "https://www.pattayamail.com/thailandnews/thai-embassy-in-bahrain-launches-registration-for-relief-kits-amid-regional-unrest-538791",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-03-26",
+    "time_sensitive": true,
+    "status": "pending"
+  },
+  {
+    "id": "f8f3757d8b1d",
+    "event_id": "work_from_home_government_2026_03",
+    "title_cn": "泰国总理令政府机构居家办公应对中东能源危机",
+    "desc_original": "Anutin Charnvirakul chairs a Cabinet meeting where he directed government agencies and state enterprises to implement work-from-home arrangements and suspend overseas study trips to help reduce energy consumption during the ongoing Middle East conflict. BANGKOK, Thailand – Prime Minister Anutin Charnvirakul has directed government agencies and state enterprises to implement work-from-home arrangements for duties that do not affect essential public services. The measure was announced during a Cab",
+    "summary_cn": "泰国总理阿努廷在内阁会议上下令政府机构和国企对不影响公共服务的工作实施居家办公制度，以应对中东冲突对能源的压力。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#政策",
+      "#经济"
+    ],
+    "source": "Pattaya Mail",
+    "url": "https://www.pattayamail.com/thailandnews/thai-pm-orders-work-from-home-for-government-agencies-amid-middle-east-energy-concerns-538813",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-03-26",
+    "time_sensitive": true,
+    "status": "pending"
+  },
+  {
+    "id": "bd4ab05dda17",
+    "event_id": "fuel_prices_biofuels_2026_03",
+    "title_cn": "泰国采取措施稳定燃油价格推广生物燃料",
+    "desc_original": "Auttapol Rerkpiboon, Thailand’s Energy Minister, outlines measures to stabilize fuel prices and promote greater use of biofuels, including incentives for motorists to switch to E20 gasoline and adjustments to biodiesel blends to reduce reliance on imported crude oil. BANGKOK, Thailand – Energy Minister Auttapol Rerkpiboon has outlined government measures to stabilize fuel prices and reduce reliance on crude oil imports amid ongoing pressure on global energy markets. The government is using the O",
+    "summary_cn": "泰国能源部长奥塔波提出稳定燃油价格并减少对进口原油依赖的政府措施。政府利用油料基金与燃油商合作控制柴油价格，同时鼓励转用E20汽油和调整生物柴油混合比例。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#政策",
+      "#经济"
+    ],
+    "source": "Pattaya Mail",
+    "url": "https://www.pattayamail.com/thailandnews/thailand-moves-to-stabilize-fuel-prices-promote-biofuels-as-global-energy-pressure-mounts-538810",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-03-26",
+    "time_sensitive": true,
+    "status": "pending"
+  },
+  {
+    "id": "cc5b117fc1ed",
+    "event_id": "middle_east_evacuation_2026_03",
+    "title_cn": "泰国敦促公民撤离中东地区",
+    "desc_original": "Panidone Pachimsawat of the Ministry of Foreign Affairs briefs the media on the volatile situation in the Middle East and ongoing evacuation efforts for Thai nationals, with hundreds already returning to Thailand. BANGKOK, Thailand – The Joint Management and Monitoring Center for the Situation in the Middle East reported today (Mar 10) that tensions in the region remain volatile as missile and drone exchanges continue among parties to the conflict. According to Panidone Pachimsawat, acting direc",
+    "summary_cn": "泰国中东形势联合管理监测中心报告称该地区局势仍然紧张，导弹和无人机交换仍在继续。泰国政府敦促公民撤离中东，数百人已返回泰国。",
+    "importance": "P1",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#安全"
+    ],
+    "source": "Pattaya Mail",
+    "url": "https://www.pattayamail.com/thailandnews/thailand-urges-citizens-to-leave-middle-east-as-regional-tensions-escalate-538807",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-03-26",
+    "time_sensitive": true,
+    "status": "pending"
+  },
+  {
+    "id": "785451eece16",
+    "event_id": "thailand_stagflation_risk_2026_03",
+    "title_cn": "经济学家警告泰国可能遭遇滞胀",
+    "desc_original": "Thailand is at risk of stagflation as oil prices skyrocket during the Middle East conflict, while the new government has yet to take office and is unable to take steps to prop up a weak economy, says economist Amonthep Chawla.",
+    "summary_cn": "经济学家阿蒙塞普警告，泰国面临滞胀风险，因为中东冲突期间油价飙升，而新政府尚未上台无法采取措施扶持弱势经济。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#经济"
+    ],
+    "source": "Bangkok Post",
+    "url": "https://www.bangkokpost.com/business/general/3213984/economist-warns-thailand-could-encounter-stagflation",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-03-26",
+    "time_sensitive": true,
+    "status": "pending"
+  },
+  {
+    "id": "5be442d01140",
+    "event_id": "thailand_tourism_recovery_2026_03",
+    "title_cn": "泰国旅行社对远程市场复苏持悲观态度",
+    "desc_original": "Thailand&rsquo;s tourism industry is struggling with the sudden impact from the Middle East conflict on long‑haul travel, with weekly arrivals down 13% due to flight disruptions.",
+    "summary_cn": "泰国旅游业受中东冲突对远程旅行的突然冲击，周抵达人数下降13%，原因是航班中断。业界对远程市场复苏前景悲观。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#旅游",
+      "#经济"
+    ],
+    "source": "Bangkok Post",
+    "url": "https://www.bangkokpost.com/business/general/3213975/thai-travel-agents-pessimistic-about-longhaul-rmarket-recovery",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-03-26",
+    "time_sensitive": true,
+    "status": "pending"
+  },
+  {
+    "id": "98b137440a53",
+    "event_id": "thailand_cambodia_border_control_2026_03",
+    "title_cn": "泰国陆军：柬埔寨边界无升级迹象",
+    "desc_original": "BANGKOK — The Thai army said the situation along the Thai–Cambodian border remains under control and there are no signs of an imminent escalation in tensions. Army spokesman Maj. Gen. Winthai Suvaree said on 10 March that authorities are closely monitoring developments along the border and maintaining troop deployments in key areas. He acknowledged that Thai soldiers in Si Sa Ket province had observed Cambodian troops approaching a barbed-wire fence near the Sam Tae crossing, sometimes filming p",
+    "summary_cn": "泰国陆军表示泰柬边境形势受控，无迫在眉睫的紧张局势升级迹象。部队对边境动向保持密切监控，在关键地区维持部署。柬埔寨军队曾在西双版纳府山梅县靠近铁丝网处逼近并记录挑衅内容。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "四色菊府 Si Sa Ket",
+    "tags": [
+      "#安全",
+      "#政策"
+    ],
+    "source": "Khaosod English",
+    "url": "https://www.khaosodenglish.com/news/2026/03/10/thai-army-no-signs-of-escalation-on-cambodia-border/",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "31d3045255b0",
+    "event_id": "iran_soccer_team_asylum_2026_03",
+    "title_cn": "澳大利亚向伊朗女足5名队员提供庇护",
+    "desc_original": "GOLD COAST, Australia (AP) — Australia granted asylum to five members of the Iranian women’s soccer team who were visiting the country for a tournament when the Iran war began, a government minister said Tuesday. The announcement followed days of urging by Iranian groups in Australia and by U.S. President Donald Trump for the Australian government to help the women, who had not spoken publicly about a wish to claim asylum. The team drew speculation and news coverage in Australia when players did",
+    "summary_cn": "澳大利亚向伊朗女足5名队员提供庇护，这些队员因参加比赛而在澳大利亚滞留。此前伊朗团体和美国总统特朗普敦促澳大利亚政府提供帮助。",
+    "importance": "P3",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Khaosod English",
+    "url": "https://www.khaosodenglish.com/news/international/2026/03/10/australia-grants-asylum-to-5-members-of-the-iranian-womens-soccer-team/",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "5c48a1fa9d20",
+    "event_id": "koh_chang_monkey_key_2026_03",
+    "title_cn": "象岛猴子遭冤枉偷窃外国人摩托车钥匙",
+    "desc_original": "Koh Chang monkeys falsely accused of stealing foreigner&#8217;s motorcycle key Legacy Foreign tourists on Koh Chang in Trat province asked a police officer for help, claiming a monkey stole their motorcycle key , only for the key to later be found at their accommodation following a four-hour search. A Thai police officer shared the story on his Facebook account, ธงงัย จะใครหละ , on March 7. The post went viral, drawing more than 18,000 reactions and nearly 900 comments and shares. In his caption",
+    "summary_cn": "象岛外国游客向警察报案称猴子偷走了摩托车钥匙，后来钥匙在他们的住宿地被找到。警察在社交媒体分享这一趣事，引发广泛关注。",
+    "importance": "P3",
+    "section_hint": "thailand",
+    "location_detail": "象岛 Koh Chang",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "The Thaiger",
+    "url": "https://thethaiger.com/news/national/koh-chang-monkeys-falsely-accused-of-stealing-foreigners-motorcycle-key",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "1b75246c0daf",
+    "event_id": "cambodia_korea_fighter_jets_2026_03",
+    "title_cn": "柬埔寨请求韩国重新考虑向泰国售战斗机",
+    "desc_original": "PHNOM PENH — Cambodia has urged South Korea to reconsider conditions for selling fighter jets to Thailand, saying the move could help maintain regional peace. The request was made during a meeting on 9 March between Cheam Yeap, First Vice President of Cambodia’s National Assembly, and a delegation from the South Korean National Assembly led by lawmaker Yoon Hu-duk in Phnom Penh, according to the National Assembly of Cambodia. Cheam Yeap asked the South Korean government to review the terms of an",
+    "summary_cn": "柬埔寨敦促韩国重新考虑向泰国售战斗机的条件，以维持地区和平。柬埔寨国民议会副主席在与韩国国民议会代表团的会议中提出了这一要求。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#政策",
+      "#安全"
+    ],
+    "source": "Khaosod English",
+    "url": "https://www.khaosodenglish.com/news/international/2026/03/10/cambodia-asks-south-korea-to-reconsider-fighter-jet-sale-to-thailand/",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "7765afe0e4c5",
+    "event_id": "trat_loan_shark_rape_2026_03",
+    "title_cn": "实邦府高利贷者因强奸15岁借贷人女儿被捕",
+    "desc_original": "Trat loan shark arrested for raping 15 year old debtor&#8217;s daughter Legacy Police arrested a loan shark who raped a 15 year old debtor&#8217;s daughter at a house in Trat province. He reportedly begged the victim&#8217;s mother to drop legal proceedings. On March 7, the 35 year old Thai mother, Aoy, accompanied her 15 year old daughter, Eye, to Mueang Trat Police Station to file a complaint against the loan shark, later identified as 38 year old Kritsada, also known as Big. Aoy told officers",
+    "summary_cn": "泰国警方逮捕一名在实邦府强奸15岁借贷人女儿的高利贷者。受害人母亲注意到女儿行为改变，陷入抑郁。高利贷者被指控强奸并恳求受害人母亲放弃法律诉讼。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "实邦府 Trat",
+    "tags": [
+      "#安全"
+    ],
+    "source": "The Thaiger",
+    "url": "https://thethaiger.com/news/national/trat-loan-shark-arrested-for-raping-15-year-old-debtors-daughter",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "3fda63ba9721",
+    "event_id": "electric_vehicles_thailand_2026",
+    "title_cn": "泰国最佳电动汽车推荐——2026年精选",
+    "desc_original": "The best EVs in Thailand right now &#8211; Our top picks for 2026 Legacy Every time oil prices spike (as they currently are with the US-Israel conflict against Iran ), fuel market prices respond with jitteriness. And now, more than ever, sentiments of switching to an electric vehicle (EV) in Thailand for 2026 have never echoed this loudly. If I were to present this idea to you as recently as this past year, your answer would most likely be along the lines of &#8220;EVs are just not there yet&#82",
+    "summary_cn": "随着油价飙升（美以以色列对伊朗冲突），泰国电动汽车销售情绪高涨。本文推荐泰国市场2026年最佳电动汽车选项，分析充电时间和成本优势。",
+    "importance": "P3",
+    "section_hint": "property",
+    "location_detail": "",
+    "tags": [
+      "#经济",
+      "#旅游"
+    ],
+    "source": "The Thaiger",
+    "url": "https://thethaiger.com/guides/automotive/best-evs-in-thailand-2026",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "cba28fd47eaa",
+    "event_id": "fake_police_fine_2026_03",
+    "title_cn": "视频显示\"警察\"索要罚款无单据",
+    "desc_original": "Video shows police-like man demanding cash fine without paperwork Legacy Nakhon Pathom City Police Station issued a public statement yesterday, March 9, after a video shared online showed a man dressed in police attire demanding a cash fine of 5,000 baht from a student without issuing any official document. The footage circulating on social media appeared to show a person dressed similarly to a police officer, with what appeared to be a firearm strapped in a holster. In the clip, the person was ",
+    "summary_cn": "呵叻巴松府警察局发布公告，称网上流传的视频显示一名身穿警察制服的人向学生索要5000泰铢罚款（后讨价至3000元），且未出示任何官方文件。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "那空巴松 Nakhon Pathom",
+    "tags": [
+      "#安全"
+    ],
+    "source": "The Thaiger",
+    "url": "https://thethaiger.com/news/national/video-shows-police-like-man-demanding-fine-without-paperwork",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "ff25a8842cb5",
+    "event_id": "thai_monk_beer_purchase_2026_03",
+    "title_cn": "泰国和尚便利店购买啤酒引网络批评",
+    "desc_original": "Thai monk tries to buy beer at convenience store, drawing online backlash Legacy A Thai monk drew criticism online after a video showed him attempting to buy two bottles of beer at a convenience store before staff refused to complete the sale. The clip was shared yesterday, March 9, by the Facebook page อยากดังเดี๋ยวจัดให้ รีเทริน์ part 7 . In the video, the monk was seen wearing full robes as he carried two bottles of beer to the cashier and placed them on the counter. Store workers appeared he",
+    "summary_cn": "一段视频显示一名泰国和尚在便利店试图购买两瓶啤酒遭拒，引发网络批评。店员以和尚身份为由拒绝完成交易。",
+    "importance": "P3",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "The Thaiger",
+    "url": "https://thethaiger.com/news/national/thai-monk-tries-to-buy-beer-at-convenience-store-drawing-online-backlash",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "28c5db4334f5",
+    "event_id": "sim_cards_thailand_2026",
+    "title_cn": "泰国最佳手机卡推荐——2026年出行指南",
+    "desc_original": "Best SIM cards to stay connected in Thailand (2026) Legacy You&#8217;ve just landed at Suvarnabhumi Airport after a long flight to Bangkok. Your phone automatically searches for a network, and within seconds, you see the roaming charges: US$15 per day just to check Google Maps or message your hotel. For a two-week trip, that&#8217;s over US$200 before you&#8217;ve even left the airport. There&#8217;s a better way. Staying connected in Thailand doesn&#8217;t have to drain your travel budget. With",
+    "summary_cn": "泰国手机运营商提供多种经济实惠的游客SIM卡和eSIM选项。本指南介绍泰国最佳手机卡选择，帮助游客节省数据费用。",
+    "importance": "P3",
+    "section_hint": "property",
+    "location_detail": "",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "The Thaiger",
+    "url": "https://thethaiger.com/guides/best-of/best-sim-card-thailand",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "ec7e7c745732",
+    "event_id": "fuel_smuggling_kanchanaburi_2026_03",
+    "title_cn": "缅甸人在甘烹碧府因燃油走私被捕",
+    "desc_original": "Myanmar national arrested over fuel smuggling in Kanchanaburi Legacy A Myanmar national was arrested in Kanchanaburi &#8216;s Sangkhla Buri district yesterday, March 9, in an alleged fuel smuggling attempt after he was found transporting 120 litres of fuel for illegal sale across the border into Myanmar. Sangkhla Buri district chief Suriyasak Muean-uam was notified at 9.20pm that officers had detained a Myanmar man in the Ban Phra Chedi Sam Ong area of Nong Lu subdistrict. The suspect was stoppe",
+    "summary_cn": "一名缅甸人在甘烹碧府三空区因涉嫌燃油走私被捕。该人被发现运载120升燃油欲非法跨境贩运至缅甸出售。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "甘烹碧府 Kanchanaburi",
+    "tags": [
+      "#安全"
+    ],
+    "source": "The Thaiger",
+    "url": "https://thethaiger.com/news/national/myanmar-national-arrested-over-fuel-smuggling-in-kanchanaburi",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "42865e4e4111",
+    "event_id": "ayutthaya_buddha_head_copy_2026_03",
+    "title_cn": "大城府地标被复制？柬埔寨\"树根佛头\"引发热议",
+    "desc_original": "AYUTTHAYA — Images circulating on social media showing a temple site in Cambodia that appears to replicate the famous Buddha head entwined in tree roots at Wat Mahathat have sparked widespread discussion online. Cambodian visitors pay respect to a Buddha head entwined in tree roots at a temple site. On 10 March, several popular social media pages shared photos of a structure resembling the iconic Buddha head within tree roots — a landmark attraction at Ayutthaya Historical Park. Many users quest",
+    "summary_cn": "社交媒体上流传的柬埔寨寺庙遗址照片似乎复制了大城府玛哈泰寺标志性景观——树根中的佛头，引发广泛网络讨论。网友质疑该结构是否新近建造。",
+    "importance": "P3",
+    "section_hint": "thailand",
+    "location_detail": "大城府 Ayutthaya",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Khaosod English",
+    "url": "https://www.khaosodenglish.com/news/2026/03/10/ayutthaya-landmark-copied-cambodias-buddha-head-in-tree-roots-sparks-debate/",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "c68d97389dea",
+    "event_id": "phuket_israeli_tourist_2026_03",
+    "title_cn": "普吉岛店主冲以色列游客喊\"真主至大\"引热议",
+    "desc_original": "PHUKET — A video circulating on social media showing an Israeli tourist being chased away from a shop in Phuket has sparked widespread debate among Thai netizens. The clip was posted on Facebook by a user identified as Thanaphon Pathan and quickly drew attention online. In the video, the male tourist, wearing a black T-shirt and black shorts and believed by some viewers to be Israeli, is seen walking along a roadside in the Ban Bang Ma Lao area of Sakhu subdistrict in Thalang district. As he pas",
+    "summary_cn": "视频显示普吉岛一名店主在一名被认为是以色列的游客经过时用泰语、英语及其他语言喝斥对方，引发泰国网民热烈讨论。",
+    "importance": "P3",
+    "section_hint": "pattaya",
+    "location_detail": "普吉岛 Phuket",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Khaosod English",
+    "url": "https://www.khaosodenglish.com/news/2026/03/10/phuket-shop-owner-shouts-allahu-akbar-at-israeli-tourist-in-viral-clip/",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "5e345a473a51",
+    "event_id": "thai_actress_crypto_scam_2026_03",
+    "title_cn": "泰国女演员丈夫涉嫌加密诈骗逾13亿泰铢",
+    "desc_original": "Thai actress&#8217;s husband allegedly swindles 1.3 billion baht in crypto scam Legacy A Thai actress’s husband allegedly swindled more than 1.3 billion baht from more than 1,000 victims by persuading them to invest in cryptocurrency platforms and then allegedly failing to deliver the promised returns. A group of 30 complainants met the President of the Santi Pracha Dham Club, Tankhun Jitissara, seeking assistance after they said they and more than 1,000 other victims lost money in an investment",
+    "summary_cn": "一名泰国女演员的丈夫涉嫌通过劝说超1000名受害者投资加密平台，诈骗逾13亿泰铢。30名投诉人向慈善组织主席寻求协助，总损失超13亿泰铢。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#安全"
+    ],
+    "source": "The Thaiger",
+    "url": "https://thethaiger.com/news/national/thai-actresss-husband-allegedly-swindles-1-3-billion-baht-in-crypto-scam",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "e6d158ab371c",
+    "event_id": "pattaya_ride_assault_2026_03",
+    "title_cn": "芭提雅摩的士司机指控网约车骑手殴打",
+    "desc_original": "Motorcycle taxi rider alleges app rider punched her in Pattaya Legacy A motorcycle taxi rider in Pattaya filed a complaint at Pattaya City Police Station yesterday, March 9, after she was allegedly punched by a male ride-hailing app rider last month, which she linked to her reporting him over a pick-up point dispute. The complainant, identified as 57 year old Tom, said she works as a motorcycle taxi rider outside a hotel in Pattaya, Chon Buri . She also holds a committee role with an association",
+    "summary_cn": "芭提雅一名摩的士司机向芭提雅市警察局报案，称被一名网约车骑手上月殴打，并将其与举报接客地点纠纷联系起来。",
+    "importance": "P3",
+    "section_hint": "pattaya",
+    "location_detail": "芭提雅 Pattaya",
+    "tags": [
+      "#安全"
+    ],
+    "source": "The Thaiger",
+    "url": "https://thethaiger.com/news/national/motorcycle-taxi-rider-alleges-app-rider-punched-her-in-pattaya",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "6fd5dc39ebbd",
+    "event_id": "airasia_jet_fuel_2026_03",
+    "title_cn": "马来西亚研究机构因油价飙升暂停亚航评级",
+    "desc_original": "Malaysian research house suspends AirAsia X call as jet fuel prices surge Legacy BIMB Research, a Malaysian research house that publishes equity and sector reports, has suspended its call on AirAsia X Bhd (AAX), just two weeks after initiating coverage, citing growing concerns in the aviation sector linked to sharp fuel price moves. The firm said major jet kerosene benchmarks have risen 53% to 54% since last Friday’s close, shortly before the US–Israel war with Iran , and that volatility has bee",
+    "summary_cn": "马来西亚研究机构BIMB在美以对伊朗冲突后喷气燃料价格飙升的背景下，仅两周后暂停对亚航X的评级调查。喷气燃油基准价格自上周五以来上升53-54%。",
+    "importance": "P2",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#经济"
+    ],
+    "source": "The Thaiger",
+    "url": "https://thethaiger.com/news/world/aviation/airasia-x-jet-fuel-prices-surge",
+    "origin": "rss",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-03-26",
+    "time_sensitive": true,
+    "status": "pending"
+  },
+  {
+    "id": "96013574d675",
+    "event_id": "pattaya_music_festival_2026_03",
+    "title_cn": "夕阳音乐节：芭提雅2026年海滩音乐月",
+    "desc_original": "The Pattaya Music Festival 2026 is a free, month-long event taking place over four weekends in March at various locations, including Central Pattaya Beach and Jomtien Beach.",
+    "summary_cn": "芭提雅音乐节2026年为期一个月的免费活动，分四个周末举行，地点包括中央芭提雅海滩和芭堤雅海滩。",
+    "importance": "P3",
+    "section_hint": "pattaya",
+    "location_detail": "芭提雅 Pattaya",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Thailand music festival concert Bangkok ",
+    "url": "https://www.nationthailand.com/life/entertainment/40063408",
+    "origin": "brave",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "26728cdbc681",
+    "event_id": "pattaya_music_festival_launch_2026_03",
+    "title_cn": "芭提雅音乐节2026正式启动",
+    "desc_original": "The Pattaya Music Festival 2026 has officially begun, turning the city’s beaches into a lively open-air music venue for an entire month of performances and tourism promotion. On March 6, 2026, at 7:00 p.m., Mr. Naris Niramaiwong, Governor ...",
+    "summary_cn": "芭提雅音乐节2026正式开幕，将整座城市的海滩改造为一个月的露天音乐场地。芭提雅市长于2026年3月6日晚间启动此项旅游推广活动。",
+    "importance": "P3",
+    "section_hint": "pattaya",
+    "location_detail": "芭提雅 Pattaya",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Thailand music festival concert Bangkok ",
+    "url": "https://thepattayanews.com/2026/03/07/pattaya-music-festival-2026-officially-kicks-off/",
+    "origin": "brave",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "9febc90d7c91",
+    "event_id": "pattaya_music_festival_final_weekend_2026_03",
+    "title_cn": "芭提雅为音乐节最后周末准备兰坡那空路亚公园",
+    "desc_original": "Wuttisak says the city is fully prepared to host the final weekend of the Pattaya Music Festival 2026 at Lan Pho Naklua Public Park and invites residents and tourists to join the celebrations.",
+    "summary_cn": "芭提雅市为芭提雅音乐节2026最后一个周末在兰坡那空路亚公园做好准备，邀请居民和游客参加庆祝活动。",
+    "importance": "P3",
+    "section_hint": "pattaya",
+    "location_detail": "芭提雅 Pattaya",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Thailand music festival concert Bangkok ",
+    "url": "https://www.pattayamail.com/news/pattaya-prepares-lan-pho-naklua-park-for-final-weekend-of-pattaya-music-festival-2026-538698",
+    "origin": "brave",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "3a86efb7b249",
+    "event_id": "holi_songkran_festival_bangkok_2026",
+    "title_cn": "曼谷欢庆霍利-宋干融合节2026",
+    "desc_original": "Held on March 8, 2026, at the ITCC in Bangkok, the event ran from 10:00 AM to 5:00 PM, filling the venue with music, dance, traditional rituals, and the playful spirit of both Holi and Songkran.",
+    "summary_cn": "2026年3月8日在曼谷ITCC举办的霍利-宋干融合节从上午10点到下午5点，会场充满音乐、舞蹈、传统仪式和霍利及宋干节的欢乐气氛。",
+    "importance": "P3",
+    "section_hint": "bangkok",
+    "location_detail": "曼谷 Bangkok",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Thailand fireworks Songkran New Year cel",
+    "url": "https://www.indothainews.com/bangkok-celebrates-colorful-cultural-fusion-at-holi-songkran-fiesta-2026/",
+    "origin": "brave",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "96013574d675",
+    "event_id": "pattaya_music_festival_2026_03",
+    "title_cn": "夕阳音乐节：芭提雅2026年海滩音乐月",
+    "desc_original": "The Pattaya Music Festival 2026 is a free, month-long event taking place over four weekends in March at various locations, including Central Pattaya Beach and Jomtien Beach.",
+    "summary_cn": "芭提雅音乐节2026年为期一个月的免费活动，分四个周末举行，地点包括中央芭提雅海滩和芭堤雅海滩。",
+    "importance": "P3",
+    "section_hint": "pattaya",
+    "location_detail": "芭提雅 Pattaya",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Bangkok Pattaya art exhibition museum cu",
+    "url": "https://www.nationthailand.com/life/entertainment/40063408",
+    "origin": "brave",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "e48416009594",
+    "event_id": "bangkok_flea_markets_2026",
+    "title_cn": "曼谷跳蚤市场：泰国复古购物热潮",
+    "desc_original": "“Everything I buy I want to pick with care.” Appropriately enough, his love of vintage was handed down to him by his father and he has turned the often dusty shopping format into a retail festival held at warehouses, rooftops and car parks across the Thai capital. Roughly 15,000 people attend his ticketed fairs, which run into the evening with DJ sets and plenty of drinks.",
+    "summary_cn": "曼谷跳蚤市场反映了泰国兴起的复古购物热潮。组织者每年举办数场门票式集市，在仓库、屋顶和停车场举行，吸引约15000人参加，配有DJ表演。",
+    "importance": "P3",
+    "section_hint": "bangkok",
+    "location_detail": "曼谷 Bangkok",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Thailand shopping festival fair expo Ban",
+    "url": "https://monocle.com/business/entrepreneurialism/bangkok-flea-markets/",
+    "origin": "brave",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "ac5e89a6800b",
+    "event_id": "bangkok_events_2026_03",
+    "title_cn": "曼谷今日及即将举行的活动",
+    "desc_original": "Louis CK in Bangkok is happening ... Siam Pic-Ganesha), Bangkok · Thailand Mobile Expo 2026 is happening on Thu 12 Mar 2026 from 12:00 PM onwards at ศูนย์การประชุมแห่งชาติสิร...",
+    "summary_cn": "曼谷近期活动包括Louis CK表演、2026年泰国移动博览会等多项活动在国家会议中心举行。",
+    "importance": "P3",
+    "section_hint": "bangkok",
+    "location_detail": "曼谷 Bangkok",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Thailand shopping festival fair expo Ban",
+    "url": "https://allevents.in/bangkok/all",
+    "origin": "brave",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "4297a7f996f9",
+    "event_id": "thailand_culture_festivals_2026",
+    "title_cn": "泰国2026年文化节：从宋干到水灯节",
+    "desc_original": "Thailand&#x27;s culture festivals 2026 in the Kingdom of Thailand aren&#x27;t just photo ops; they&#x27;re how this Southeast Asian nation marks seasons, merit, and",
+    "summary_cn": "泰国2026年文化节日包括宋干、水灯节等，不仅是拍照机会，更是泰国标志四季、功德和重要时刻的文化表达。",
+    "importance": "P3",
+    "section_hint": "thailand",
+    "location_detail": "",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Thailand shopping festival fair expo Ban",
+    "url": "https://www.chiangraitimes.com/learning/thailand-culture-festivals-in-2026/",
+    "origin": "brave",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  },
+  {
+    "id": "49ddc3227dd0",
+    "event_id": "bangkok_design_week_2026",
+    "title_cn": "曼谷设计周2026：亚洲创意中心",
+    "desc_original": "Representing the Philippines, Bangkok Design Week 2026 serves as the launch platform for &quot;LAHI (Heritage): The Philippines Fashion Exhibition,&quot; presented through a collaboration between the Department of Trade and Industry (DTI), the Philippine ...",
+    "summary_cn": "曼谷设计周2026作为亚洲创意中心的舞台。菲律宾代表团推出\"LAHI（遗产）：菲律宾时装展\"，由贸易和工业部等联合呈现。",
+    "importance": "P3",
+    "section_hint": "bangkok",
+    "location_detail": "曼谷 Bangkok",
+    "tags": [
+      "#旅游"
+    ],
+    "source": "Thailand shopping festival fair expo Ban",
+    "url": "https://www.manilatimes.net/2026/03/09/tmt-newswire/media-outreach-newswire/bangkok-design-week-2026-sets-the-stage-as-asias-creative-hub/2295567",
+    "origin": "brave",
+    "added_date": "2026-03-11",
+    "expires_date": "2026-04-10",
+    "time_sensitive": false,
+    "status": "pending"
+  }
+]

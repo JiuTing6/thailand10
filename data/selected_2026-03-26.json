@@ -1,0 +1,54 @@
+{
+  "date": "2026-03-26",
+  "issue": 10,
+  "highlights": [0, 1, 5, 6, 13],
+  "sections": {
+    "thailand": [
+      "0efd5a40f4f7",
+      "678e8664ceac",
+      "16954a2fd98f",
+      "6175eaa3e4c9",
+      "2132f200512e",
+      "293392a3fe34",
+      "c6b801330308",
+      "d6ca3cbc0ba6",
+      "34ee7b4c80f8",
+      "b9cf9f25cc9d",
+      "3990201b497d",
+      "3ac8e1bbdcf8",
+      "0cc6d621b0be",
+      "e67b66470633",
+      "b887ab7be339",
+      "dc00ef89ce8a",
+      "f0fb9ae44f43",
+      "3803c84d42a7",
+      "fc2bc1e347db",
+      "b05afc59265a"
+    ],
+    "property": [
+      "395b11b22bb5",
+      "2c02e5c4d6ac",
+      "9c9f4f09bd63",
+      "b75b87706e23"
+    ],
+    "bangkok": [
+      "0e0a4bbebe1d",
+      "f1939c493468",
+      "c1eabbdb3808",
+      "bec712e4a6b3",
+      "91aeaf2447f3"
+    ],
+    "pattaya": [
+      "2f46d2eb0361",
+      "1c96ba77bd50",
+      "da8a2932cc60",
+      "a46b51a893ca",
+      "4fac1c7d9693",
+      "77d511395ed1"
+    ],
+    "cn_thai": [
+      "0b85e0685b0e",
+      "af9e2a8014f1"
+    ]
+  }
+}

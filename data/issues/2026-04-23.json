@@ -1,0 +1,455 @@
+{
+  "date": "2026-04-23",
+  "issue": 14,
+  "highlights": [
+    2,
+    0,
+    7,
+    12,
+    4
+  ],
+  "sections": {
+    "thailand": [
+      {
+        "title": "泰国总理阿努廷拟申请5000亿泰铢贷款案报告",
+        "city_tag": "#泰国",
+        "topic_tag": "#时政",
+        "body": "泰国总理阿努廷（Anutin Charnvirakul）已指示副总理兼财政部长埃克尼提（Ekniti Nitithanprapas）及内阁国务委员会，就颁布紧急贷款法令和提高国家公共债务上限的法律影响进行紧急研究。这笔高达5000亿泰铢的潜在贷款计划引发关注，旨在应对当前的经济挑战，但面临着严格的财政纪律审查及法律程序评估。",
+        "date": "2026-04-22",
+        "source": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/thailand/general/3241293/pm-mulls-b500bn-loan-bid"
+      },
+      {
+        "title": "人民党（People's Party）计划于五一劳动节在国会发起集会",
+        "city_tag": "#曼谷",
+        "topic_tag": "#时政",
+        "body": "人民党（People's Party, PP）呼吁民众于5月1日国际劳动节当天在国会（Parliament）集会。届时该党将提交其拟定的《社会保障法案》草案，并启动一项名为“为全体公民夺回社保”的运动。此次行动旨在推动泰国社会保障体系的全面改革，反映了在野党对劳工权益及福利分配问题的政治动态。",
+        "date": "2026-04-21",
+        "source": "Bangkok Post Thailand",
+        "url": "https://www.bangkokpost.com/thailand/politics/3240590/peoples-party-plans-may-day-rally"
+      },
+      {
+        "title": "泰国拟修订《外商经营法》Foreign Business Act，封堵“代持人”漏洞",
+        "city_tag": "#泰国",
+        "topic_tag": "#经济",
+        "body": "泰国商业部拟大幅修订实施逾20年的《外商经营法》，旨在解决目前复杂的交叉持股定性难题、堵住非法利用“代持人”（Nominee）的执法漏洞。本次修订重点包括明确未经授权经营的处罚标准、强化股权登记透明度及加大对违规行为的威慑力。此举将对在泰外籍投资者产生深远影响，也是打击灰产、规范外资营商环境的重要举措。",
+        "date": "2026-04-20",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187252/"
+      },
+      {
+        "title": "泰国参议院委员会提议提高增值税（VAT）以缓解公共债务",
+        "city_tag": "#泰国",
+        "topic_tag": "#经济",
+        "body": "泰国参议院经济、货币与财政事务委员会披露了一项广泛的税收改革议案。由于泰国公共债务预计在未来几年将大幅增长甚至超过法定上限，委员会提议调高目前的增值税（VAT）税率，以增加财政收入并遏制债台高筑。若该政策实施，将直接影响泰国境内的物价水平及所有居民的消费成本。",
+        "date": "2026-04-20",
+        "source": "Bangkok Post Thailand",
+        "url": "https://www.bangkokpost.com/thailand/politics/3239918/senate-panel-proposes-vat-hike-to-curb-debt"
+      },
+      {
+        "title": "警方突袭曼谷赛迈区（Sai Mai），逮捕19名运营赌博网站中国籍男子",
+        "city_tag": "#曼谷",
+        "topic_tag": "#中泰",
+        "body": "曼谷警方于4月17日对赛迈区（Sai Mai）Ao Ngoen一处住宅进行突击搜查，成功端掉一个名为“Sheng Entertainment”的针对中国客户的赌博窝点。警方当场逮捕了19名中国籍男子（年龄26-45岁），并缴获包括102部手机及多台电脑在内的大批作案工具。主犯某嫌疑人承认通过会员充值制经营非法网赌，目前嫌疑人已被移送至警局依法处理。 ",
+        "date": "2026-04-18",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187165/"
+      },
+      {
+        "title": "总理阿努廷（Anutin）欢迎穆迪（Moody’s）上调泰国信用前景评级",
+        "city_tag": "#泰国",
+        "topic_tag": "#经济",
+        "body": "泰国总理阿努廷（Anutin Charnvirakul）对穆迪投资者服务公司（Moody’s Investors Service）上调泰国信用评级前景表示欢迎。穆迪已将泰国的长期本外币信用前景从“负面”修正为“稳定”，同时维持其主权信用评级为Baa1级。此举反映了国际评级机构对泰国财政韧性和经济复苏潜力的认可，有助于提升国际投资者信心。",
+        "date": "2026-04-23",
+        "source": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/business/general/3241948/pm-anutin-welcomes-outlook-upgrade-by-moodys"
+      },
+      {
+        "title": "穆迪（Moody’s）将泰国经济展望上调至“稳定”",
+        "city_tag": "#泰国",
+        "topic_tag": "#经济",
+        "body": "国际评级机构穆迪（Moody’s Ratings）周二宣布，将泰国政府的经济展望从“负面”上调至“稳定”。同时，穆迪维持了泰国 Baa1 的外币和本币发行人信用评级，以及本币高级无担保债务评级。此次上调反映了对泰国财政韧性及经济复苏势头的认可，对增强外资信心具有积极作用。",
+        "date": "2026-04-21",
+        "source": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/business/general/3241244/moodys-upgrades-thailand-outlook-to-stable"
+      },
+      {
+        "title": "泰总理阿努廷（Anutin）下令紧缩 2027 财年预算以应对危机",
+        "city_tag": "#泰国",
+        "topic_tag": "#时政",
+        "body": "泰国总理阿努廷 Anutin Charnvirakul 指导 2027 财年预算编制需紧扣当前的经济危机形势。他要求各政府部门优先削减非必要开支，并规定所有追加预算的申请必须仅限用于投资性支出。此举旨在优化财政资源分配，确保国家在危机期间的财政稳健，提高政府部门的资金使用效率。",
+        "date": "2026-04-21",
+        "source": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/business/general/3240650/budget-tightened-amid-crisis-focus"
+      },
+      {
+        "title": "泰国选委（EC）向宪法法院提交澄清，涉及选票上的条形码争议",
+        "city_tag": "#泰国",
+        "topic_tag": "#时政",
+        "body": "针对2月8日大选中使用的选票印有条形码和二维码可能损害投票秘密性并违反宪法的指控，泰国选举委员会（EC）已正式向宪法法院提交了书面澄清材料。此案备受政界关注，若被判定违宪可能影响选举结果的合法性，选委会强调相关技术仅用于行政追踪，不涉及选民身份关联。",
+        "date": "2026-04-21",
+        "source": "Bangkok Post Thailand",
+        "url": "https://www.bangkokpost.com/thailand/politics/3240530/ec-submits-clarification-to-court-on-barcodes-in-ballot-papers"
+      },
+      {
+        "title": "泰国重返全球前20！2026年外商直接投资（FDI）信心显著回升",
+        "city_tag": "#泰国",
+        "topic_tag": "#经济",
+        "body": "根据科尔尼（Kearney）发布的《2026年外商直接投资信心指数》报告，泰国表现亮眼，时隔三年再次跻身全球最具吸引力的投资目的地前25强，并一举跃升至第20位。这得益于泰国政府积极的新能源汽车支持政策、东部经济走廊（EEC）的稳步推进以及持续的产业优化，显示出国际资本对泰国市场长期潜力和经济环境的认可。",
+        "date": "2026-04-20",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187275/"
+      },
+      {
+        "title": "泰国拟定2027财年预算纲要：军事能力与国家主权成核心支出项",
+        "city_tag": "#泰国",
+        "topic_tag": "#时政",
+        "body": "泰国政府近日公布了2027财年国防预算草案大纲，核心聚焦于增强军事作战能力及维护国家主权。该预算计划拨款用于军事装备现代化、防御系统升级以及加强边境安保。副总理阿努廷（Anutin Charnvirakul）等政府要员强调，在多变的地区安全局势下，维持强有力的国防开支对保障国家稳定和主权至关重要。",
+        "date": "2026-04-20",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/hot-news/politics/thailand-outlines-military-capability-in-2027-budget"
+      },
+      {
+        "title": "阿努廷（Anutin）部署泰国2027财年预算 聚焦国家转型与行政节流",
+        "city_tag": "#曼谷",
+        "topic_tag": "#时政",
+        "body": "泰国副总理兼内政部长阿努廷（Anutin Charnvirakul）在芒通他尼（Muang Thong Thani）主持召开2027财年预算政策会议。会议明确了未来预算编制的六大核心原则，强调预算使用必须与国家战略接轨，优先支持推动数字化转型、产业升级以及能够直接提升国民收入的项目。同时，政府将实施严格的节流措施，压缩行政冗余支出，确保公共资源精准投入到提升泰国国家竞争力的关键领域。",
+        "date": "2026-04-20",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187272/"
+      },
+      {
+        "title": "斩获超20亿订单，泰国木薯成功打入中国重庆市场",
+        "city_tag": "#泰国",
+        "topic_tag": "#中泰",
+        "body": "泰国对外贸易厅（DFT）厅长阿拉达透露，泰国木薯已成功敲开中国西部重庆市场的大门，首批斩获超过20亿泰铢的订单。此举是泰国政府积极拓展出口渠道、降低对单一市场依赖的重要成果。通过与中国内陆城市的直接合作，将极大提升泰国农产品的出口附加值，并加强中泰经济走廊的物流联动。",
+        "date": "2026-04-20",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187260/"
+      },
+      {
+        "title": "银发经济持续增长，泰国高龄人口增至1480万人",
+        "city_tag": "#泰国",
+        "topic_tag": "#经济",
+        "body": "泰国已正式步入高龄化社会，60岁以上人口达1480万占总人口22.5%。随着“银发经济”崛起，具备支付能力的长者更追求高品质的医疗、旅游与生活服务。针对核心家庭化导致的养老需求，泰京银行信用卡业务中心（KTC）与服务商合作推出陪诊、代办、伴游等个性化照护方案，将人口老龄化转变为全新的市场商机。",
+        "date": "2026-04-20",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187257/"
+      },
+      {
+        "title": "泰国经济面临“滞胀”阴影：泼水节后价格冻结措施将结束",
+        "city_tag": "#泰国",
+        "topic_tag": "#经济",
+        "body": "随着宋干节（Songkran）长假结束，泰国经济的脆弱性日益显现。由于政府此前对能源和民生商品的价格冻结措施将逐步到期，通胀压力激增，专家警告由于经济增长动力不足，泰国可能陷入经济停滞与高通胀并行的“滞胀”困局，对民众购买力和企业成本构成严峻考验。",
+        "date": "2026-04-20",
+        "source": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/business/general/3240108/spectre-of-stagflation-haunts-thailand"
+      },
+      {
+        "title": "泰国外交部代表团访问缅甸，寻求加强边境安全与双边合作",
+        "city_tag": "#泰国",
+        "topic_tag": "#时政",
+        "body": "泰国政府代表团于4月22日访问缅甸，与缅甸新领导层举行正式会谈。此次访问的核心议题集中在边境安全、打击跨国犯罪以及区域稳定合作。泰国官方希望通过加强外交联系，共同应对日益严峻的边境走私和难民安置问题，并探讨在东盟（ASEAN）框架下的多边合作可能性，旨在维持两国长期邻里经济协作关系。",
+        "date": "2026-04-22",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/hot-news/politics/thailand-seeks-closer-cooperation-myanmar-visit"
+      }
+    ],
+    "property": [
+      {
+        "title": "2026年外国人在泰置业：避开“代持陷阱”与严管时代到来",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#房产",
+        "body": "资深律师指出，2026年是泰国房产市场的转折年。在芭提雅（Pattaya）等外资集中的核心区，过去通过人头代持（Nominee）持有不动产的模式正面临巨大风险。随着泰国法规进入“严厉执法时代”，政府正逐步取缔不合规架构。此举不仅重塑了投资者的合规预期，也意味着外国人在泰投资房产必须走合法合规的正轨，法律监管门槛显著提升。",
+        "date": "2026-04-22",
+        "source": "Pattaya Mail",
+        "url": "https://www.pattayamail.com/latestnews/news/foreign-property-ownership-in-2026-the-nominee-trap-and-the-new-era-of-strict-enforcement-545297"
+      },
+      {
+        "title": "2026年泰国外国房产所有权：严格监管下的“代持”架构终结",
+        "city_tag": "#泰国",
+        "topic_tag": "#房产",
+        "body": "2026年标志着泰国法律监管的历史性转折，政府对外国投资的“法律完整性”已从单纯的建议转为严格执行。特别是针对外资在泰购房常用的“代持结构（Nominee Structures）”正被逐步清理，这反映了泰国对投资环境管控的全面加强。对于投资者而言，合规化已成为硬性生存要求，传统的法律漏洞正在逐步关闭。",
+        "date": "2026-04-22",
+        "source": "Pattaya Mail",
+        "url": "https://www.pattayamail.com/newsrussian/%d0%b8%d0%bd%d0%be%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%bd%d0%b0%d1%8f-%d1%81%d0%be%d0%b1%d1%81%d1%82%d0%b2%d0%b5%d0%bd%d0%bd%d0%be%d1%81%d1%82%d1%8c-%d0%bd%d0%b0-%d0%bd%d0%b5%d0%b4%d0%b2%d0%b8%d0%b6-545303"
+      },
+      {
+        "title": "外籍人士在普吉岛（Phuket）购入5600万泰铢豪宅，宣称享受“零税收”长期居留",
+        "city_tag": "#普吉岛",
+        "topic_tag": "#房产",
+        "body": "一名外籍人士在社交媒体分享其在普吉岛邦涛海滩（Bang Tao Beach）斥资5600万泰铢购入永久产权豪宅的消息，引发广泛关注。该男子声称，通过此项投资他有资格申请泰国LRT“全球富裕公民”签证，从而合法实现长期居留，并对其全球收入享受零税收政策。此事件反映出泰国通过签证激励吸引高净值投资者的现状。",
+        "date": "2026-04-21",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/news/phuket/foreigner-claims-0-tax-after-buying-56-million-baht-phuket-home"
+      },
+      {
+        "title": "多位参议员对1万亿铢“陆桥”（Land Bridge）巨型项目提出质疑",
+        "city_tag": "#泰国",
+        "topic_tag": "#房产",
+        "body": "泰国多名参议员对政府提议的耗资1万亿泰铢的陆桥项目表达了明确反对意见。质疑焦点集中在该项目可能产生的经济效益评估、潜在的环境破坏以及当前公众听证过程的草率与不足。作为连接春蓬（Chumphon）和拉廊（Ranong）的重大基建项目，其争议的升温可能导致融资和开发进度的推迟。",
+        "date": "2026-04-21",
+        "source": "Bangkok Post Thailand",
+        "url": "https://www.bangkokpost.com/thailand/general/3240550/senators-question-land-bridge"
+      }
+    ],
+    "bangkok": [
+      {
+        "title": "曼谷市长查切 Chadchart 谋求连任，下月将宣布竞选计划",
+        "city_tag": "#曼谷",
+        "topic_tag": "#时政",
+        "body": "现任曼谷市长查切·西提潘（Chadchart Sittipunt）近日透露，他计划在下月任期届满前正式宣布参加新一届市长选举。查切打算再次以独立候选人身份参选，旨在延续其近年来在城建及民生领域的政策落地。此举备受曼谷市民关注，目前各项民调显示其拥有较高的连任支持率。",
+        "date": "2026-04-20",
+        "source": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/thailand/politics/3239963/chadchart-eyes-another-term-in-office"
+      },
+      {
+        "title": "极端高温！曼谷酷热指数连续19天处于“危险等级”",
+        "city_tag": "#曼谷",
+        "topic_tag": "#治安",
+        "body": "曼谷正面临持续的酷热考验，酷热指数（Heat Index）已连续19天维持在“危险”水平。极端高温与高湿度交织，使得体感温度远高于实际气温，对公共卫生构成严重风险。提醒在曼谷的中方人员及游客注意防暑降温，避免在午后进行剧烈户外活动。",
+        "date": "2026-04-19",
+        "source": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/thailand/general/3239804/bangkok-swelters-in-danger-zone-for-19-straight-days"
+      },
+      {
+        "title": "热爆了！曼谷（Bangkok）发布高温警报，体感温度达“危险级”",
+        "city_tag": "#曼谷",
+        "topic_tag": "#社会",
+        "body": "曼谷（Bangkok）市政府于4月19日发布极端高温预警。监测显示当日体感温度已飙升至“危险级”水平。政府提醒市民及在泰游客尽量避免长时间高温暴露，特别是老人、儿童和慢性病患者等高危人群需警惕热射病及相关症状。民众可通过官方App实时掌握气象动态。由于正直热季，该警告反映了泰国极端气候对日常生活的直接威胁。",
+        "date": "2026-04-19",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187227/"
+      },
+      {
+        "title": "曼谷女子称在宋干节（Songkran）派对中被喷射迷奸药",
+        "city_tag": "#曼谷",
+        "topic_tag": "#治安",
+        "body": "一名泰国女子发布公开预警，声称她在曼谷的一处娱乐场所参加宋干节庆典时，被水枪喷射出的液体击中眼部和面部，随后怀疑暴露于“迷奸药”（GHB，γ-羟基丁酸）。受害者提醒公众在泼水节狂欢中警惕不法分子将药物混入水具。此类新型犯罪手段引发了安全担忧，警方目前正介入调查涉事娱乐场所的安保漏洞。",
+        "date": "2026-04-17",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/news/bangkok/woman-says-she-exposes-to-ghb-through-water-gun-in-bangkok-songkran"
+      },
+      {
+        "title": "曼谷邦纳（Bang Na）高档联排别墅突发大火，致2人死亡2人伤",
+        "city_tag": "#曼谷",
+        "topic_tag": "#治安",
+        "body": "4月19日凌晨，曼谷邦纳（Bang Na）区乌多姆苏路（Udom Suk Road）一处于高档住宅区的联排别墅发生严重火灾。大火迅速席卷房屋，不幸造成2人死亡，另有2人受伤被送往医院。目前消防部门已控制火势，火灾发生的具体原因仍在进一步调查中。",
+        "date": "2026-04-19",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/news/national/townhouse-fire-in-bangkok-claims-two-lives-injures-two"
+      },
+      {
+        "title": "外卖骑手警觉报案，曼谷警方逮捕6名涉网赌韩国嫌疑人",
+        "city_tag": "#曼谷",
+        "topic_tag": "#治安",
+        "body": "4月19日，曼谷警方成功破获一个由韩国人组成的网络赌博团伙，共逮捕6名韩籍嫌疑人。此案起因于一名送餐骑手的敏锐警觉，由于怀疑配送单据异常而向警方报信。警方在行动中搜获大量涉案电脑、手机及现金。目前案件正进一步审理中，旨在打击在泰的外籍非法网络犯罪活动。",
+        "date": "2026-04-19",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187242/"
+      },
+      {
+        "title": "尼日利亚与瑞士籍嫌犯在曼谷可卡因贩毒网扫荡行动中被捕",
+        "city_tag": "#曼谷",
+        "topic_tag": "#治安",
+        "body": "泰国警方在历时数月的侦查后，于曼谷和暖武里府（Nonthaburi）展开突击行动，成功打掉一个国际跨国贩毒网络。行动中逮捕了包括尼日利亚籍和瑞士籍在内的4名犯罪嫌疑人，现场缴获大量可卡因及涉案资产。此案反映出此跨国毒品网络在曼谷及周边地区的活跃度，目前警方正进一步扩大战果。",
+        "date": "2026-04-19",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/news/bangkok/nigerian-swiss-suspects-cocaine-network-bust"
+      },
+      {
+        "title": "曼谷国际车展订单创新高，中国品牌占比近七成",
+        "city_tag": "#曼谷",
+        "topic_tag": "#中泰",
+        "body": "第47届曼谷国际车展圆满落幕，根据泰国汇商银行电研中心（SCB EIC）数据，本届车展累计汽车订单突破13万辆的新高。其中，中国汽车品牌表现极为强劲，横扫近65%的订单份额。这一数据反映了中国新能源及燃油车品牌在泰国市场的统治力正迅速增强，泰国已成为中国车企出行的重镇。",
+        "date": "2026-04-19",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187234/"
+      },
+      {
+        "title": "曼谷邦纳（Bang Na）豪宅深夜失火，致2死2伤含德籍公民",
+        "city_tag": "#曼谷",
+        "topic_tag": "#治安",
+        "body": "4月19日凌晨，曼谷邦纳（Bang Na）区一栋四层高档联排别墅发生火灾。火势从二、三层迅速蔓延，素坤逸（Sukhumvit）消防队耗时30分钟才控制住火情。事故导致一名40岁泰籍女子及一名70岁德籍女子不幸遇难，另有两名德籍男子受伤送医。目前警方正调查火灾诱因，此事件再次引发对高层联排建筑消防安全的关注。",
+        "date": "2026-04-19",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187231/"
+      },
+      {
+        "title": "曼谷水门 Flyover 高架桥 Phetchaburi 路段将关闭至明年2月",
+        "city_tag": "#曼谷",
+        "topic_tag": "#治安",
+        "body": "根据曼谷大都会警局（MPB）和泰国大众捷运局（MRTA）的消息，位于新碧武里路（Phetchaburi Road）繁忙的水门（Pratunam）高架桥将从本周五晚22:00起关闭，直至明年2月。此次封路旨在配合捷运橙线（MRT Orange Line）地下段工程施工。建议通勤者避开该路段，预料将对曼谷市中心交通造成显著影响。",
+        "date": "2026-04-22",
+        "source": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/thailand/general/3241353/flyover-to-close-until-february"
+      },
+      {
+        "title": "女子称宋干节被水枪射入GHB迷药，曼谷拉玛铁菩提 (Ramathibodi) 毒物中心表示存疑",
+        "city_tag": "#曼谷",
+        "topic_tag": "#治安",
+        "body": "针对一名泰国女子在TikTok上发视频称在曼谷宋干节期间疑似被水枪射入GHB（迷奸水）导致住院的传闻，拉玛铁菩提 (Ramathibodi) 医院毒物中心专家表示，通过水枪喷射实现该药物中毒的可能性极低。GHB虽无色无味，但在开放环境下的浓度稀释和接触方式难以达到迷晕效果，警方正进一步调查该事件的真实性。",
+        "date": "2026-04-21",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/news/bangkok/thai-poison-center-says-ghb-in-water-gun-has-low-chance-of-success"
+      }
+    ],
+    "pattaya": [
+      {
+        "title": "芭提雅（Pattaya）酷暑后迎风暴威胁，气象局发布预警",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#治安",
+        "body": "在经历连续数日的极端酷热天气后，泰国气象局发布预警，预计4月23日至25日期间，包括芭提雅（Pattaya）在内的泰国北部及中部地区将面临夏季风暴袭击。当局提醒当地居民和游客保持警惕，防范强降雨、大风甚至冰雹可能带来的安全隐患及财产损失。",
+        "date": "2026-04-22",
+        "source": "Pattaya Mail",
+        "url": "https://www.pattayamail.com/news/storm-threat-looms-over-pattaya-after-days-of-scorching-heat-545328"
+      },
+      {
+        "title": "一名爱尔兰籍男子在芭提雅公寓纵火因幻觉惊恐导致三人被困",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#治安",
+        "body": "4月21日凌晨，一名爱尔兰籍男子在芭提雅中路4巷（Central Pattaya Soi 4）的一处公寓内疑似因幻觉发作纵火。火势迅速蔓延造成浓烟，救援人员成功疏散居民并救出三名被困人员。警方与消拯队及救援组织及时赶到现场灭火，避免了更大人员伤亡。肇事外籍男子已被警方控制，接受进一步调查。",
+        "date": "2026-04-21",
+        "source": "Pattaya Mail",
+        "url": "https://www.pattayamail.com/news/irish-man-allegedly-sets-pattaya-condo-room-on-fire-during-hallucination-scare-three-rescued-545222"
+      },
+      {
+        "title": "芭提雅（Pattaya）引入“AI人脸识别移动指挥车”，成功抓捕逾期居留印度籍男士",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#治安",
+        "body": "2026年4月19日，泰国春武里府旅游警察在芭提雅（Pattaya）执行“万莱节”打击犯罪行动。警方首次部署了搭载AI人脸识别系统的移动指挥车在海滩沿路巡逻，通过精准识别抓获一名35岁的印度籍男子。系统显示该男子已在泰逾期居留43天，目前已移交法办。这也展示了泰国警方在重点景区提升科技安防的趋势。",
+        "date": "2026-04-21",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187297/"
+      },
+      {
+        "title": "芭提雅（Pattaya）豪宅区突袭：30名印度人涉非法加密货币及股票交易被捕，月流水达3000万铢",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#治安",
+        "body": "4月20日，春武里府 Chonburi 移民局联合相关部门对芭提雅（Pattaya）一处高档住宅进行突击搜查。行动中抓获30名印度籍人员，查获多台电脑及电子设备。初步调查显示，该团伙涉嫌未经许可非法从事股票及加密货币交易，每月非法流水金额高达3000万泰铢。涉案人员已被带走并将面临非法务工及金融犯罪相关法律指控。",
+        "date": "2026-04-21",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187290/"
+      },
+      {
+        "title": "芭提雅步行街宋干节期间发生枪击案：警员涉嫌枪杀大麻店老板",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#治安",
+        "body": "4月19日清晨，芭提雅步行街（Pattaya Walking Street）在宋干节庆祝期间发生命案。一名警察因涉嫌枪杀一名大麻店老板被捕。事件发生在游客密集的娱乐区，正值泼水节假期收尾阶段，案件性质恶劣引起社会广泛关注。目前涉案警员已被控制，相关部门正就行凶动机展开调查。",
+        "date": "2026-04-19",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/news/pattaya/pattaya-police-shooting-cannabis-shop-owner"
+      },
+      {
+        "title": "芭提雅（Pattaya）醉酒警察当街枪杀大麻店主入狱",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#治安",
+        "body": "芭提雅（Pattaya）南部步行街近日发生恶性枪击案。一名醉酒的便衣警察在公共场所漫无目的开枪，41岁的大麻店主帕塔通（Pattathorn）上前以合十礼劝阻时，竟遭该警察近距离枪杀。涉事警员事后还试图销毁死者手机证据，最终被民众合力制服并交由警方。该案严重损害了泰国警察形象，引发社会对公职人员酒后携枪安全性的剧烈讨论。",
+        "date": "2026-04-19",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187221/"
+      },
+      {
+        "title": "芭提雅（Pattaya）致命车祸：一名48岁中国男子在雨林路段摔落被货车碾压入命",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#治安",
+        "body": "4月16日，一名48岁中国籍男子在芭提雅（Pattaya）驾驶摩托车时发生意外。该男子疑因失去控制摔倒在路面，不幸被后方驶来的一辆六轮洒水车直接碾过，当场身亡。事故具体原因仍在调查中。近期宋干节期间交通事故高发，提醒在泰中国公民务必注意行车安全，尤其在湿滑路面驾驶摩托车时需格外谨慎。",
+        "date": "2026-04-17",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/news/pattaya/chinese-man-killed-after-falling-under-truck-in-pattaya"
+      },
+      {
+        "title": "芭提雅（Pattaya）4名摩的司机及酒吧安保因在宋干节期间围殴外籍游客被捕",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#治安",
+        "body": "在一段关于宋干节庆祝活动的视频走红网络后，芭提雅（Pattaya）警方迅速采取行动。视频显示，包括摩托车出租车司机及酒吧保镖在内的4名泰国男子在路边围殴两名外籍游客。目前涉案人员已全部归案，面临刑事指控。此事件在泼水节期间造成恶劣社会影响，芭提雅当局正审察旅游及夜间娱乐场所的安保规范，以维护城市形象。",
+        "date": "2026-04-16",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/news/pattaya/4-thai-men-attack-2-foreigners-during-pattaya-songkran-festival"
+      },
+      {
+        "title": "芭提雅步行街夺命枪击案：涉案警察申请50万铢保释被法庭拒绝",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#治安",
+        "body": "被绰号为“枪手乔”的芭提雅警察中尉Jirasak Srikanthanam（54岁），因涉嫌在芭提雅步行街（Walking Street）制造的一起致命枪击案而被拘留。尽管其提出了50万泰铢的保释申请，但芭提雅省级法院出于案情恶劣及涉嫌谋杀的考虑，拒绝了其保释请求。该警员目前已被押送至芭提雅特别监狱候审。此案因涉及警务人员执法期间犯罪，引发社会高度关注。",
+        "date": "2026-04-22",
+        "source": "Pattaya Mail",
+        "url": "https://www.pattayamail.com/newsrussian/%d1%81%d1%83%d0%b4-%d0%be%d1%82%d0%ba%d0%b0%d0%b7%d0%b0%d0%bb-%d0%b2-%d0%b7%d0%b0%d0%bb%d0%be%d0%b3%d0%b5-%d0%b2-500-000-%d0%b1%d0%b0%d1%82-%d0%bf%d0%be%d0%bb%d0%b8%d1%86%d0%b5%d0%b9%d1%81-545293"
+      },
+      {
+        "title": "芭提雅（Pattaya）数字游民现状：自由与法律边界的博弈",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#旅居",
+        "body": "芭提雅正转型为全球“无国界”劳动力中心，从中天海滩（Jomtien）的咖啡馆到北芭提雅（North Pattaya）的共享办公空间，大量数字游民涌入。然而，在追求海滨办公便利的同时，法律与税务问题日益凸显。文章指出，数字游民面临复杂的居留许可及年度税务合规风险，提醒外籍人士在享受自由生活方式时需注意法律红线。",
+        "date": "2026-04-23",
+        "source": "Pattaya Mail",
+        "url": "https://www.pattayamail.com/latestnews/news/digital-nomads-in-pattaya-the-fine-line-between-freedom-and-legality-545323"
+      },
+      {
+        "title": "中国男子在芭提雅（Pattaya）夜店外因涉嫌猥亵被捕，自称遭驱离时受伤",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#中泰",
+        "body": "一名中国籍男子因涉嫌在芭提雅（Pattaya）的Legacy夜店外猥亵一名泰国女性而接受调查。受害者指控该男子在公共场合对其进行不当肢体接触，随后该男子在被驱离过程中发生冲突并受伤。警方介入后对双方进行了笔录，目前该案件正按性骚扰及暴力冲突的相关法律程序深入调查。",
+        "date": "2026-04-22",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/news/pattaya/chinese-man-arrested-for-allegedly-groping-pattaya-woman"
+      },
+      {
+        "title": "中国男子在芭提雅醉酒骚扰女生被警方带走",
+        "city_tag": "#芭提雅",
+        "topic_tag": "#中泰",
+        "body": "4月22日凌晨，芭提雅（Pattaya）警局在南路（South Road）一娱乐场所抓获一名当众骚扰女性的中国籍游客。该男子因处于重度醉酒状态，在场所外交际处抱住并骚扰两名年轻女子，更在保安制止时暴力反抗，随后在扭打中受伤自残。受害人表示绝不和解。目前警方已将其扣押，待其清醒后将调取监控进一步调查，并依据法律程序追究其民事及刑事责任。",
+        "date": "2026-04-22",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187326/"
+      }
+    ],
+    "cn_thai": [
+      {
+        "title": "中国投资者抛售土地，泰国工业用地价格预期持平",
+        "city_tag": "#泰国",
+        "topic_tag": "#中泰",
+        "body": "根据房地产咨询公司戴德梁行（Cushman & Wakefield Thailand）的分析，尽管当前工业用地市场需求强劲，但平均挂牌价格预计将保持平稳。主要原因是部分中国投资者由于无法在持有的土地上顺利运营业务或将其出租，近期出现了大量土地抛售潮，供应量的激增抵消了价格上涨的动力。",
+        "date": "2026-04-22",
+        "source": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/business/general/3241568/industrial-land-prices-flat-as-chinese-investors-sell-up"
+      },
+      {
+        "title": "泰国警方澄清“宋干节水枪投毒”传闻：受害者系泰籍，并非中国游客",
+        "city_tag": "#泰国",
+        "topic_tag": "#中泰",
+        "body": "针对宋干节期间引发热议的“高压水枪疑遭投毒”事件，泰国警方于4月20日发布正式声明辟谣。警方的调查结果证实，受害女性为泰国籍，而非网络传言的中国公民。此声明及时纠正了误导性的涉外消息，旨在平息可能引发的国际游客安全担忧，建议公众通过官方渠道获取案件最新进展。",
+        "date": "2026-04-21",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187310/"
+      },
+      {
+        "title": "女留学生自导自演“绑架案”敲诈亲父，泰国北榄府（Samut Prakan）四名中国籍男女落网",
+        "city_tag": "#泰国",
+        "topic_tag": "#中泰",
+        "body": "泰国警方在北榄府（Samut Prakan）逮捕了四名涉嫌敲诈勒索的中国籍公民。调查发现，一名在泰中国女子为了向身在国内的父亲索要钱财，伙同其男友及另外两名中国男子，精心策划并拍摄了其被“绑架”勒索的虚假视频与照片。目前四名涉案人员已全部被警方控制，警方正依据泰国民刑法典中关于敲诈及虚假报案等相关条款进行起诉，此案反映了针对在泰中国公民犯罪的多样化趋势。",
+        "date": "2026-04-16",
+        "source": "The Thaiger",
+        "url": "https://thethaiger.com/news/central-thailand/chinese-woman-stages-kidnapping-to-extort-money-from-father"
+      },
+      {
+        "title": "自导自演绑架案！4名中国公民在北榄府（Samut Prakan）被捕",
+        "city_tag": "#泰国",
+        "topic_tag": "#中泰",
+        "body": "一名19岁中国籍女子在泰国北榄府（Samut Prakan）策划了一场“假绑架”骗局。其父在支付11万元人民币赎金后因女儿未获释向中国警方报案。泰国中央调查局（CIB）受托调查后，在出租屋内抓获该女子及4名中国籍同伙。经查，此案系女子为骗取钱财自导自演。目前涉案人员已被泰国警方逮捕，面临法律制裁。",
+        "date": "2026-04-16",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187084/"
+      },
+      {
+        "title": "受油价上涨及淡季影响，泰航（Thai Airways）宣布减少5月多线航班",
+        "city_tag": "#泰国",
+        "topic_tag": "#中泰",
+        "body": "泰国国际航空公司（Thai Airways）4月17日宣布，由于全球燃油成本上升及5月进入旅游淡季，决定减少包括国内线及东盟、北亚、欧洲等国际航线的飞行班次。此举旨在优化运营成本。建议已购票或计划5月出行的旅客及时核对航班状态，预计涉及中国部分城市的航线也可能受到调整影响。",
+        "date": "2026-04-17",
+        "source": "泰国头条新闻",
+        "url": "https://www.thaiheadlines.com/187149/"
+      }
+    ]
+  }
+}
