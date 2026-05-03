@@ -23,13 +23,11 @@ MODEL = "claude-haiku-4-5"
 BATCH_SIZE = 5
 
 
-SYSTEM_PROMPT = """你是泰国华文新闻翻译专员。输入是一批英文/泰文新闻条目（JSON数组），你的任务是补全每条条目的中文字段，并返回完整的 JSON 数组。
+SYSTEM_PROMPT = """你是泰国华文新闻翻译专员。输入是一批英文/泰文新闻条目（JSON数组），输出每条对应的中文字段。
 
-注意：每条输入已包含 topic_tag 和 relevance_score，直接原样继承，不要修改。
+注意：每条输入已包含 topic_tag、city_tag、relevance_score，由 filter 阶段确定，**translate 不重复打 tag**。`desc_original` 由 python 机械截取 desc，translate **不输出** desc_original。
 
 ## 字段规则
-
-（`desc_original` 由 python 在调用后机械截取 desc 字段，**模型不要输出此字段**）
 
 ### title_cn
 - 信达雅，不要机翻腔
@@ -47,44 +45,14 @@ SYSTEM_PROMPT = """你是泰国华文新闻翻译专员。输入是一批英文/
 - P2：基建大项目、重大楼盘、重要经济数据、奇闻要案
 - P3：常规经济、促销活动、一般旅游资讯
 
-### section_hint
-- bangkok：明确发生在曼谷市内
-- pattaya：明确属于芭提雅地区
-- samui：明确属于苏梅岛
-- property：房产政策、大型开发商动态、外国人买房规则
-- cn_thai：中泰双边关系、中国投资/游客/移民/企业在泰
-- thailand：全国性政治/经济/社会新闻
-
-### location_detail
-- 最具体的地名（街区/县府/区名），无法确定则留空 ""
-
-### city_tag
-根据新闻发生地点，选最匹配的1个城市 tag：
-- `#曼谷`：明确发生在曼谷市内
-- `#芭提雅`：明确属于芭提雅地区
-- `#苏梅岛`：明确属于苏梅岛
-- `#普吉岛`：明确属于普吉岛
-- `#清迈`：明确属于清迈
-- `#泰国`：全国性新闻、或无法确定具体城市
-- 其他城市（如华欣、孔敬、清莱等）：填写具体城市名，如 `#华欣`、`#清莱`
-
-### tags
-- 固定输出空数组：[]（已由 city_tag 和 topic_tag 替代）
-
 ### time_sensitive / expires_date
 - time_sensitive: true = 有明确时效（政策生效日、活动截止日）；false = 时效中性
 - expires_date: time_sensitive=true → added_date+15天；false → added_date+30天
 
-### event_id
-- 生成简洁英文事件ID，如 thailand_visa_overstay_2026_03
-
-### status
-- 固定 "pending"
-
 ## 输出要求
-**只输出每条的 id 字段 + 新生成的字段**（不要回显原始 title/desc/source/url/origin/topic_tag/relevance_score/lang/date 等任何输入字段，避免转义问题导致 JSON 失败）。
+**只输出每条的 id 字段 + 新生成的 5 个字段**（不要回显原始 title/desc/source/url/origin/topic_tag/city_tag/relevance_score/lang/date 等任何输入字段，避免转义问题导致 JSON 失败）。
 
-每条只需输出：id, title_cn, summary_cn, importance, section_hint, location_detail, city_tag, tags, time_sensitive, expires_date, event_id, status
+每条只需输出：id, title_cn, summary_cn, importance, time_sensitive, expires_date
 
 格式：{"items": [...]}，与输入条目一一对应，顺序不变。无代码块标记，无说明文字。
 
@@ -150,13 +118,16 @@ def main():
 
         # Model 只回新字段 + id，按 id 查回原 batch item 并 merge 原始字段
         # desc_original 由 python 机械截取（避免模型回显引号导致 JSON 失败）
+        # DEAD_FIELDS 从 orig 透传剔除（避免 RSS 源的 tags 等死字段渗入 pool）
+        DEAD_FIELDS = {"section_hint", "location_detail", "event_id", "status", "tags"}
         batch_by_id = {it["id"]: it for it in batch}
         for new_fields in translated:
             tid = new_fields.get("id") if isinstance(new_fields, dict) else None
             if tid and tid in batch_by_id:
                 orig = batch_by_id[tid]
+                orig_clean = {k: v for k, v in orig.items() if k not in DEAD_FIELDS}
                 desc_original = (orig.get("desc") or "")[:500]
-                merged = {**orig, **new_fields, "desc_original": desc_original, "added_date": args.date}
+                merged = {**orig_clean, **new_fields, "desc_original": desc_original, "added_date": args.date}
                 results.append(merged)
             else:
                 results.append({**new_fields, "added_date": args.date})

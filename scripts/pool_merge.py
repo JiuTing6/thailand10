@@ -83,14 +83,14 @@ def main():
     # 统计
     if new_items:
         p_counts = {"P1": 0, "P2": 0, "P3": 0}
-        section_counts = {}
+        topic_counts = {}
         for item in new_items:
             p = item.get("importance", "?")
             p_counts[p] = p_counts.get(p, 0) + 1
-            s = item.get("section_hint", "?")
-            section_counts[s] = section_counts.get(s, 0) + 1
+            t = item.get("topic_tag", "?")
+            topic_counts[t] = topic_counts.get(t, 0) + 1
         print(f"   重要性: P1={p_counts.get('P1',0)} P2={p_counts.get('P2',0)} P3={p_counts.get('P3',0)}")
-        print(f"   板块: {dict(section_counts)}")
+        print(f"   主题: {dict(topic_counts)}")
 
     if args.dry_run:
         print("🔍 Dry-run 模式，不写入文件")

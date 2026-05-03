@@ -8,15 +8,6 @@
     "summary_cn": "因中东局势引发航班中断，此前滞留在泰国的4万多名欧洲游客已通过包机顺利回国。泰国泰国民航局（CAAT）通过特别批准，允许相关国家的旅行社派遣包机接回滞留人员。此举体现了泰国政府在突发国际危机中对旅游业的应急保障能力，缓解了主要口岸的滞留压力。",
     "desc_original": "More than 40,000 European tourists stranded here by flight disruptions in the Middle East have safely returned home, aided by the Civil Aviation Authority of Thailand's (CAAT) temporary approval for tour operators in the originating countries to send charter flights to retrieve them.",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#旅游",
-      "#交通",
-      "#政策"
-    ],
-    "event_id": "thailand_tourist_repatriation_2026_03",
-    "status": "pending",
     "time_sensitive": true,
     "expires_date": "2026-03-27",
     "url": "https://www.bangkokpost.com/business/general/3215043/thailand-sends-40000-stranded-europeans-home",
@@ -32,15 +23,6 @@
     "summary_cn": "尽管中东冲突导致全球油价飙升且建筑成本压力增大，泰国知名家居建筑商 Built To Build Group 承诺对已签约客户冻结价格。公司负责人表示，由于信心冲突会在本月底平息，现阶段将自行消化成本波动。此举旨在稳定市场信心，对于正处于合同执行期的业主属于重大利好。",
     "desc_original": "Homebuilder Built To Build Group says it will freeze prices for contracted clients despite rising oil prices fuelled by war in the Middle East, expressing confidence the conflict will subside by the end of this month.",
     "importance": "P2",
-    "section_hint": "property",
-    "location_detail": "",
-    "tags": [
-      "#房产",
-      "#经济",
-      "#政策"
-    ],
-    "event_id": "thailand_construction_price_freeze_2026_03",
-    "status": "pending",
     "time_sensitive": true,
     "expires_date": "2026-03-27",
     "url": "https://www.bangkokpost.com/property/3214953/built-to-build-rules-out-price-hikes-despite-soaring-oil-costs",
@@ -56,15 +38,6 @@
     "summary_cn": "泰国多家银行近日向潜在购房者发出提醒，建议在今年上半年内尽快做出购房决定。由于正值战争期间，通货膨胀预期加剧，预计未来建筑材料及融资成本将进一步攀升。在泰持有购房计划的人士需关注贷款利率调整及房企调价预期，以捕捉当前相对较低的成本窗口期。",
     "desc_original": "Banks are urging prospective homebuyers to make purchasing decisions within the first half of the year before costs rise further, amid concerns that inflation could increase under wartime conditions.",
     "importance": "P1",
-    "section_hint": "property",
-    "location_detail": "",
-    "tags": [
-      "#房产",
-      "#经济",
-      "#政策"
-    ],
-    "event_id": "thailand_homebuyer_advice_inflation_2026_03",
-    "status": "pending",
     "time_sensitive": true,
     "expires_date": "2026-03-27",
     "url": "https://www.bangkokpost.com/property/3215008/homebuyers-advised-to-decide quickly",
@@ -80,15 +53,6 @@
     "summary_cn": "泰国支柱出口产业——电子行业正面临美国关税壁垒与泰铢汇率波动的双重打击。行业高管指出，通过投资人工智能（AI）及数据中心相关产品实现多元化是缓冲冲击的关键。尽管出口环境严峻，但市场对AI硬件与算力基础设施的强劲需求正成为支撑泰国电子行业收入增长的新引擎。",
     "desc_original": "As US tariffs and baht fluctuation pose challenges for the electronics industry, Thailand's major export earner, executives see investment and product diversification as key to cushion the impact, while demand for artificial intelligence (AI) and data centres continues to drive revenue growth.",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#基建",
-      "#中泰"
-    ],
-    "event_id": "thailand_electronics_industry_shift_2026_03",
-    "status": "pending",
     "time_sensitive": false,
     "expires_date": "2026-04-11",
     "url": "https://www.bangkokpost.com/business/general/3215188/electronics-sector-braces-for-tariff-thump",
@@ -104,15 +68,6 @@
     "summary_cn": "受中东地区持续冲突影响，全球原油供应受阻，泰国企业正高度警惕由此引发的塑料原材料短缺。由于石油是塑料生产的核心上游原料，供应链中段企业已开始评估产能调整，未来可能导致本地塑料制成品的物价上涨及包装、物流等相关产业的成本波动。",
     "desc_original": "Businesses are bracing for the impact of a plastic supply shortage due to ongoing conflicts in the Middle East.",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#环境",
-      "#政策"
-    ],
-    "event_id": "thailand_plastic_shortage_oil_2026_03",
-    "status": "pending",
     "time_sensitive": false,
     "expires_date": "2026-04-11",
     "url": "https://www.bangkokpost.com/business/general/3214963/plastic-shortages-loom-as-war-hits-oil-supplies",
@@ -131,16 +86,8 @@
     "desc_original": "Digital asset business operators are warning the newly proposed Travel Rule should not be overly restrictive or it could unintentionally undermine the open and decentralised nature of blockchain networks, stifling innovation.",
     "url": "https://www.bangkokpost.com/business/general/3214983/proposed-travel-rule-ruffles-some-feathers",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#政策"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "thailand_crypto_travel_rule_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -156,16 +103,8 @@
     "desc_original": "Fifty-two Thai nationals evacuated from Iran arrived at Suvarnabhumi airport on Monday, with several saying the country remained largely safe despite the Middle East conflict.",
     "url": "https://www.bangkokpost.com/thailand/general/3215118/thais-defend-proiran-stance",
     "importance": "P2",
-    "section_hint": "bangkok",
-    "location_detail": "素万那普机场 Suvarnabhumi Airport",
-    "tags": [
-      "#安全",
-      "#中泰"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "thai_evacuation_iran_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -181,16 +120,8 @@
     "desc_original": "Authorities have named six firms suspected of running foreign-controlled coconut businesses through Thai nominees, while preparing legal amendments to close regulatory loopholes.",
     "url": "https://www.bangkokpost.com/thailand/general/3214933/dbd-names-6-firms-in-coconut-probe",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#政策",
-      "#经济"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "thailand_nominee_investigation_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -206,16 +137,8 @@
     "desc_original": "Consumers across the country are worried about the rising cost of goods as global energy prices and supply chains have been hit by the war in the Middle East, pushing up prices for everyday necessities.",
     "url": "https://www.bangkokpost.com/thailand/general/3214948/fears-grow-over-rising-cost-of-goods",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#政策"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "thailand_inflation_fears_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -231,17 +154,8 @@
     "desc_original": "The Thai government is widening efforts to curb demand for fuel, as it burns through cash fighting to keep domestic diesel prices artificially low amid surging global energy costs.",
     "url": "https://www.bangkokpost.com/business/general/3214788/thai-oil-fund-spending-b1-billion-a-day-on-subsidies",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#政策",
-      "#交通"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "thailand_oil_subsidy_crisis_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -256,17 +170,8 @@
     "desc_original": "The Royal Thai Embassy in Doha advises Thai nationals in Qatar to remain alert and follow official guidance as the situation develops, while Qatar Airways resumes limited flights including route QR826 from Doha to Bangkok to assist stranded passengers. BANGKOK, Thailand – The Royal Thai Embassy in Doha has issued an updated advisory outlining key developments and safety guidance for Thai nationals in Qatar. The embassy reports that the Government of Qatar confirms that authorities are maintaining effective control nationwide. Thai nationals are advised to remain calm, stay alert, and strictly ",
     "summary_cn": "泰国驻卡塔尔多哈 (Doha) 大使馆发布紧急安全预警，提醒在卡塔尔的泰国国民鉴于当前领空部分关闭的情况，务必保持冷静并严格遵守政府指令。由于地区局势发展导致航班波动，卡塔尔航空目前已恢复有限航班，其中包括从多哈飞往曼谷的 QR826 航班，以协助滞留旅客撤离或回国。大使馆强调将密切关注局势，确保在卡塔尔泰国公民的安全。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "多哈 Doha",
-    "tags": [
-      "#安全",
-      "#交通",
-      "#旅游"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "qatar_airspace_safety_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -281,17 +186,8 @@
     "desc_original": "The Thai Cabinet has approved the renewal of a bilateral LNG cooperation agreement with Japan, allowing the Ministry of Energy of Thailand to sign the consent document during the Indo-Pacific Energy Security Ministerial and Business Forum in Tokyo, reinforcing long-term energy security cooperation between the two countries. BANGKOK, Thailand – The Cabinet has approved the renewal of the bilateral cooperation agreement between Thailand and Japan on Liquefied Natural Gas (LNG) to strengthen long-term energy security for both countries. During the meeting on March 10, 2026, the cabinet approved t",
     "summary_cn": "泰国政府内阁于2026年3月10日正式批准续签与日本的液化天然气 (LNG) 双边合作协议。泰国能源部将在东京举行的印太能源安全部长级论坛期间签署相关文件。此举旨在加强两国在液化天然气供应链领域的长期深度合作，通过资源共享与技术交流，共同应对复杂国际局势下的能源保障压力，提升泰国的液化天然气进口稳定性与能源安全储备水平。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "曼谷 Bangkok",
-    "tags": [
-      "#经济",
-      "#政策",
-      "#能源"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "thai_japan_lng_cooperation_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -306,17 +202,8 @@
     "desc_original": "Anutin Charnvirakul presides over the opening ceremony of THAIFEX – HOREC ASIA 2026 at IMPACT Muang Thong Thani in Nonthaburi, highlighting Thailand’s role as a regional hub for the hotel, restaurant and catering industries and presenting the “Thailand’s Best Friend 2026” awards to international trade partners. BANGKOK, Thailand – Prime Minister and Minister of Interior Anutin Charnvirakul presided over the opening ceremony of THAIFEX – HOREC ASIA 2026 on March 11, 2026, at IMPACT Muang Thong Thani. He delivered a keynote address and presented the &#8220;Thailand’s Best Friend 2026&#8221; awar",
     "summary_cn": "泰国副总理兼内政部长阿努廷 (Anutin Charnvirakul) 在暖武里府 Impact 会展中心 (Muang Thong Thani) 为 2026 年亚洲餐饮酒店设备展 (THAIFEX – HOREC ASIA) 揭幕。该展会旨在展示泰国作为东南亚餐饮、酒店及餐饮服务外包 (HoReCa) 行业核心枢纽的实力。活动期间还颁发了“2026 泰国之友”奖项，表彰为推动泰国国际贸易作出杰出贡献的全球合作伙伴。",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "暖武里 Pak Kret",
-    "tags": [
-      "#旅游",
-      "#美食",
-      "#经济"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "thaifex_horec_asia_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -331,17 +218,8 @@
     "desc_original": "Santi Piyatat, Minister attached to the Prime Minister’s Office, joins Angela Macdonald, Ambassador of Australia to Thailand, at the opening of an international workshop in Bangkok aimed at strengthening investigations into online consumer fraud and improving digital-age consumer protection. BANGKOK, Thailand – Thailand has stepped up efforts to protect consumers in the digital era by strengthening international cooperation to investigate online fraud and unfair business practices. Santi Piyatat, Minister attached to the Prime Minister’s Office, and Angela Macdonald, Ambassador of Australia to",
     "summary_cn": "泰国总理府部长 Santi Piyatat 与澳大利亚驻泰大使 Angela Macdonald 在曼谷共同启动国际研讨会，宣布两国将加强跨国执法合作，共同打击数字时代的网络消费诈骗。此次合作重点在于提升网络欺诈调查技术储备、打击不公平商业行为，并完善针对消费者的数字化法律保护框架，以强化泰国数字经济的安全环境和消费者信心。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "曼谷 Bangkok",
-    "tags": [
-      "#法律",
-      "#安全",
-      "#经济"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "thailand_australia_fraud_investigation_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -356,17 +234,8 @@
     "desc_original": "Researchers at Khon Kaen University are urging the Thai government to relax energy regulations to allow communities to produce alternative fuels from rubber waste, as rising global oil prices linked to tensions in the Strait of Hormuz increase fuel costs for farmers and local industries. KHON KAEN, Thailand – Researchers at Khon Kaen University are calling on the Thai government to ease energy regulations to allow communities to produce and sell alternative fuels, as Middle East tensions drive global oil prices higher. The university’s Faculty of Science is pushing to revive a project that con",
     "summary_cn": "孔敬大学 (Khon Kaen University) 的研究团队敦促泰国政府下放能源管理权限并放松法规，允许社区从废旧橡胶中提取和生产替代燃料。由于中东霍尔木兹海峡局势紧张推高了国际原油价格，导致泰国农民及地方产业成本激增。该研究项目旨在通过变废为宝提高社区能源自主权，缓解高油价带来的经济负担，目前正寻求政策松绑以实现商业化推广。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "孔敬府 Khon Kaen",
-    "tags": [
-      "#能源",
-      "#环境",
-      "#政策"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "khon_kaen_rubber_fuel_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -381,16 +250,8 @@
     "desc_original": "Ministry of Foreign Affairs of Thailand confirms that 381 Thai nationals have been evacuated from conflict-affected areas in the Middle East, with the latest groups travelling via Turkey and expected to arrive in Bangkok by March 13, while authorities warn of scams targeting evacuees. BANGKOK, Thailand – Thailand’s Middle East Situation Monitoring Center (SMC) announced on Wednesday that 381 Thai nationals have been successfully evacuated from the region as conflict continues to escalate. Panidone Patchimsawat, Acting Director-General of the Department of Information, confirmed that the latest",
     "summary_cn": "泰国自中东冲突地区疏散381名公民。据中东局势监测中心（SMC）通报，最新批次撤离人员正经土耳其（Turkey）中转，预计于3月13日抵曼谷。泰国政府提醒疏散人员警惕针对落难者的诈骗。此举体现泰国对领事保护的重视及对地区局势的快速预警反应。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "曼谷",
-    "tags": [
-      "#安全",
-      "#政策"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "thailand_middle_east_evacuation_2026",
-    "status": "pending",
     "added_date": "2026-03-12"
   },
   {
@@ -404,16 +265,8 @@
     "desc_original": "An Air India Express Boeing 737-800 sits immobilized on the runway at Phuket International Airport after a hard landing damaged its nose landing gear, forcing authorities to temporarily close the runway while recovery operations were carried out. PHUKET, Thailand – An Air India Express aircraft was left stranded on the runway at Phuket International Airport after a hard landing damaged its nose landing gear, forcing authorities to temporarily close the runway until early evening. Airport officials said the incident occurred at about 11:24 a.m. on March 11 and involved Flight AXB938 operating t",
     "summary_cn": "一架印度航空快运（Air India Express）波音737-800客机在普吉国际机场（Phuket International Airport）降落时发生硬着陆，导致鼻起落架损坏并困于跑道。事故导致机场跑道临时关闭至傍晚，部分航班受到影响。事故发生在3月11日上午11:24，目前救援及清理工作正在进行中。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "普吉岛",
-    "tags": [
-      "#交通",
-      "#旅游"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "phuket_airport_incident_2026",
-    "status": "pending",
     "added_date": "2026-03-12"
   },
   {
@@ -427,16 +280,8 @@
     "desc_original": "A Thai‑flagged bulk carrier was struck by Iranian missiles near the Strait of Hormuz on Wednesday, with 20 Thai crew rescued by the Royal Navy of Oman and three still on board, according to the Royal Thai Navy.",
     "summary_cn": "周三，一艘悬挂泰国国旗的散货船在霍尔木兹海峡（Strait of Hormuz）附近遭到伊朗导弹袭击。根据泰国皇家海军通报，阿曼皇家海军已成功营救出20名泰籍船员，目前仍有3人留在船上。该事件显示了中东海域近期紧张局势对泰国航运安全的直接威胁。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "霍尔木兹海峡",
-    "tags": [
-      "#安全",
-      "#交通"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "thai_ship_attack_2026",
-    "status": "pending",
     "added_date": "2026-03-12"
   },
   {
@@ -450,16 +295,8 @@
     "desc_original": "Officials from the Department of National Parks, Wildlife and Plant Conservation captured rare drone footage of two dugong displaying natural courtship behavior near Khao Ba Na canal in Trang, highlighting the success of marine conservation efforts in protecting endangered species in Thai waters. TRANG, Thailand – The Department of National Parks, Wildlife and Plant Conservation (DNP) has released rare footage of dugongs engaging in natural courtship in Trang province. The sighting indicates a healthy marine ecosystem and highlights the success of ongoing conservation efforts for rare marine s",
     "summary_cn": "泰国国家公园、野生动物及植物保护局（DNP）在董里府（Trang）靠巴纳（Khao Ba Na）运河附近利用无人机捕捉到两头儒艮自然求偶的罕见画面。专家指出，儒艮是濒危物种，其繁育活动表明当地海洋生态系统正趋于健康，也展现了多年来海洋生态保护和环境治理的阶段性成果。",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "董里府",
-    "tags": [
-      "#环境",
-      "#旅游"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "trang_dugong_nature_2026",
-    "status": "pending",
     "added_date": "2026-03-12"
   },
   {
@@ -473,16 +310,8 @@
     "desc_original": "Bangkok has been ranked the top city in Asia for 2026 in the Readers’ Choice Awards by DestinAsian, with the Thai capital praised for its blend of historic landmarks such as the Grand Palace and vibrant areas like Khao San Road, alongside its renowned food scene and hospitality. BANGKOK, Thailand – The Thai government on Wednesday welcomed Bangkok’s ranking as the top city in Asia for 2026, reinforcing the country&#8217;s position as a premier global travel destination. Deputy Government Spokesperson Airin Phanrit stated that the Thai capital secured the No. 1 spot in the &#8220;Best Cities in",
     "summary_cn": "在2026年《DestinAsian》“读者选择奖”中，曼谷力压群雄荣登亚洲最佳城市榜首。杂志赞扬了曼谷将大皇宫（Grand Palace）等历史古迹与考山路（Khao San Road）等活力街区的完美融合，并肯定了其世界级美食与待客服务。泰国政府发言人表示，这一殊荣进一步巩固了曼谷作为全球顶级旅游地点的地位。",
     "importance": "P3",
-    "section_hint": "bangkok",
-    "location_detail": "曼谷",
-    "tags": [
-      "#旅游",
-      "#美食"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "bangkok_best_city_2026",
-    "status": "pending",
     "added_date": "2026-03-12"
   },
   {
@@ -496,16 +325,8 @@
     "desc_original": "Royal Thai Navy works with Omani authorities to rescue Thai crew members from the Thai-registered cargo ship Mayuree Naree after it was attacked near the Strait of Hormuz, with most of the sailors safely brought ashore in Khasab, Oman. BANGKOK, Thailand – The Royal Thai Navy (RTN) is working with Omani authorities to rescue 23 Thai crew members after their cargo ship was attacked near the Strait of Hormuz on Wednesday. RTN Spokesperson Rear Admiral Parach Rattanachaiyapan stated that the Thai-reg",
     "summary_cn": "泰国皇家海军正在与阿曼当局紧密合作，营救在霍尔木兹海峡（Strait of Hormuz）附近遭遇袭击的泰国货船“Mayuree Naree”号上的23名泰籍船员。该船隶属于珍宝航运（Precious Shipping PCL）。目前，大部分船员已安全抵达阿曼的卡萨布（Khasab）。海军发言人表示将持续监测局势并确保后续返回工作的安全，此事件凸显了中东局势动荡对泰国航运业的安全威胁。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "霍尔木兹海峡",
-    "tags": [
-      "#安全",
-      "#经济"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "thai_navy_rescue_hormuz_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -519,16 +340,8 @@
     "desc_original": "WASHINGTON (AP) — Facing jittery global markets and drooping poll numbers since launching a war on Iran , President Donald Trump has cycled from calls for “unconditional surrender” to sounding amenable to an end state in which Iran trades one hard-line ayatollah for another . Shifting comments from the Republican president and his top aides are adding to the precariousness of the 12-day-old conflict, which is impacting nearly every corner of the Middle East and causing economic tremors around ",
     "summary_cn": "伊美战争进入第12天，面对全球市场的动荡和民调下滑，美国总统特朗普一面宣称正在取得胜利，一面在终战立场上反复摇摆。从最初要求伊朗“无条件投降”，到后来暗示接受更换领导层，其模糊的态度加剧了中东局势的不确定性。这场冲突已对全球经济产生震荡，由于双方均无退让迹象，局势正朝着不可预测的方向发展，严重影响中东出口与供应链。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#安全"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "us_iran_war_updates_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -543,17 +356,8 @@
     "desc_original": "An entire overview of the US-Israel war with Iran &#8211; How does it affect Thailand? Legacy The US-Israel-Iran conflict, now in its 11th day, is set to hammer Thailand&#8217;s economy despite being fought 7,000 kilometres away. With the Strait of Hormuz closed and oil above US$120 per barrel, Thailand faces its sharpest energy and trade disruption in decades. With the Strait of Hormuz effectively closed and global oil prices rising above US$120 a barrel, Thailand faces its sharpest energy and trade disru",
     "summary_cn": "尽管美以与伊朗的冲突远在7000公里外，但泰国经济正面临数十年以来最严重的能源和贸易冲击。随着霍尔木兹海峡（Strait of Hormuz）实际关闭，国际油价飙升至每桶120美元以上，不仅直接推高了泰国国内通胀和物流成本，还打击了出口航线。作为依赖进口能源的经济体，泰国正经历尖锐的经济阵痛。该文章详细梳理了战局对泰国的多重连锁反应。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#政策",
-      "#交通"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "israel_iran_war_impact_thai_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -568,17 +372,8 @@
     "desc_original": "Pattaya deer accident leaves taxi rider and foreign passenger injured Legacy A Thai app-based motorcycle taxi rider in Pattaya is seeking accountability from the owner of a deer after the animal reportedly caused an accident that left him and his foreign passenger injured . The rider, identified only as Kritsana, posted in the Facebook group Pong Talk asking for help to identify who owns the deer. He did not state when the incident happened, but it was believed to have occurred today, March 11,",
     "summary_cn": "在芭提雅（Pattaya），一名网约摩托车手Kritsana在载客途中遭遇惊魂一幕：一只鹿突然窜出横穿马路，导致摩托车发生车祸，骑手及一名外籍乘客均受伤。目前，该骑手正在社交媒体小组寻求线索以确定该鹿的主人并追究法律责任。此类涉及野生或饲养动物引发的交通事故在芭提雅近郊时有发生，提醒游客和驾驶者在夜间或植被茂密路段注意安全。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "芭提雅",
-    "tags": [
-      "#旅游",
-      "#安全",
-      "#交通"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "pattaya_deer_accident_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -593,16 +388,8 @@
     "desc_original": "Almost 500 teenagers gather nightly for street racing in Pattani Legacy Residents in Pattani asked for urgent action today, March 11, after large groups of teenagers were seen gathering overnight to race motorcycles on a public road, causing noise disruption and raising safety concerns for other road users. The complaints centre on repeated incidents on Road 43. Residents said that nearly 500 people began assembling from about 12am, parking motorcycles along both sides of the road for more than ",
     "summary_cn": "泰南北大年府（Pattani）巴拉哈奥（Barahao）地区的居民对此深感不安并请求警方查处。据当地居民反映，近期每晚约有500名青少年聚集在43号公路非法飙车。人群通常从零点开始聚集，摩托车停放绵延数百米，从凌晨1点起噪音和危险驾驶行为加重，严重扰民并威胁公共交通安全。当地正呼吁政府介入，严厉打击夜间非法集结赛车行为。",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "北大年府 Barahao",
-    "tags": [
-      "#安全",
-      "#交通"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "pattani_street_racing_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-12"
   },
@@ -615,19 +402,10 @@
     "summary_cn": "3月11日上午11时30分左右，一艘名为玛悠里纳利号（Mayuree Naree）的泰国籍货轮在从阿联酋（UAE）开往印度干德拉港（Kandla）途中遭到不明武装袭击。事发地位于阿拉伯海，紧邻伊朗附近的霍尔木兹海峡（Hormuz Strait）。袭击造成船体受损，船员被迫弃船并在海上漂浮等待救援。目前武器来源及袭击方身份由于信息受限尚不明确。此事件引发了对泰国海员海外安全及中东航道局势的高度关注。",
     "desc_original": "Crew awaits rescue after Thai cargo ship attacked near Hormuz Strait Legacy The crew members from a cargo ship are reported to be floating at sea while awaiting rescue after their vessel was attacked near the Strait of Hormuz in Iran today, March 11. The incident was reported to have happened at about 11.30am as the Thai cargo ship Mayuree Naree was travelling from the United Arab Emirates (UAE) to Kandla, India. The vessel was attacked in the Arabian Sea shortly after passing the Strait of Hormuz , with the weapons and source of the attack remain unidentified. The attack reportedly caused a f",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "Hormuz Strait",
-    "tags": [
-      "#交通",
-      "#安全",
-      "#经济"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
     "origin": "rss",
     "added_date": "2026-03-12",
-    "event_id": "thai_cargo_ship_attack_2026_03",
-    "status": "pending",
     "url": "https://thethaiger.com/news/world/crew-awaits-rescue-after-thai-cargo-ship-damaged-near-hormuz"
   },
   {
@@ -639,19 +417,10 @@
     "summary_cn": "由于中东局势加剧导致国内能源面临巨大挑战，泰国政府发言人拉丽达（Lalida Periswiwatthana）于3月10日在内阁会议后宣布，总理已下令政府机构和国营企业在不影响公共服务的情况下，立即启动居家办公（WFH）模式。此举旨在削减运营能耗并优化行政管理，应对国际局势带来的油气价格波动及电力供应压力。这对在泰办理行政办公的人员可能产生流程上的时效变动。",
     "desc_original": "Cabinet orders WFH for public sector amid energy pressures Legacy Thailand’s Cabinet approved urgent measures yesterday, March 10, to cut energy use and manage the public-sector workforce, amid fighting in the Middle East and its impact on domestic energy pressures. The decisions were announced at Government House by Lalida Periswiwatthana, deputy spokesperson for the Prime Minister’s Office. She said the prime minister had instructed government agencies and state enterprises to begin Work From Home (WFH) arrangements immediately for duties that would not affect public services. The measures a",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "Government House",
-    "tags": [
-      "#政策",
-      "#能源",
-      "#经济"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
     "origin": "rss",
     "added_date": "2026-03-12",
-    "event_id": "thailand_energy_saving_wfh_2026",
-    "status": "pending",
     "url": "https://thethaiger.com/law/cabinet-orders-wfh-public-sector-energy-pressures"
   },
   {
@@ -663,18 +432,10 @@
     "summary_cn": "3月10日晚9点20分，芭提雅二路（Pattaya Sai Song Road）某酒店门前发生抢劫案。4名泰国籍男女试图抢夺一名54岁印度男游客价值近10万泰铢的金项链。由于受害者极力防抗且项链被拉断，现场保安及热心群众及时介入拦截。芭提雅警方赶到现场将4人全部抓获封锁隔离。目前受害者处于受惊状态。此案再次为赴芭提雅旅游的游客敲响安全警钟，建议避免佩戴显眼贵重首饰出行。",
     "desc_original": "4 Thai people detained after failing to steal gold necklace from Indian man Legacy A group of four Thai nationals attempted to steal a gold necklace worth nearly 100,000 baht from an Indian tourist in Pattaya , but a hotel security guard and witnesses intervened and stopped them. Mueang Pattaya Police Station were called to investigate the gold necklace robbery outside a hotel on Pattaya Sai Song Road at about 9.20pm yesterday, March 10. Officers found the 54 year old Indian victim, Sadesh Sangte, who was reported to be in shock. His gold necklace was torn during the incident. Sadesh revealed ",
     "importance": "P1",
-    "section_hint": "pattaya",
-    "location_detail": "Pattaya Sai Song Road",
-    "tags": [
-      "#安全",
-      "#旅游"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
     "origin": "rss",
     "added_date": "2026-03-12",
-    "event_id": "pattaya_robbery_indian_tourist_2026",
-    "status": "pending",
     "url": "https://thethaiger.com/news/pattaya/4-thai-people-detained-after-failing-to-steal-gold-necklace-from-indian-man"
   },
   {
@@ -686,18 +447,10 @@
     "summary_cn": "泰国皇家海军于3月11日通报，珍宝航运公司（Precious Shipping）旗下的泰籍货轮玛悠里纳利号在阿曼（Oman）海域航行时，遭到水线上方两次不明武器袭击。爆炸点位于船尾及机舱，引发严重大火。该船于泰国时间凌晨3时从阿联酋哈里发港（Khalifa Port）出发。目前火势猛烈，船员已被迫弃船并等待海军营救。这是中东海域局势动荡波及泰国航运业的直接体现。",
     "desc_original": "A Thai-flagged cargo ship was attacked near the Strait of Hormuz, triggering an explosion and fire on board and forcing crew members to abandon the vessel, the Royal Thai Navy said on 11 March. The vessel, Mayuree Naree, operated by Precious Shipping, had departed from the anchorage area near Khalifa Port in the United Arab Emirates at around 03:00 Thailand time. At approximately 11:10, when the ship was sailing in waters off Oman, it was struck twice by an unidentified weapon above the waterline, causing explosions near the stern and the engine room. The blasts sparked a fire in the engine ro",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "Oman Coast",
-    "tags": [
-      "#安全",
-      "#交通"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
     "origin": "rss",
     "added_date": "2026-03-12",
-    "event_id": "thai_ship_explosion_oman_2026",
-    "status": "pending",
     "url": "https://www.khaosodenglish.com/featured/2026/03/11/thai-flagged-cargo-ship-attacked-after-passing-the-strait-of-hormuz/"
   },
   {
@@ -709,19 +462,10 @@
     "summary_cn": "泰国劳工部长直努（Trinuch Thienthong）近期会见泰国商会、工业联合会等私企联合委员会后重申，尽管民营部门担心劳动力短缺，但政府将坚持不再接纳新柬埔寨劳工的政策。目前的管理重点在于清理和核查已在泰国境内且持有有效工签的柬埔寨劳工。该政策可能会对以来大量廉价劳动力的建筑及农业领域产生冲击，在泰雇主及其外商投资企业需关注用工合规性及替代人力方案。",
     "desc_original": "BANGKOK — Thailand will not allow new Cambodian workers to enter the country, the labour minister said on 9 March, reaffirming the government’s position despite growing concern from the private sector over labour shortages. Labour Minister Trinuch Thienthong said the government’s policy is to not admit additional Cambodian workers, while managing those already in Thailand who still hold valid work permits. Her remarks followed a meeting with representatives of the Joint Standing Committee on Commerce, Industry and Banking, which includes the Thai Chamber of Commerce, the Federation of Thai Ind",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "Bangkok",
-    "tags": [
-      "#政策",
-      "#移民",
-      "#经济"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
     "origin": "rss",
     "added_date": "2026-03-12",
-    "event_id": "thailand_cambodia_labour_limit_2026",
-    "status": "pending",
     "url": "https://www.khaosodenglish.com/news/2026/03/11/thailand-will-not-allow-new-cambodian-workers-labour-minister-says/"
   },
   {
@@ -735,15 +479,6 @@
     "desc_original": "Air India Express plane stuck on runway after hard landing in Phuket Legacy An Air India Express flight carrying 133 passengers made a hard landing at Phuket International Airport today, March 11, leaving the aircraft disabled on the runway and disrupting airport operations. No injuries were reported. Tourist police were notified at about 11.20am after an aircraft encountered a landing problem at the airport. The plane was identified as Air India Express flight IX938 operating the Hyderabad–Phuket route, with 133 passengers on board. Police said checks found that as the aircraft landed, its no",
     "summary_cn": "3月11日，一架从海德拉巴飞往普吉（Phuket）的印度航空快运（Air India Express）IX938航班在普吉国际机场降落时发生硬着陆。机上载有133名乘客，所幸无人受伤。此次事故导致飞机滞留在跑道上无法移动，严重干扰了机场的正常运行。旅游警察于上午11时20分接到报案。初步检查显示飞机降落时鼻轮发生故障，目前相关部门正在全力排查并恢复跑道运营。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "普吉国际机场 Phuket International Airport",
-    "tags": [
-      "#旅游",
-      "#交通",
-      "#安全"
-    ],
-    "event_id": "phuket_airport_air_india_landing_2026_03",
-    "status": "pending",
     "added_date": "2026-03-12",
     "time_sensitive": true,
     "expires_date": "2026-03-27",
@@ -760,13 +495,6 @@
     "desc_original": "Bangkok delivery rider caught on CCTV filming under skirt of vendor Legacy A Thai delivery rider allegedly filmed under a skirt of a female vendor while waiting for an order at a beverage shop in Bangkok . The vendor posted the video on social media to warn others, saying the incident happened at about 1pm on March 7. The footage showed a rider wearing a green jacket standing behind her as she prepared drinks. The suspect was then seen approaching the vendor and sitting down. The vendor alleged he took a photo under her skirt before stepping back and checking the images on his phone. He was al",
     "summary_cn": "近日，曼谷（Bangkok）一名女性饮品摊主在社交媒体上发布监控视频提醒他人。视频显示，3月7日下午1时许，一名身穿绿色外套的外卖配送员在等待取餐时，站在摊主身后并在其准备饮料时实施纠缠。随后该男子坐下并疑似从低角度偷拍女摊主的裙底，之后还退后查看手机照片。受害者随后查看监控并确认其猥亵行为。此事件引发了当地对公共安全及外卖从业人员管理的关注。",
     "importance": "P3",
-    "section_hint": "bangkok",
-    "location_detail": "曼谷 Bangkok",
-    "tags": [
-      "#安全"
-    ],
-    "event_id": "bangkok_delivery_rider_harassment_2026_03",
-    "status": "pending",
     "added_date": "2026-03-12",
     "time_sensitive": false,
     "expires_date": "2026-04-11",
@@ -783,13 +511,6 @@
     "desc_original": "Photos of students discarding cash outside exam rooms debunked Legacy The viral images shared as proof that students discarded cash during the Triam Udom Suksa School entrance exam were challenged yesterday , March 10, after a clarification said the photo was not from the exam venue. The controversy relates to the Triam Udom Suksa School entrance exam for Matthayom 4 (Grade 10), at Impact Mueang Thong Thani, where candidates were not allowed to bring money into the exam room. This led to online claims that candidates were forced to throw cash into bins or leave it on the floor outside. Photo v",
     "summary_cn": "近日一组传言称Triam Udom Suksa学校入学考试期间，考生因不准携带现金进入考场而被迫将钱丢入垃圾桶或弃之于地的照片引发热议。3月10日相关机构澄清，该照片拍摄地点并非考场所在地Impact Mueang Thong Thani（曼通塔尼会展中心）。虽然该校的高一（Matthayom 4）入学考确实有严格的安全规定，但网传的极端弃钱行为已被证实为张冠李戴的不实传闻。",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "曼通塔尼 Impact Mueang Thong Thani",
-    "tags": [
-      "#旅游"
-    ],
-    "event_id": "thailand_school_exam_cash_hoax_2026_03",
-    "status": "pending",
     "added_date": "2026-03-12",
     "time_sensitive": false,
     "expires_date": "2026-04-11",
@@ -806,14 +527,6 @@
     "desc_original": "BANGKOK — 11 March 2026, Thailand’s Pollution Control Department says Bangkok has passed the worst of its PM2.5 pollution crisis, with air quality improving overall compared with last year, though occasional spikes above safety standards are still possible during the seasonal transition. Pollution Control Department director-general Surin Warakitthamrong said on Wednesday that air quality in the capital has begun to ease after a severe pollution period earlier in the season. He said the situation has improved compared with the previous year, following intensified measures by government agencie",
     "summary_cn": "泰国污染控制司（Pollution Control Department）表示，曼谷（Bangkok）最严重的PM2.5雾霾危机阶段已经过去。司长Surin Warakitthamrong指出，尽管在季节交替期间仍可能出现短暂的超标情况，但当前空气质量整体已较去年同期有所改善。政府通过强化管控措施，使得首都地区的空气污染压力开始缓解。这对于当地居民及游客来说是一个积极信号，表明最艰难的污染高峰已经平稳度过。",
     "importance": "P1",
-    "section_hint": "bangkok",
-    "location_detail": "曼谷 Bangkok",
-    "tags": [
-      "#环境",
-      "#政策"
-    ],
-    "event_id": "bangkok_pm25_pollution_update_2026_03",
-    "status": "pending",
     "added_date": "2026-03-12",
     "time_sensitive": true,
     "expires_date": "2026-03-27",
@@ -830,13 +543,6 @@
     "desc_original": "Thai man finds bloodstains in his car after lending it to friend Legacy A Thai man asked police to investigate after finding bloodstains , a military ID card and an obscured registration plate on his car after he lent it to a female friend . The 29 year old owner, Thanaporn Wilaepana, contacted Pak Kret Police to inspect his bronze Honda City sedan, which was parked outside a condominium in the Khlong Klua area of Nonthaburi province. Police said an initial inspection found damage to the front and rear bumpers, a right rear door that could not be opened and signs of a crash at several points o",
     "summary_cn": "一名29岁的男子Thanaporn向暖武里府（Nonthaburi）北革（Pak Kret）警方报案，称其将本田轿车借给一位女性朋友后，在车内发现不明血迹、一张军人身份证以及一块被遮挡的号牌。车身前后保险杠受损严重，右后车门无法开启，有多处撞击痕迹。该车当时停放在Khlong Klua区某公寓外。目前警方已介入调查，以确定该车辆是否涉及重大交通事故或刑事案件。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "暖武里府北革县 Pak Kret, Nonthaburi",
-    "tags": [
-      "#安全"
-    ],
-    "event_id": "nonthaburi_car_blood_mystery_2026_03",
-    "status": "pending",
     "added_date": "2026-03-12",
     "time_sensitive": false,
     "expires_date": "2026-04-11",
@@ -848,17 +554,8 @@
     "desc_original": "Private Airport to City Transfer : Suvarnabhumi (BKK)/Don Mueang ... ... The SIAM Songkran Music Festival 2026 is the premier way to experience the Songkran Festival 2026 in Bangkok.",
     "summary_cn": "2026年宋干节（Songkran，泼水节）官方指南发布。文中重点提及曼谷素万那普机场（Suvarnabhumi）和廊曼机场（Don Mueang）的接送便利。今年曼谷的核心亮点是SIAM宋干音乐节，结合了传统泼水庆典与现代电子音乐，是国际游客体验泰国新年气氛的首选项目。建议出行人员提前规划机场转运行程。",
     "importance": "P3",
-    "section_hint": "bangkok",
-    "location_detail": "素万那普机场 Suvarnabhumi",
-    "tags": [
-      "#旅游",
-      "#交通",
-      "#夜生活"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "status": "pending",
-    "event_id": "bangkok_songkran_siam_music_2026",
     "source": "Thailand music festival concert Bangkok ",
     "url": "https://www.kkday.com/en/blog/89168/thailand-songkran-festival",
     "origin": "brave",
@@ -870,17 +567,8 @@
     "desc_original": "Patrols and monitoring will continue ... gather to enjoy the performances. The Pattaya Music Festival 2026 runs every Friday and Saturday throughout March, turning beaches, islands, and public venues across the city into open-air ...",
     "summary_cn": "2026年芭提雅（Pattaya）音乐节正式拉开帷幕，3月期间的每周五和周六，整个城市的海滩、离岛及公共场所将变成露天舞台。为保障现场观众安全，警方已加强巡逻和监控力度。这是芭提雅春季最重要的旅游推广活动，预计吸引大量游客涌向海滨区域参加这场跨月盛会。",
     "importance": "P2",
-    "section_hint": "pattaya",
-    "location_detail": "芭提雅海滩路 Pattaya Beach",
-    "tags": [
-      "#旅游",
-      "#安全",
-      "#夜生活"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "status": "pending",
-    "event_id": "pattaya_music_fest_security_2026",
     "source": "Thailand music festival concert Bangkok ",
     "url": "https://www.pattayamail.com/news/security-in-place-as-pattaya-music-festival-2026-kicks-off-its-first-weekend-538290",
     "origin": "brave",
@@ -892,16 +580,8 @@
     "desc_original": "Songkran Thailand 2026 is officially happening from Monday, April 13 to Wednesday, April 15, kicking off the traditional Thai New Year. While the official holiday is just three days, don’t be surprised if the water fights start early or go ...",
     "summary_cn": "泰国官方确认，2026年宋干节（泼水节）法定假日定于4月13日（周一）至4月15日（周三）。作为泰国传统新年，虽然官方假期只有三天，但部分热门地区通常会提前开启庆祝活动或延长狂欢。提醒游客在此时段出行需留意交通封锁情况，并注意保护电子设备等易受水损物品。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#旅游",
-      "#政策"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "status": "pending",
-    "event_id": "thailand_songkran_dates_2026",
     "source": "Thailand fireworks Songkran New Year cel",
     "url": "https://www.kkday.com/en/blog/89168/thailand-songkran-festival",
     "origin": "brave",
@@ -913,16 +593,8 @@
     "desc_original": "Songkran officially takes place from 13 to 15 April 2026, though celebrations often extend beyond these dates, especially in major cities and tourist hotspots. In cities like Bangkok, Chiang Mai, and Pattaya, festivities can last up to a week, ...",
     "summary_cn": "尽管2026年宋干节法定假期为4月13日至15日，但在曼谷（Bangkok）、清迈（Chiang Mai）及芭提雅（Pattaya）等旅游热点城市，庆典活动往往会延长。在清迈等地，泼水狂欢有时会持续长达一周。前往清迈古城区或芭提雅海滨的游客需提前预订酒店，并做好面对交通拥堵的准备。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "清迈 Chiang Mai",
-    "tags": [
-      "#旅游",
-      "#交通"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "status": "pending",
-    "event_id": "thailand_songkran_extended_celebration_2026",
     "source": "Thailand fireworks Songkran New Year cel",
     "url": "https://www.justwravel.com/blog/songkran-festival-thailand/",
     "origin": "brave",
@@ -934,16 +606,8 @@
     "desc_original": "Known as the Thai New Year, Songkran is celebrated with water fights, traditional rituals, and a joyful atmosphere. Bangkok has become the heart of the festivities, attracting visitors from around the world.",
     "summary_cn": "曼谷（Bangkok）已成为泰国宋干节庆祝活动的核心阵地。2026年的活动将融合传统佛教祈福仪式与现代激烈的街道泼水战。曼谷素坤逸路（Sukhumvit）及考山路（Khaosan Road）等片区将有高浓度的庆典气氛，吸引全球游客。对于追求传统文化的游客，建议前往大皇宫附近的寺庙观礼。",
     "importance": "P3",
-    "section_hint": "bangkok",
-    "location_detail": "考山路 Khaosan Road",
-    "tags": [
-      "#旅游",
-      "#文化"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "status": "pending",
-    "event_id": "bangkok_songkran_guide_2026",
     "source": "Thailand fireworks Songkran New Year cel",
     "url": "https://www.pullmanbangkokkingpower.com/songkran-in-bangkok/",
     "origin": "brave",
@@ -955,15 +619,8 @@
     "desc_original": "Notice that Songkran 2026 Pattaya dates fall on April 17-19, extending celebrations beyond the traditional period. Cities coordinate schedules, allowing serial festival-hoppers to experience multiple locations across eight continuous days.",
     "summary_cn": "2026年泰国宋干节（Songkran）将采取多地城市联动模式，庆祝活动预计可持续8天。其中，芭提雅（Pattaya）的庆祝活动定于4月17日至19日举行，比传统日期有所延长。此举旨在方便游客在不同城市间穿梭，体验多场连续的大型泼水活动。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "芭提雅 Pattaya",
-    "tags": [
-      "#旅游"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "thailand_songkran_pattaya_2026_04",
-    "status": "pending",
     "source": "Thailand fireworks Songkran New Year cel",
     "url": "https://radicalstorage.com/travel/songkran-2026/",
     "origin": "brave",
@@ -975,16 +632,8 @@
     "desc_original": "Thailand’s Songkran 2026 is set to bring new energy to top destinations like Pattaya, Chiang Mai, Phuket, Krabi, and Koh Samui, elevating them as prime locations for unforgettable water fights, scenic beauty, and cultural immersion. With its extended festivities and growing global appeal, Songkran continues to captivate both domestic and international travelers, making it the ultimate travel experience of the year.",
     "summary_cn": "2026年泰国宋干节（Songkran）将为清迈（Chiang Mai）、普吉（Phuket）、甲米（Krabi）及苏梅岛（Koh Samui）等热门旅游地注入强劲发展动力。通过延长节庆时间和深挖文化内涵，泰国旨在将泼水节打造为集文化沉浸、美景欣赏于一体的全球顶尖旅游体验，预计将显著拉动国内外游客增长。",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#旅游",
-      "#经济"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "thailand_songkran_tourism_strategy_2026",
-    "status": "pending",
     "source": "Thailand fireworks Songkran New Year cel",
     "url": "https://www.travelandtourworld.com/news/article/thailands-songkran-2026-brings-new-energy-to-pattaya-joining-chiang-mai-phuket-krabi-koh-samui-and-many-other-destinations-spotlighting-them-as-top-locations-for-unforgettable-water-fig/",
     "origin": "brave",
@@ -996,16 +645,8 @@
     "desc_original": "Pattaya leads the list of domestic destinations, primarily due to its extended celebrations. The city’s festival continues well beyond the traditional Songkran dates, lasting until April 19.",
     "summary_cn": "在2026年全球文化庆典目的地竞争中，泰国力压中国、日本、韩国等国，成为游客首选。由于芭提雅（Pattaya）的宋干节（Songkran）庆祝活动将一直延续至4月19日，该市目前位居泰国国内旅游目的地榜首，成功吸引了大量国际长途游客关注。",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "芭提雅 Pattaya",
-    "tags": [
-      "#旅游",
-      "#中泰"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "thailand_songkran_global_ranking_2026",
-    "status": "pending",
     "source": "Thailand fireworks Songkran New Year cel",
     "url": "https://www.travelandtourworld.com/news/article/thailand-overtakes-china-japan-south-korea-taiwan-and-more-countries-soaring-to-the-top-as-the-premier-destination-for-songkran-2026-fueling-unprecedented-growth-in-global-travel-and-cultural-ce/",
     "origin": "brave",
@@ -1017,17 +658,8 @@
     "desc_original": "Private Airport to City Transfer : Suvarnabhumi (BKK)/Don Mueang ... ... The SIAM Songkran Music Festival 2026 is the premier way to experience the Songkran Festival 2026 in Bangkok.",
     "summary_cn": "2026年曼谷（Bangkok）SIAM宋干节音乐节被定位为体验泰国泼水节的最佳方式。为应对节日期间的交通高峰，素万那普（BKK）和廊曼（Don Mueang）机场至市区的私人接送服务已开放预订，方便游客参加这场融合了电音与传统泼水精髓的顶级派对。",
     "importance": "P3",
-    "section_hint": "bangkok",
-    "location_detail": "曼谷 Bangkok",
-    "tags": [
-      "#旅游",
-      "#交通",
-      "#夜生活"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "bangkok_siam_songkran_music_fest_2026",
-    "status": "pending",
     "source": "Bangkok Pattaya art exhibition museum cu",
     "url": "https://www.kkday.com/en/blog/89168/thailand-songkran-festival",
     "origin": "brave",
@@ -1039,16 +671,8 @@
     "desc_original": "Elevating Bangkok Design Week as the Creative Hub of Asia · These collaborations represent only a fraction of what unfolds at Bangkok Design Week 2026, taking place from 29 January - 8 February 2026.",
     "summary_cn": "2026年曼谷设计周（Bangkok Design Week）已于今年初圆满举行。通过展示多领域的跨界合作，该活动进一步巩固了曼谷作为“亚洲创意枢纽”的地位。尽管活动主体已于2月8日结束，其产生的后续创意产业影响和相关文化合作仍持续受到业界高度关注。",
     "importance": "P2",
-    "section_hint": "bangkok",
-    "location_detail": "曼谷 Bangkok",
-    "tags": [
-      "#经济",
-      "#交通"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "bangkok_design_week_recap_2026",
-    "status": "pending",
     "source": "Bangkok Pattaya art exhibition museum cu",
     "url": "https://www.manilatimes.net/2026/03/09/tmt-newswire/media-outreach-newswire/bangkok-design-week-2026-sets-the-stage-as-asias-creative-hub/2295574",
     "origin": "brave",
@@ -1065,15 +689,8 @@
     "source": "Bangkok Pattaya art exhibition museum cu",
     "origin": "brave",
     "importance": "P3",
-    "section_hint": "bangkok",
-    "location_detail": "Bangkok",
-    "tags": [
-      "#旅游"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-11",
-    "event_id": "bangkok_travel_guide_2026",
-    "status": "pending",
     "added_date": "2026-03-12"
   },
   {
@@ -1087,16 +704,8 @@
     "source": "Thailand shopping festival fair expo Ban",
     "origin": "brave",
     "importance": "P2",
-    "section_hint": "bangkok",
-    "location_detail": "Pathum Wan",
-    "tags": [
-      "#旅游",
-      "#夜生活"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "bangkok_songkran_party_2026",
-    "status": "pending",
     "added_date": "2026-03-12"
   },
   {
@@ -1110,16 +719,8 @@
     "source": "Thailand shopping festival fair expo Ban",
     "origin": "brave",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "Chiang Mai",
-    "tags": [
-      "#旅游",
-      "#交通"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-27",
-    "event_id": "thailand_songkran_guide_2026",
-    "status": "pending",
     "added_date": "2026-03-12"
   }
 ]

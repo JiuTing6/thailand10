@@ -10,18 +10,11 @@
     "desc": "Warm and cosy -- it is not only an abortion clinic, but a haven for women and LGBTIs to reclaim power over their bodies.",
     "desc_original": "Warm and cosy -- it is not only an abortion clinic, but a haven for women and LGBTIs to reclaim power over their bodies.",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#政策"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
     "url": "https://www.bangkokpost.com/life/social-and-lifestyle/3217574/accessible-abortion-services",
     "date": "2026-03-16T05:58:00+07:00",
     "added_date": "2026-03-16",
-    "event_id": "thailand_healthcare_abortion_2026",
-    "status": "pending",
     "origin": "rss"
   },
   {
@@ -35,18 +28,11 @@
     "desc": "Thai small and medium-sized enterprises (SMEs) face a wall of negative sentiment this year as geopolitical tensions, trade conflicts and tighter access to loans weigh on the sector, raising questions about how businesses can navigate these tumultuous times.",
     "desc_original": "Thai small and medium-sized enterprises (SMEs) face a wall of negative sentiment this year as geopolitical tensions, trade conflicts and tighter access to loans weigh on the sector, raising questions about how businesses can navigate these tumultuous times.",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
     "url": "https://www.bangkokpost.com/business/general/3217584/small-firms-under-pressure-as-costs-soar",
     "date": "2026-03-16T05:43:00+07:00",
     "added_date": "2026-03-16",
-    "event_id": "thailand_sme_crisis_2026",
-    "status": "pending",
     "origin": "rss"
   },
   {
@@ -60,19 +46,11 @@
     "desc": "New residential supply launched in Greater Bangkok this year is expected to continue to decline after hitting a multi-year low in 2025, as a large amount of inventory remains unsold and developers become more cautious about investment.",
     "desc_original": "New residential supply launched in Greater Bangkok this year is expected to continue to decline after hitting a multi-year low in 2025, as a large amount of inventory remains unsold and developers become more cautious about investment.",
     "importance": "P2",
-    "section_hint": "property",
-    "location_detail": "Bangkok",
-    "tags": [
-      "#房产",
-      "#经济"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
     "url": "https://www.bangkokpost.com/property/3217494/cautious-developers-to-cut-bangkok-housing-launches",
     "date": "2026-03-16T05:36:00+07:00",
     "added_date": "2026-03-16",
-    "event_id": "bangkok_property_supply_cut_2026",
-    "status": "pending",
     "origin": "rss"
   },
   {
@@ -86,19 +64,11 @@
     "desc": "Thailand's economy and equity market could face mounting pressure if tensions between the US-Israel alliance and Iran escalate, with risks evolving from short-term financial market volatility to a deeper economic slowdown, says InnovestX Securities.",
     "desc_original": "Thailand's economy and equity market could face mounting pressure if tensions between the US-Israel alliance and Iran escalate, with risks evolving from short-term financial market volatility to a deeper economic slowdown, says InnovestX Securities.",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#政策"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
     "url": "https://www.bangkokpost.com/business/investment/3217534/war-impact-likely-to-unfold-in-phases",
     "date": "2026-03-16T05:17:00+07:00",
     "added_date": "2026-03-16",
-    "event_id": "thailand_economic_impact_war_2026",
-    "status": "pending",
     "origin": "rss"
   },
   {
@@ -112,19 +82,11 @@
     "desc": "The escalating war between the US-Israel alliance and Iran is entering a more dangerous phase, raising concerns the conflict could trigger a wider economic shock via surging energy prices, disrupted trade routes and weakening global demand.",
     "desc_original": "The escalating war between the US-Israel alliance and Iran is entering a more dangerous phase, raising concerns the conflict could trigger a wider economic shock via surging energy prices, disrupted trade routes and weakening global demand.",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#交通"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
     "url": "https://www.bangkokpost.com/business/general/3217544/economic-toll-of-war-grows",
     "date": "2026-03-16T05:06:00+07:00",
     "added_date": "2026-03-16",
-    "event_id": "global_war_economic_shock_2026",
-    "status": "pending",
     "origin": "rss"
   },
   {
@@ -139,16 +101,8 @@
     "desc_original": "Bangkok's Lumpini Park -- long regarded as the city's green heart -- is undergoing a quiet but significant transformation.",
     "summary_cn": "被誉为曼谷“城市绿肺”的伦披尼公园（Lumpini Park）目前正在经历一场低调但意义重大的改造。该翻新项目不仅改善了公园的绿化景观和配套设施，还通过各种功能分区提升了市民与游客的休闲体验。近期该项目收到了大量正面反馈，被视为提升曼谷宜居程度的关键举措。",
     "importance": "P3",
-    "section_hint": "bangkok",
-    "location_detail": "伦披尼公园 Lumpini Park",
-    "tags": [
-      "#环境",
-      "#旅游"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "bangkok_lumpini_park_renovation_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -164,16 +118,8 @@
     "desc_original": "Prime Minister Anutin Charnvirakul says Thailand is negotiating with all major oil-producing nations, not only Russia, to secure energy supplies, adding the nation will not face an energy shortage.",
     "summary_cn": "泰国总理阿努廷（Anutin Charnvirakul）表示，政府正积极与包括俄罗斯在内的全球主要产油国进行谈判，旨在锁定长期稳定的能源供应。受当前国际局势影响，政府强调已做好储备预案，泰国不会面临能源短缺危机。此举意在稳定物价并保障国内交通与工业用油安全。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#政策"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thailand_energy_security_talks_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -189,16 +135,8 @@
     "desc_original": "Rescue workers from Sawang Boriboon assist a foreign woman who was seriously injured after falling from a hotel building in Pattaya before rushing her to hospital for treatment. PATTAYA, Thailand – A foreign woman was seriously injured after falling from a hotel building in Pattaya during the early hours of March 15. At approximately 4:06 a.m., the rescue center of Sawang Boriboon received a report of a person falling from a height at a hotel located in Soi Bongkot 8 in South Pattaya. Rescue volunteers, together with officers from Pattaya City Police Station, rushed to the scene to investigate",
     "summary_cn": "3月15日凌晨4时许，一名外籍女子在芭提雅（Pattaya）南部的 Soi Bongkot 8 巷某酒店坠楼。明满善堂（Sawang Boriboon）救援队及当地警方迅速抵达现场。坠楼者由于骨折和内部损伤伤势严重，已被紧急送往医院救治。目前警方正在调查坠楼原因，以确定是意外还是人为因素。",
     "importance": "P1",
-    "section_hint": "pattaya",
-    "location_detail": "Soi Bongkot 8",
-    "tags": [
-      "#安全",
-      "#旅游"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "pattaya_hotel_fall_incident_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -214,16 +152,8 @@
     "desc_original": "Sanphet Suphaborwornsathien, Assistant Managing Director of The Zign Group, says tourism operators in Pattaya are closely monitoring global developments as rising fuel costs and flight disruptions linked to tensions in the Middle East begin to affect travel patterns. PATTAYA, Thailand – Rising tensions in the Middle East are beginning to ripple through the global travel industry, with tourism operators in Pattaya closely monitoring the situation as fuel prices climb and some international flights face disruptions. The conflict has driven oil prices higher worldwide, increasing fuel costs for a",
     "summary_cn": "受中东局势紧张导致燃油成本上升及航班变动影响，芭提雅（Pattaya）旅游业者正密切关注预订模式的变化。The Zign Group 指出，游客的预订周期明显缩短。为此，当地酒店与运营商正被迫重新思考促销策略，通过更具灵活性的定价和应急方案，应对因地缘政治波动带来的不确定性，以维持旅游市场的热度。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "芭提雅 Pattaya",
-    "tags": [
-      "#旅游",
-      "#经济"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "pattaya_tourism_booking_shift_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -239,17 +169,8 @@
     "desc_original": "Municipal officers in Pattaya assist an intoxicated foreign tourist who was found asleep on the steps of Bangkok Bank along Pattaya Second Road on March 15. Officers checked on the tourist after noticing him lying on the staircase, a situation that posed potential risks to both his safety and belongings. Authorities woke the man and asked about his accommodation before helping escort ",
     "summary_cn": "3月15日，芭提雅（Pattaya）二路（Pattaya Second Road）盘谷银行（Bangkok Bank）台阶上发现一名露宿的醉酒外籍游客。当地城管人员考虑到其随身财物安全及人身风险，上前将其唤醒并询问酒店信息。随后城管协助该游客安全返回住所。此举体现了当地针对夜生活集聚区游客安全管理的常态化巡逻，旨在维护旅游城市形象。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "Pattaya Second Road",
-    "tags": [
-      "#安全",
-      "#旅游",
-      "#夜生活"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "pattaya_tourist_safety_assistance_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -266,16 +187,8 @@
     "title_cn": "舆论压力攀升，芭提雅（Pattaya）重新评估 Bongkot-Kor Phai 交通隔离带",
     "summary_cn": "由于南芭提雅（South Pattaya）的 Soi Bongkot 路与 Soi Kor Phai 路交叉口设置的隔离带导致交通拥堵加剧，当地居民和司机的投诉激增。芭提雅市政府官员目前正迫于公众压力，与相关部门讨论重新开放该路口的方案。该地长期受堵车困扰，移除或调整隔离带旨在缓解高峰期的交通压力，确保周边社区出行的便利性。",
     "importance": "P1",
-    "section_hint": "pattaya",
-    "location_detail": "South Pattaya",
-    "tags": [
-      "#交通",
-      "#政策"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "pattaya_traffic_barrier_review_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -292,16 +205,8 @@
     "title_cn": "芭提雅（Pattaya）查封非法占地经营的沙滩椅与凉席",
     "summary_cn": "芭提雅（Pattaya）市政执法人员近期对海滩上的非法租赁摊位展开严查，强行没收了在公共沙滩区域违规摆放的凉席和折叠椅。当局强调，未经许可严禁私占公共岸线进行商业经营，违规者将面临没收经营器材及高额罚款。此举是对游客反映摊贩垄断公共空间、扰乱旅游秩序的直接回应，旨在改善旅游区的视觉景观与自由使用权。",
     "importance": "P2",
-    "section_hint": "pattaya",
-    "location_detail": "Pattaya Beach",
-    "tags": [
-      "#旅游",
-      "#政策"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "pattaya_beach_vendor_crackdown_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -318,16 +223,8 @@
     "title_cn": "芭提雅（Pattaya）万莱节定于4月19日，春武里府（Chonburi）庆祝长假泼水节",
     "summary_cn": "虽然泰国官方颂干节（Songkran）为4月13日至15日，但春武里府（Chonburi）全境将举行漫长的接力庆祝。其中最具盛名的芭提雅（Pattaya）“万莱节”（Wan Lai）确定于4月19日举行，作为全府水战巡游的压轴好戏。届时将有万人空巷的洒水活动和长达一个月的节日狂欢，吸引全球游客参与这一泰东最具规模的年度盛会。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "Pattaya Beach",
-    "tags": [
-      "#旅游",
-      "#中泰"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "pattaya_wan_lai_festival_2026_04",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -344,16 +241,8 @@
     "title_cn": "天气预报：芭提雅（Pattaya）及泰东地区迎高温，恐伴有雷阵雨",
     "summary_cn": "泰国气象局发布预报，泰国北部及东部大部分地区将迎来高温天气，包括沿海旅游胜地芭提雅（Pattaya）在内的东部省份日间气温较高。受气候变化影响，部分地区可能会出现局地的短时雷阵雨。建议在海滩游玩的游客注意防晒及突发降雨，相关部门正密切关注可能影响旅游安全的天气系统动态。",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "Eastern Thailand",
-    "tags": [
-      "#环境",
-      "#旅游"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "pattaya_weather_forecast_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -370,16 +259,8 @@
     "title_cn": "佛统府（Nakhon Pathom）金店劫案嫌犯落网，警方誓言保障旅游区安全",
     "summary_cn": "泰国国家警察总署副署长 Thatchai Pitaneelaboot 表示，已成功逮捕近期由于佛统府（Nakhon Pathom）商场内洗劫金店的嫌犯。警方以此案告诫，任何企图破坏公共安全的罪犯均将无处遁形，未来将重点加强芭提雅（Pattaya）等核心旅游区的警力管控，严厉打击各类针对商业设施的暴力犯罪，全力维护泰国作为安全旅游胜地的国际形象。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "Nakhon Pathom",
-    "tags": [
-      "#安全",
-      "#旅游"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "thailand_gold_robbery_arrest_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -394,16 +275,8 @@
     "desc_original": "Egg trays are displayed for sale at a market as Thailand's egg producer network has announced a price increase starting March 16, while suppliers say tourist destinations such as Pattaya continue to have sufficient eggs to meet demand from residents and visitors. PATTAYA, Thailand – Thailand's egg producer network has announced a recommended increase in farm-gate egg prices, raising the cost of mixed eggs from 3.20 baht to 3.40 baht per egg, or about 6 baht more per tray. The adjustment will take effect on March 16. Producers say the increase follows a prolonged period of low prices that forced farmers to",
     "summary_cn": "泰国鸡蛋生产商网络宣布从3月16日起上调出场价，混合蛋价格从每枚3.20泰铢涨至3.40泰铢，每盘（30枚）上涨约6泰铢。此次调价主因是前期价格长期偏低。芭提雅（Pattaya）的供应商表示，尽管价格波动，但目前当地针对居民及游客的备货充足，酒店及餐厅暂未出现短缺情况。",
     "importance": "P1",
-    "section_hint": "pattaya",
-    "location_detail": "Pattaya",
-    "tags": [
-      "#经济",
-      "#美食"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thailand_egg_price_hike_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -418,16 +291,8 @@
     "desc_original": "A petrol station displays \"fuel finished\" and purchase limit signs outside its forecourt as motorists rush to fill their tanks amid fears of price increases, while authorities say the shortages are caused by panic buying and insist national fuel supplies remain sufficient. PATTAYA, Thailand – Reports of motorists rushing to fill their tanks have led to temporary fuel shortages and purchase limits at some petrol stations across parts of Thailand, while authorities insist national fuel supplies remain stable and urge the public not to panic or hoard fuel. Local media reported that several statio",
     "summary_cn": "由于担忧油价上涨，泰国部分地区出现民众抢买汽油现象，导致部分加油站挂出“售罄”或“限购”标识。尽管芭提雅（Pattaya）目前尚未出现大规模抢购热潮，但官方重申全国燃油储备充足，呼吁民众不要盲目囤积，所谓“短缺”完全是由异常抢购导致的物流暂滞。",
     "importance": "P1",
-    "section_hint": "pattaya",
-    "location_detail": "Pattaya",
-    "tags": [
-      "#经济",
-      "#交通"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thailand_fuel_panic_buying_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -442,17 +307,8 @@
     "desc_original": "Government officials have rushed to reassure motorists that \"out of stock\" signs reported at some petrol stations were caused by private motorists and public transport operators panicked into topping up by the Middle East war, not by a shortage of fuel reserves in Thailand. ",
     "summary_cn": "面对加油站频现的“售罄”提示，泰国政府官员紧急发声安抚。官方指出，这种现象是由于中东冲突（Middle East war）引发恐慌，导致私家车主及公交运营商超量加油所致，绝非国内燃油储备不足。官方敦促民众理性消费，强调国家能源安全在该特殊时期仍有保障。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#政策",
-      "#交通",
-      "#经济"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thailand_fuel_reserve_statement_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -467,16 +323,8 @@
     "desc_original": "The Department of Public Administration has blocked the People's Party (PP) from using its digital ID verification system, after the party's membership database was hacked.",
     "summary_cn": "由于人民党（People's Party）的党员数据库遭到黑客攻击并发生数据泄露，泰国行政厅已紧急封禁该党访问国家数字身份核验系统的权限。此举旨在防止政治团体关联的敏感数据进一步外泄，反映出泰国政府在政党数字化管理中对网络安全风险的严厉态度。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#政策",
-      "#安全"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "thailand_pp_party_data_breach_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -491,15 +339,8 @@
     "desc_original": "The House of Representatives on Sunday elected Bhumjaithai's Sophon Zaram as speaker, with 289 votes, defeating People's Party list MP Parit Wacharasindhu, who received 123. ",
     "summary_cn": "泰国下议院于周日投票选出新任议长，来自泰自豪党（Bhumjaithai）的索蓬（Sophon Zaram）以289票当选。他击败了仅获得123票的人民党（People's Party）比例代表巴立（Parit Wacharasindhu）。此次选举巩固了执政联盟在议会中的主导地位。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "Bangkok",
-    "tags": [
-      "#政策"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "thailand_house_speaker_election_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -516,16 +357,8 @@
     "title_cn": "泰缅边境美索（Mae Sot）加油站因燃油耗尽暂停服务",
     "summary_cn": "2026年3月15日，位于达府（Tak）泰缅边境的美索（Mae Sot）县多家加油站因燃油耗尽被迫暂停营业。受价格上涨和需求激增影响，大量货车、农用车及私家车在12号亚洲公路沿线排起长龙，引发严重交通拥堵。当地警方已介入疏导交通。此供应短缺主要受边境贸易波动及价格预期影响，短时间内当地用油压力巨大。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "美索（Mae Sot）",
-    "tags": [
-      "#经济",
-      "#交通"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "mae_sot_fuel_shortage_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -542,16 +375,8 @@
     "title_cn": "以色列籍男子在甲米（Krabi）涉私设大麻提取工厂被捕",
     "summary_cn": "3月14日，甲米（Krabi）警方在赛泰区（Sai Thai）破获一处大型违法大麻提取工厂，并逮捕一名以色列籍男子。行动中多部门联合执法，查获了大量工厂化生产设备。该设施被指控未经许可生产并销售大麻提取物，违反了泰国当前对大麻及其提取物的严格监管规定，此类行为即便在大麻合法化调整背景下仍属刑事犯罪。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "甲米（Krabi）",
-    "tags": [
-      "#安全",
-      "#政策"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "krabi_cannabis_raid_israeli_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -568,16 +393,8 @@
     "title_cn": "洛坤府（Nakhon Si Thammarat）两男子因在保护区猎杀豪猪被捕",
     "summary_cn": "2026年3月15日凌晨，泰国洛坤府（Nakhon Si Thammarat）兰萨加县（Lan Saka）执法人员在考龙山国家森林公园捕获两名盗猎者。行动中缴获豪猪尸体和枪支。此次联合行动由“虎王”特遣队（Phaya Suea）及国家公园人员发起。泰国法律对保护动物盗猎行为处罚严厉，此次捕获旨在震慑非法野生动物交易及对保护区环境的破坏。",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "洛坤府（Nakhon Si Thammarat）",
-    "tags": [
-      "#安全",
-      "#环境"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "thailand_poaching_arrest_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -594,16 +411,8 @@
     "title_cn": "副总理阿努廷（Anutin）保证泰国燃油储备充足，呼吁民众节约能源",
     "summary_cn": "3月15日，泰国副总理（原标题提及总理或因来源误指阿努廷角色）阿努廷（Anutin Charnvirakul）在议会表示，尽管全球局势不稳，但泰国燃油储备充足，不会出现短缺。包括Thai Oil、Bangchak在内的主要贸易商已确认供应稳定。阿努廷同时强调将继续向老挝维持油类出口，并呼吁民众节约能源。此举旨在稳定国内物价预期及商业信心。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "曼谷（Bangkok）",
-    "tags": [
-      "#经济",
-      "#政策"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thailand_fuel_security_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -620,15 +429,8 @@
     "title_cn": "宋卡府（Songkhla）警方追捕一名涉嫌公然猥亵的黑衣摩托车手",
     "summary_cn": "3月15日，宋卡府沙道县（Sadao）警方接到两名女性报案，称遭到一名摩的司机尾随并公然进行猥亵行为。嫌疑人特征为肤色较深、身材瘦高、佩戴黑色口罩，骑摩托车在Ban P及植物检疫站附近出没。警方目前正在根据线索进行搜捕。鉴于该地区靠近边境商业区，提醒在泰南游玩及生活的女性加强警惕，注意出行安全。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "宋卡府萨道县（Sadao）",
-    "tags": [
-      "#安全"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "songkhla_indecency_manhunt_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -645,16 +447,8 @@
     "url": "https://thethaiger.com/news/pattaya/pattaya-massage-worker-surrenders-japanese-tourist",
     "date": "2026-03-15T09:20:50+00:00",
     "importance": "P1",
-    "section_hint": "pattaya",
-    "location_detail": "Nong Prue, Bang Lamung",
-    "tags": [
-      "#安全",
-      "#旅游"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "pattaya_robbery_japanese_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -671,16 +465,8 @@
     "url": "https://thethaiger.com/news/pattaya/foreign-woman-injured-fall-pattaya-hotel",
     "date": "2026-03-15T08:43:09+00:00",
     "importance": "P2",
-    "section_hint": "pattaya",
-    "location_detail": "Nong Prue, Bang Lamung",
-    "tags": [
-      "#安全",
-      "#旅游"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "pattaya_hotel_fall_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -697,17 +483,8 @@
     "url": "https://thethaiger.com/news/phuket/two-thai-women-filmed-brawling-phuket-street",
     "date": "2026-03-15T08:05:43+00:00",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "Soi Bangla, Patong, Phuket",
-    "tags": [
-      "#旅游",
-      "#夜生活",
-      "#安全"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "phuket_street_fight_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -724,17 +501,8 @@
     "url": "https://thethaiger.com/news/national/german-tourist-dies-in-bike-crash-at-phayaos-triple-heaven-spot",
     "date": "2026-03-15T08:00:55+00:00",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "Chiang Muan, Phayao",
-    "tags": [
-      "#安全",
-      "#交通",
-      "#旅游"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "phayao_bike_crash_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -751,16 +519,8 @@
     "url": "https://www.pattayamail.com/news/pattaya-music-festival-2026-returns-to-jomtien-beach-this-weekend-539166",
     "date": "3 days ago",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "Jomtien Beach, Pattaya",
-    "tags": [
-      "#旅游",
-      "#经济"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "pattaya_music_festival_2026_03",
-    "status": "pending",
     "origin": "brave",
     "added_date": "2026-03-16"
   },
@@ -770,16 +530,8 @@
     "desc_original": "The Pattaya Music Festival 2026, themed around the city's rhythmic coastal energy, continues to draw large crowds eager for live music against the scenic backdrop of Jomtien Beach. With more weekends ahead—including upcoming stops at Koh Larn and Lan Pho Na Klua Public Park—the festival is set to keep the beats going strong all month long.",
     "summary_cn": "2026年芭提雅（Pattaya）音乐节第二周在中天海滩（Jomtien Beach）成功举办。活动融合了滨海风情与现代音乐，吸引了大量市民和游客现场观演。作为贯穿全月的音乐盛事，活动接下来还将移至格兰岛（Koh Larn）和纳库阿兰坡公共公园（Lan Pho Na Klua Public Park）举办，旨在通过文化艺术活动持续带动当地旅游经济。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "中天海滩 Jomtien Beach",
-    "tags": [
-      "#旅游",
-      "#夜生活"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "pattaya_music_festival_2026_03",
-    "status": "pending",
     "source": "Thailand music festival concert Bangkok ",
     "url": "https://thepattayanews.com/2026/03/14/pattaya-music-festival-rocks-jomtien-beach-on-week-two/",
     "origin": "brave",
@@ -791,16 +543,8 @@
     "desc_original": "The Pattaya Music Festival 2026 continued to draw massive crowds during its second week, with top Thai artists lighting up the stage at Jomtien Beach on the evening of March 14th, 2026.",
     "summary_cn": "2026年3月14日晚，芭提雅音乐节进入第二周高潮，众多泰国顶级艺人在中天海滩（Jomtien Beach）登台献艺。活动吸引了数千名乐迷到场，现场气氛热烈。作为芭提雅市政府推广城市形象的重点项目，此类大型免费音乐会有效地提振了当地特别是夜间服务的消费需求。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "中天海滩 Jomtien Beach",
-    "tags": [
-      "#旅游",
-      "#夜生活"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "pattaya_music_festival_2026_03",
-    "status": "pending",
     "source": "Thailand music festival concert Bangkok ",
     "url": "https://thepattayanews.com/2026/03/15/photo-tour-pattaya-music-festival-week-two-on-jomtien-beach-attracts-thousands-of-fans/",
     "origin": "brave",
@@ -812,16 +556,8 @@
     "desc_original": "Wuttisak says the city is fully prepared to host the final weekend of the Pattaya Music Festival 2026 at Lan Pho Naklua Public Park and invites residents and tourists to join the celebrations.",
     "summary_cn": "芭提雅副市长 Wuttisak 表示，市府已为2026年芭提雅音乐节在兰坡纳库阿公共公园（Lan Pho Naklua Public Park）举办的收官周活动做好了全面准备。该区域作为芭提雅的老城区和传统社区中心，将在音乐节期间迎来大量客流，政府旨在通过此举均衡发展城市南北区域的旅游热度。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "纳库阿 Lan Pho Naklua",
-    "tags": [
-      "#旅游",
-      "#交通"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "pattaya_music_festival_2026_03",
-    "status": "pending",
     "source": "Thailand music festival concert Bangkok ",
     "url": "https://www.pattayamail.com/news/pattaya-prepares-lan-pho-naklua-park-for-final-weekend-of-pattaya-music-festival-2026-538698",
     "origin": "brave",
@@ -833,15 +569,8 @@
     "desc_original": "Thailand is preparing for nationwide celebrations for Songkran 2026, which will take place from April 13–15, with major events organised across the country as well as extended \"Wan Lai\" festivals in Chon Buri province.",
     "summary_cn": "泰国正紧锣密鼓地筹备2026年宋干节（泼水节）全国庆典。官方定于4月13日至15日举行核心活动。值得关注的是，春武里府（Chon Buri）的部分地区将举行特有的“万莱（Wan Lai）”传统延长活动。这对于驻泰华人及游客安排出行，避开拥堵或加入庆典具有极高的参考价值。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "春武里 Chon Buri",
-    "tags": [
-      "#旅游"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thailand_songkran_2026_guide",
-    "status": "pending",
     "source": "Thailand fireworks Songkran New Year cel",
     "url": "https://www.nationthailand.com/news/tourism/40063676",
     "origin": "brave",
@@ -853,16 +582,8 @@
     "desc_original": "In 2026, Songkran will take place from April 13 to April 15, bringing vibrant cultural traditions, religious rituals, and massive street celebrations across Thailand. Whether you're planning to explore bustling cities like Bangkok or cultural ...",
     "summary_cn": "2026年宋干节将于4月13日至15日举行，该节日现已被联合国教科文组织认定。活动不仅包含著名的打水仗街头狂欢，还涉及各地的宗教仪式和传统文化表演。曼谷（Bangkok）等大城市将实施阶段性道路封锁以供群众庆祝。建议在泰人士提前关注交通规划。 ",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "曼谷 Bangkok",
-    "tags": [
-      "#旅游",
-      "#交通"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thailand_songkran_2026_guide",
-    "status": "pending",
     "source": "Thailand fireworks Songkran New Year cel",
     "url": "https://voyeglobal.com/songkran-festival-2026-thailand-water-festival/",
     "origin": "brave",
@@ -876,16 +597,8 @@
     "desc_original": "While most of Thailand celebrates Songkran for three days, Pattaya is famous for extending the celebration even longer.",
     "summary_cn": "随着2026年泰国泼水节（Songkran）临近，本指南详述了各地的庆祝特色。虽然泰国大部分地区通常进行为期三天的庆祝，但芭提雅（Pattaya）因其独特的“婉莱节”（Wan Lai）传统而闻名，庆祝活动通常会延长约一周。游客可在芭提雅体验到更持久且疯狂的泼水狂欢，是体验泰国传统新年氛围的最佳目的地之一。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "Pattaya",
-    "tags": [
-      "#旅游",
-      "#政策"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thailand_songkran_guide_2026",
-    "status": "pending",
     "added_date": "2026-03-16",
     "url": "https://etravelsim.com/blogs/updates/best-places-to-celebrate-songkran-in-thailand",
     "source": "Thailand fireworks Songkran New Year cel",
@@ -900,15 +613,8 @@
     "desc_original": "Bangkok's art scene in 2026 doesn't just feel bigger, it feels more usable. New spaces are acting less like quiet showrooms and more like public rooms for the city. That shift is shaping a fresh kind of \"Thai-ness,\" one that can hold ...",
     "summary_cn": "2026年曼谷（Bangkok）艺术界正经历变革，其规模不仅在扩大，更向实用化转型。新型艺术空间不再是传统的静谧展厅，而是演变为城市的公共客房。这种转变正在塑造一种全新的“泰式风格”，通过空间互动让传统艺术与现代都市生活深度融合。这标志着泰国文化叙事开始强调人与社区的交互体验。",
     "importance": "P3",
-    "section_hint": "bangkok",
-    "location_detail": "Bangkok",
-    "tags": [
-      "#旅游"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "bangkok_art_scene_shift_2026",
-    "status": "pending",
     "added_date": "2026-03-16",
     "url": "https://www.chiangraitimes.com/lifestyles/new-art-waves-influencing-traditions-in-thailand/",
     "source": "Bangkok Pattaya art exhibition museum cu",
@@ -923,16 +629,8 @@
     "desc_original": "Day 3: Nong Nooch Tropical Botanical Garden: Spend the day exploring the gardens and cultural shows. Day 4: Sanctuary of Truth: Visit the stunning wooden temple and learn about traditional Thai craftsmanship. Day 5: Coral Island (Koh Larn): Take a day trip to Coral Island for snorkeling and beach relaxation. Day 6: Pattaya Floating Market: Experience local foods and crafts at the floating market. Day 7: Art in Paradise: Have fun with interactive 3D art exhibits.",
     "summary_cn": "本指南针对2026年芭提雅（Pattaya）旅游提供详细建议，涵盖东芭乐园（Nong Nooch Tropical Botanical Garden）、真理圣殿（Sanctuary of Truth）及格兰岛（Koh Larn）潜水。攻略还包括芭提雅水上市场的美食体验及3D美术馆的互动展出。为游客在泰国东部沿海地区的深度游提供了结构化的路线参考。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "Pattaya",
-    "tags": [
-      "#旅游",
-      "#交通"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "pattaya_travel_guide_2026",
-    "status": "pending",
     "added_date": "2026-03-16",
     "url": "https://itinerary.expert/thailand/eastern-thailand/pattaya/",
     "source": "Bangkok Pattaya art exhibition museum cu",
@@ -947,16 +645,8 @@
     "desc_original": "Explore Dib Bangkok, a new contemporary art museum in a converted warehouse – its inaugural exhibition is showcasing works by 40 artists until August 3.",
     "summary_cn": "曼谷（Bangkok）新兴当代艺术馆 Dib Bangkok 由旧仓库改造而成，迅速成为热门文化地标。目前该馆正举办开幕展览，汇集了40位艺术家的力作，展览将持续至8月3日。该馆的出现丰富了曼谷的城市艺术版图，不仅是旧建筑再利用的典范，也为曼谷旅游提供了多元文化目的地选择。",
     "importance": "P2",
-    "section_hint": "bangkok",
-    "location_detail": "Dib Bangkok",
-    "tags": [
-      "#旅游",
-      "#经济"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "dib_bangkok_museum_opening_2026",
-    "status": "pending",
     "added_date": "2026-03-16",
     "url": "https://www.scmp.com/magazines/style/lifestyle/leisure/article/3346293/why-modern-art-museum-dib-bangkok-must-visit-destination-thailand",
     "source": "Bangkok Pattaya art exhibition museum cu",
@@ -971,16 +661,8 @@
     "desc_original": "HortEx - 2026 is happening on Wed 20 May 2026 from 9:00 AM onwards at Bangkok International Trade & Exhibition Centre (BITEC)",
     "summary_cn": "2026年 HortEx 国际园艺展确定将于2026年5月20日上午9点起在曼谷国际贸易展览中心（BITEC）拉开帷幕。作为该地区重要的专业展会，HortEx 旨在展示先进的种植技术与园艺趋势。此次展会将吸引全球业内人士及投资者关注曼谷，对于促进当地商务旅游和农业技术交流具有重要意义。",
     "importance": "P2",
-    "section_hint": "bangkok",
-    "location_detail": "Bangkok International Trade & Exhibition Centre (BITEC)",
-    "tags": [
-      "#经济",
-      "#基建"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "hortex_bangkok_bitec_2026",
-    "status": "pending",
     "added_date": "2026-03-16",
     "url": "https://allevents.in/bangkok/all",
     "source": "Bangkok Pattaya art exhibition museum cu",
@@ -995,19 +677,12 @@
     "date": "3 days ago",
     "source": "Thailand shopping festival fair expo Ban",
     "origin": "brave",
-    "tags": [
-      "#经济"
-    ],
     "weight": 1,
     "added_date": "2026-03-16",
     "desc_original": "The expo will be held from March 11-13, 2026, at the Ministry of Commerce and will feature 135 companies with export-potential products.",
     "title_cn": "泰国走向全球：商务部举办 2026 年国际贸易促进厅出口博览会 (DITP EXPO)",
     "summary_cn": "泰国商务部于2026年3月11日至13日在商务部总部举办出口博览会。此项盛事汇集了135家具有出口潜力的泰国企业，展示优质泰国制造产品。该展会旨在推动泰国产品走向国际市场，提升品牌知名度，并作为泰国出口战略的重要窗口，吸引潜在的国际买家和合作伙伴，展示泰国在全球贸易中的竞争力。",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "暖武里府 Nonthaburi",
-    "event_id": "thailand_ditp_expo_2026",
-    "status": "pending",
     "time_sensitive": true,
     "expires_date": "2026-03-31"
   },
@@ -1019,19 +694,12 @@
     "date": "6 days ago",
     "source": "Thailand shopping festival fair expo Ban",
     "origin": "brave",
-    "tags": [
-      "#旅游"
-    ],
     "weight": 1,
     "added_date": "2026-03-16",
     "desc_original": "\"Everything I buy I want to pick with care.\" Appropriately enough, his love of vintage was handed down to him by his father and he has turned the often dusty shopping format into a retail festival held at warehouses, rooftops and car parks across the Thai capital. Roughly 15,000 people attend his ticketed fairs, which run into the evening with DJ sets and plenty of drinks.",
     "title_cn": "曼谷跳蚤市场：揭秘泰国蓬勃发展的复古时尚热潮",
     "summary_cn": "曼谷曼谷(Bangkok)正掀起一股复古购物浪潮。创业者们将传统陈旧的跳蚤市场转型为时尚零售盛典，地点涵盖仓库、楼顶和停车场。此类市集通过收票入场形式，结合DJ表演和餐饮，单场吸引约1.5万名访客。这一趋势反映了泰国年轻人消费观念的转变，不再单纯追求快时尚，而是更看重具有传承感和个性的二手选物，极大地丰富了曼谷的夜生活场景。",
     "importance": "P3",
-    "section_hint": "bangkok",
-    "location_detail": "曼谷 Bangkok",
-    "event_id": "bangkok_vintage_flea_market_boom",
-    "status": "pending",
     "time_sensitive": false,
     "expires_date": "2026-04-15"
   },
@@ -1043,20 +711,12 @@
     "date": "1 week ago",
     "source": "Thailand shopping festival fair expo Ban",
     "origin": "brave",
-    "tags": [
-      "#旅游",
-      "#政策"
-    ],
     "weight": 1,
     "added_date": "2026-03-16",
     "desc_original": "Known as the Thai New Year, Songkran is celebrated with water fights, traditional rituals, and a joyful atmosphere. Bangkok has become the heart of the festivities, attracting visitors from around the world.",
     "title_cn": "2026 曼谷泼水节：泰国最具盛名的传统新年庆典",
     "summary_cn": "宋干节（Songkran）即泰国新年，将于2026年4月如期举行。曼谷作为庆祝活动的核心区域，融合了激烈的街头水战、传统的祈福仪式及热烈的新年氛围，吸引着全球游客。随着泰国政府持续强化“泼水节”作为软实力的推广，曼谷各大热门地点如考山路、是隆路等将举办大规模文化活动。游客需注意交通管制及安全守则。",
     "importance": "P1",
-    "section_hint": "bangkok",
-    "location_detail": "曼谷 Bangkok",
-    "event_id": "thailand_songkran_festival_2026",
-    "status": "pending",
     "time_sensitive": true,
     "expires_date": "2026-03-31"
   },
@@ -1068,19 +728,12 @@
     "date": "1 week ago",
     "source": "Bangkok Pattaya art exhibition museum cu",
     "origin": "brave",
-    "tags": [
-      "#旅游"
-    ],
     "weight": 1,
     "added_date": "2026-03-16",
     "desc_original": "For travellers seeking artistic inspiration, MOCA Bangkok offers one of the city's most impressive collections of Thai contemporary art. With multiple gallery floors showcasing modern masterpieces, the museum provides a fascinating insight ...",
     "title_cn": "曼谷艺术季：本季热门艺术、音乐与生活体验指南",
     "summary_cn": "本季曼谷为寻求艺术灵感的游客提供了丰富选择。其中，曼谷当代艺术馆（MOCA Bangkok）作为亮点，展出了泰国最令人震撼的当代艺术藏品。该馆多层展厅陈列了众多现代艺术大师之作，为大众提供了了解泰国社会演变和文化深度的窗口。此外，市内还有多场音乐与沉浸式体验活动，增强了曼谷作为东南亚艺术枢纽的地位。",
     "importance": "P3",
-    "section_hint": "bangkok",
-    "location_detail": "恰度恰县 Chatuchak",
-    "event_id": "bangkok_art_music_season_2026",
-    "status": "pending",
     "time_sensitive": false,
     "expires_date": "2026-04-15"
   },
@@ -1092,20 +745,12 @@
     "date": "2 days ago",
     "source": "Thailand shopping festival fair expo Ban",
     "origin": "brave",
-    "tags": [
-      "#旅游",
-      "#经济"
-    ],
     "weight": 1,
     "added_date": "2026-03-16",
     "desc_original": "Keywords: Thailand tourism trends 2026, value over volume Thailand, longer stays Thailand, neighborhood tourism Bangkok, respectful travel Thailand, wellness tourism Thailand, Thai food tourism, Maha Songkran World Water Festival, Tomorrowland ...",
     "title_cn": "文化转型重塑 2026 泰国未来：从追求数量向追求品质转型",
     "summary_cn": "2026年泰国旅游业正经历深刻转型，重心由“游客数量”转向“消费价值”。行业关键词包括长效停留、社区深度游及康养旅游。大宋干世界泼水节和Tomorrowland音乐节等超级IP被视为吸引高净值人群的关键。政府正推动更有责任感的旅游方式，鼓励游客探索曼谷小众社区。这一举措旨在提升旅游整体收入，平衡各府经济发展，并保护当地文化资源。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "event_id": "thailand_tourism_transformation_2026",
-    "status": "pending",
     "time_sensitive": false,
     "expires_date": "2026-04-15"
   },
@@ -1115,16 +760,8 @@
     "summary_cn": "“2026年泰国爱猫展”（Thailand Cat Lovers Fair 2026）将于3月27日至29日在曼谷暖武里府的 IMPACT 展览中心举行。本届展会规模宏大，亮点包括5种泰国神圣猫种的评选大赛，现场设有超过150个展位，提供各类宠物用品和趣味活动，被誉为年度最受关注的猫友盛会。猫咪爱好者不仅能购物，还能深入了解泰国本土猫文化。",
     "desc_original": "Watch the contest of 5 sacred Thai cat breeds, enjoy fun activities, and shop from more than 150 booths from 27-29 March 2026. Prepare yourself for the biggest cat lover festival of the year, returning as Thailand Cat Lovers Fair 2026, this ...",
     "importance": "P3",
-    "section_hint": "bangkok",
-    "location_detail": "IMPACT Muang Thong Thani",
-    "tags": [
-      "#旅游",
-      "#美食"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thailand_cat_fair_2026",
-    "status": "pending",
     "source": "Thailand shopping festival fair expo Ban",
     "url": "https://en.thairath.co.th/lifestyle/life/2919698",
     "origin": "brave",
@@ -1136,16 +773,8 @@
     "summary_cn": "根据权威研究机构 Gartner 的最新预测，在人工智能计算基础设施投资的强力牵引下，泰国2026年的IT总支出预计将达到近1.1万亿泰铢，同比增长8.36%。这一增长反映了泰国在数字化转型及高科技产业领域的发力。随着企业纷纷布局AI应用，相关软件、硬件及咨询服务的市场需求正呈现爆发式增长。",
     "desc_original": "IT spending in Thailand is expected to reach almost 1.1 trillion baht in 2026, up 8.36% year-on-year, thanks to artificial intelligence (AI) infrastructure investment, according to the latest forecast by business tech and insight firm Gartner.",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#基建"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "thai_it_spending_forecast_2026",
-    "status": "pending",
     "source": "Bangkok Post",
     "url": "https://www.bangkokpost.com/business/general/3215764/ai-boom-drives-tech-investment-surge",
     "origin": "rss",
@@ -1157,17 +786,8 @@
     "summary_cn": "为应对能源危机并落实紧急节能措施，泰国政府部门开始推行临时性的居家办公（WFH）政策。分析师指出，该政策的出台导致通勤人数减少，直接导致公共交通板块（如轨道交通）及户外广告传媒股在股市上承受短期抛售压力。此举显示了政府在能源管理方面的决心，但也引发了对服务业市场活跃度的担忧。",
     "desc_original": "Thailand's temporary work-from-home (WFH) policy for government agencies, introduced as part of emergency energy-saving measures, creates short-term pressure on transport and out-of-home media stocks, according to analysts.",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#政策",
-      "#经济",
-      "#交通"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thailand_wfh_policy_impact_2026",
-    "status": "pending",
     "source": "Bangkok Post",
     "url": "https://www.bangkokpost.com/business/general/3215849/remote-work-move-weighs-on-transport-media-stocks",
     "origin": "rss",
@@ -1179,16 +799,8 @@
     "summary_cn": "泰国证券交易所（SET）披露，今年1月外国投资者持有的泰股总额创下6.11万亿泰铢的历史新高，占市场总市值的37.1%。这一数据表明尽管全球局势波动，但海外资本对泰国重点蓝筹股及转型产业依然持有乐观预期。外资比例的提升进一步增强了泰国资本市场的国际影响力，体现了泰股在全球资产配置中的吸引力。",
     "desc_original": "Foreign investor holdings in Thai stocks reached a new record high of 6.11 trillion baht in January, representing 37.1% of the total market capitalisation and reflecting growing overseas interest in the equities market, says the Stock Exchange of Thailand (SET).",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#中泰"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "thai_set_foreign_holdings_record_2026",
-    "status": "pending",
     "source": "Bangkok Post",
     "url": "https://www.bangkokpost.com/business/investment/3215844/foreign-holdings-of-thai-stocks-peak",
     "origin": "rss",
@@ -1200,16 +812,8 @@
     "summary_cn": "随着中东地区冲突持续升级，当地安全局势急剧恶化。根据泰国劳工部的最新统计，已有近1000名身在冲突涉及区域的泰籍劳工表达了回国意向。泰国政府目前正密切监控局势，协调相关部门制定撤侨或安置计划，优先确保公民生命安全。此前，中东地区一直是泰国熟练工及农业劳务输出的主要目的地之一。",
     "desc_original": "Nearly 1,000 Thai workers in the Middle East have expressed a desire to return home amid the escalating regional conflict, according to the Ministry of Labour.",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#安全",
-      "#政策"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thai_workers_middle_east_return_2026",
-    "status": "pending",
     "source": "Bangkok Post",
     "url": "https://www.bangkokpost.com/thailand/general/3215614/1000-eager-to-return-home",
     "origin": "rss",
@@ -1228,17 +832,8 @@
     "title_cn": "泰国证监会 SEC 对币圈名人 Acme Traderist 采取法律行动",
     "summary_cn": "泰国证券交易委员会（SEC）重申，已对知名加密货币推广人 Worawat Narknawdee（绰号 Acme Traderist）采取法律行动。此举是针对公众近期对该案的高度关注以及多位受害者提出的额外控诉。SEC 指出已介入调查其是否存在违规交易及欺诈行为。该事件再次为在泰投资虚拟货币的群体敲响警钟，提示监管机构正加强对数字资产领域的执法力度。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#政策",
-      "#安全"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "thailand_sec_crypto_legal_2026",
-    "status": "pending",
     "added_date": "2026-03-16"
   },
   {
@@ -1254,17 +849,8 @@
     "title_cn": "泰能源巨头 PTG 响应政府号召 计划提高成品油储备以应对地缘冲突",
     "summary_cn": "泰国 PT 加油站运营商 PTG Energy Plc 宣布，计划扩大其成品油储备。此举旨在响应泰国政府的指示，在当前美伊冲突持续引发地缘政治动荡的背景下，确保国家能源安全。公司表示将通过优化仓储与供应链，防止燃油供应中断。对于在泰自驾的居民及旅游业而言，此储备计划有助于稳定燃油供应，缓解国际局势对本地油价的直接冲击。",
     "importance": "P1",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#交通",
-      "#经济",
-      "#政策"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thailand_energy_security_ptg_2026",
-    "status": "pending",
     "added_date": "2026-03-16"
   },
   {
@@ -1280,17 +866,8 @@
     "title_cn": "泰国快递巨头引入 AI 技术 优化路径以降低物流成本",
     "summary_cn": "泰国两大快递服务商 KEX Express（原 Kerry）和极兔速递 J&T Express 正加大人工智能（AI）与路径优化技术的投入。在燃料价格波动剧烈且电商需求激增的背景下，通过 AI 技术减少能源浪费并提升车队运营效率，旨在维持服务稳定性并降低物流成本。这标志着泰国物流业正向数字化转型，长期看有助于维持电商包裹配送费用的竞争力。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#交通",
-      "#经济",
-      "#中泰"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "thailand_delivery_ai_tech_2026",
-    "status": "pending",
     "added_date": "2026-03-16"
   },
   {
@@ -1306,16 +883,8 @@
     "title_cn": "2026 芭提雅音乐节本周末移师中天海滩 Jomtien Beach",
     "summary_cn": "2026 芭提雅音乐节（Pattaya Music Festival）将于本周末（3月13-14日）进入第二周的演出。演出舞台已在中天海滩（Jomtien Beach）沿线准备就绪，届时将有多位泰国当红 T-POP、摇滚和嘻哈艺人登台献艺。活动面向本地居民及游客免费开放，预计将吸引大量人潮前往海滨享受音乐之夜。游客需注意活动期间海滩路的相关交通管制及人流高峰。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "Jomtien Beach",
-    "tags": [
-      "#旅游",
-      "#夜生活"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "pattaya_music_fest_jomtien_2026",
-    "status": "pending",
     "added_date": "2026-03-16"
   },
   {
@@ -1331,16 +900,8 @@
     "title_cn": "泰国酒店协会东部分会换届 Watcharapong 博士当选新任主席",
     "summary_cn": "泰国酒店协会（THA）东部分会于3月12日在芭提雅 The Zign Pool Villa 酒店召开了第十次全体大会。会上，Watcharapong Khunpluem 博士正式当选为该会新任主席。此次会议汇集了泰国东部地区的酒店从业者及政府代表，共同探讨该地区旅游住宿业的发展策略。新主席的任命预示着芭提雅及东部省份酒店业在后疫情时代的品牌升级与推广将迎来新领导方针。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "Naklua, Pattaya",
-    "tags": [
-      "#旅游",
-      "#经济"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "tha_eastern_election_2026",
-    "status": "pending",
     "added_date": "2026-03-16"
   },
   {
@@ -1354,16 +915,8 @@
     "desc_original": "Members of the Pattaya City Council discuss plans to improve the water supply system for Koh Larn during a council meeting addressing ongoing shortages affecting residents and tourism businesses on the island. PATTAYA, Thailand – Members of the Pattaya City Council have raised concerns over ongoing water shortages on Koh Larn, urging faster progress on a long-delayed project to develop a new water production system for the island. During the meeting, council member Wasan Sukkee questioned the a",
     "summary_cn": "芭提雅（Pattaya）市议会正在积极推进在阁兰岛（Koh Larn）建设新供水系统的计划，旨在解决长期困扰海岛居民及旅游业者的淡水短缺问题。市议员 Wasan Sukkee 在会议上敦促相关部门加快这个曾被推迟的制水项目进度。随着阁兰岛游客人数回升，稳定的基础建设已成为维持当地旅游吸引力和民生的迫切需求。",
     "importance": "P2",
-    "section_hint": "pattaya",
-    "location_detail": "阁兰岛 Koh Larn",
-    "tags": [
-      "#基建",
-      "#旅游"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "pattaya_koh_larn_water_project_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -1378,17 +931,8 @@
     "desc_original": "Officers from Immigration Bureau Division 3 conduct a raid at a residence in Pattaya after an investigation uncovered an alleged online operation selling laughing gas and illegal vape products. PATTAYA, Thailand – Immigration police have raided a residence in Pattaya, arresting a Chinese national suspected of running an online operation selling laughing gas and illegal vape products to local youths, while also seizing a firearm, ammunition, and a large quantity of contraband. According to Pol.",
     "summary_cn": "泰国移民局第3分局警方近日对芭提雅（Pattaya）一处住宅进行了突击搜查，捣毁了一个由中国籍人员运营的非法网络销售团伙。该团伙涉嫌向当地青少年出售笑气和非法电子烟。行动中。警方不仅缴获了大量违禁品和弹药，还搜出了一支枪支。发言人 Parinya Klinkesorn 上校表示，此举是严厉打击外籍人员在泰从事非法商业活动的一部分。",
     "importance": "P1",
-    "section_hint": "pattaya",
-    "location_detail": "芭提雅市中心",
-    "tags": [
-      "#安全",
-      "#中泰",
-      "#政策"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "pattaya_chinese_vape_raid_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -1403,16 +947,8 @@
     "desc_original": "Workers clear encroached structures along Soi Pornprapanimit 2 as Pattaya City Hall moves forward with a project to reclaim public land and widen the road. PATTAYA, Thailand – City workers in Pattaya have begun clearing encroached public land in a neighborhood road expansion project, after a city official respectfully paid tribute to a roadside spirit shrine before its removal. A short video shared on Facebook by Thipchai Rattanaveerathavorn, Director of Infrastructure Development at Pattaya Ci",
     "summary_cn": "为配合 Soi Pornprapanimit 2 路的拓宽工程，芭提雅（Pattaya）市政厅开始清理占用的公共土地。基础设施发展司司长 Thipchai 在正式拆除路边神龛前，按照当地习俗举行了传统祭拜仪式（合十礼）以示尊重。此项工程旨在收回被非法占用的空间，改善当地交通拥堵情况，体现了行政效率与民俗传统的平衡。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "Soi Pornprapanimit 2",
-    "tags": [
-      "#基建",
-      "#交通"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "pattaya_road_expansion_shrine_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -1427,16 +963,8 @@
     "desc_original": "Rescue workers and police inspect the scene of a fatal motorcycle collision on a railway-side road near Wat Tham Samakkhi, where a big bike rider was killed after a high-speed crash late at night in Pattaya. PATTAYA, Thailand – A big bike rider was killed in a late-night motorcycle collision near a railway crossing in Pattaya , after reportedly crashing at high speed into another motorcycle. Rescue volunteers from the Sawang Boriboon were alerted to the accident at around 10:00 p.m. on March 11",
     "summary_cn": "3月11日晚10点左右，芭提雅（Pattaya）靠近 Wat Tham Samakkhi 寺的铁路旁道路发生一起惨烈交通事故。一名大排量重型机车骑士疑似因高速行驶，追尾撞上另一辆摩托车，导致该骑士当场死亡。警方及救援组织（Sawang Boriboon）已介入调查。由于该路段夜间视线不佳且紧靠铁路线，警方再次提醒民众注意行车安全。",
     "importance": "P3",
-    "section_hint": "pattaya",
-    "location_detail": "Wat Tham Samakkhi 附近",
-    "tags": [
-      "#交通",
-      "#安全"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "pattaya_bigbike_crash_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -1451,16 +979,8 @@
     "desc_original": "CCTV footage shows the helmeted suspect pointing a handgun at staff inside a gold shop in Nakhon Pathom, forcing employees to place gold necklaces into a bag during a robbery that netted about 46 baht weight of gold. PATTAYA, Thailand – A lone gunman walked calmly into a gold shop inside a shopping mall in Nakhon Pathom, pointed a gun at staff, forced them to bag gold necklaces, fired a shot while escaping, and rode off on a motorcycle with about 46 baht weight of gold worth roughly 3.5 millio",
     "summary_cn": "佛统府（Nakhon Pathom）一家商场内的金店遭遇武装抢劫。监控显示，一名戴头盔的独行歹徒持枪闯入，强迫员工将金项链装袋，并在逃跑时开枪示威。此案共损失约46铢重的金饰（约合350万泰铢）。歹徒随后骑摩托车逃离。目前泰国警方正在调取周边监控进行跨府追捕。近期泰国金店劫案频发，警方呼吁商家提高安全警觉。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "佛统府 Nakhon Pathom",
-    "tags": [
-      "#安全",
-      "#经济"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "nakhon_pathom_gold_heist_2026",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -1477,18 +997,10 @@
     "title_cn": "中东局势升级忧虑：泰国航空局（CAAT）密切监控航司燃油供应及价格走势",
     "summary_cn": "泰国民航局（CAAT）于3月11日召集泰国国家石油公司（PTT）及邦查克公司（Bangchak）等多家能源巨头开会，评估中东紧张局势对全球油价及泰国航空燃油供应的潜在影响。鉴于能源价格波动可能推升航空成本，民航局正与相关部门紧密配合，确保航油储备稳定。此举旨在预防因地缘政治风险导致泰国航空业受挫。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "",
-    "tags": [
-      "#经济",
-      "#交通"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
     "origin": "rss",
-    "added_date": "2026-03-16",
-    "event_id": "thailand_jet_fuel_monitoring_2026",
-    "status": "pending"
+    "added_date": "2026-03-16"
   },
   {
     "id": "e53bda433842",
@@ -1503,18 +1015,10 @@
     "title_cn": "夏季风暴预警：芭提雅（Pattaya）及上部地区将迎来雷雨及强风天气",
     "summary_cn": "泰国气象局发布预警，受夏季风暴影响，泰国上部地区预计在未来24小时内出现剧烈雷阵雨、短时强风甚至降雨天气。目前正值3月旅游旺季，尽管芭提雅（Pattaya）海滨游客众多，但气象部门已将沿海城市列入不稳定天气监测范围，提醒游客及当地民众警惕突发风暴，注意出行安全与财产防护。",
     "importance": "P1",
-    "section_hint": "pattaya",
-    "location_detail": "Pattaya",
-    "tags": [
-      "#旅游",
-      "#环境"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
     "origin": "rss",
-    "added_date": "2026-03-16",
-    "event_id": "pattaya_summer_storm_2026_03",
-    "status": "pending"
+    "added_date": "2026-03-16"
   },
   {
     "id": "056ba54892da",
@@ -1529,18 +1033,10 @@
     "title_cn": "诺博地产（Noble Development）坚持“轻资产”战略，聚焦合资开发及公寓租赁业务",
     "summary_cn": "泰国上市开发商诺博地产（Noble Development）计划通过寻求新项目合资伙伴，以及吸引投资者购买其去年底推出的公寓租赁单位，来进一步推行其“轻资产”战略。此举旨在优化财务结构，通过租赁托管等新业务模式提升资产周转效率，而非过度依赖直接持有房产，反映了泰国房企在当前环境下的策略转型。",
     "importance": "P2",
-    "section_hint": "property",
-    "location_detail": "Bangkok",
-    "tags": [
-      "#房产",
-      "#经济"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
     "origin": "rss",
-    "added_date": "2026-03-16",
-    "event_id": "noble_development_asset_light_2026",
-    "status": "pending"
+    "added_date": "2026-03-16"
   },
   {
     "id": "7cba56721930",
@@ -1555,17 +1051,10 @@
     "title_cn": "阿努廷（Anutin）确认政府执政联盟名单落定，排除民主党与 Klatham 党",
     "summary_cn": "由于泰国政治格局调整，现任高层阿努廷（Anutin Charnvirakul）证实政府执政联盟最终名单已确定。核心骨干为泰自豪党（Bhumjaithai）与为泰党（Pheu Thai），并辅以若干小党派协助。此次表态明确排除了民主党（Democrats）及 Klatham 党入阁的可能性，标志着本届政府内阁权力的进一步巩固。 ",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "Bangkok",
-    "tags": [
-      "#政策"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
     "origin": "rss",
-    "added_date": "2026-03-16",
-    "event_id": "thailand_political_coalition_2026_03",
-    "status": "pending"
+    "added_date": "2026-03-16"
   },
   {
     "id": "65fafcf1fd21",
@@ -1580,18 +1069,10 @@
     "title_cn": "国民党（People's Party）就成员激光代码（Laser ID）数据泄露事件致歉",
     "summary_cn": "泰国国民党（People's Party）近期因在收集党员信息时泄露了其激光代码（Laser ID）发生数据违规，公开向受访成员致歉。由于激光代码是泰国身份证背面关键验证码，该信息泄露会导致身份信息被盗风险激增，并可能引发电信诈骗及个人资产误操作。党部承诺将加强网络安全维护，防止此类风险蔓延。",
     "importance": "P2",
-    "section_hint": "thailand",
-    "location_detail": "Bangkok",
-    "tags": [
-      "#安全",
-      "#政策"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
     "origin": "rss",
-    "added_date": "2026-03-16",
-    "event_id": "pp_party_data_breach_2026",
-    "status": "pending"
+    "added_date": "2026-03-16"
   },
   {
     "id": "249acf126bbd",
@@ -1606,16 +1087,8 @@
     "title_cn": "正义力量党 (Klatham Party) 下议员涉嫌网络赌博，获准 100 万铢保释",
     "summary_cn": "周四，泰国刑事法院批准了正义力量党 (Klatham Party) 下议员春纳普 (Chonnaput Naksua) 的保释申请。保释金设定为 100 万泰铢，并禁止其出境。目前调查人员正在进一步收集证据，以查明该议员与某网络赌博犯罪团伙之间的具体关联。此案因涉及现任立法人员，引发了泰国各界对政界反腐和廉洁性的高度关注。",
     "importance": "P3",
-    "section_hint": "thailand",
-    "location_detail": "曼谷",
-    "tags": [
-      "#政策",
-      "#安全"
-    ],
     "time_sensitive": false,
     "expires_date": "2026-04-15",
-    "event_id": "thailand_klatham_mp_gambling_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   },
@@ -1632,17 +1105,8 @@
     "title_cn": "曼谷 (Bangkok) 入围 2030 年世界骄傲节 (WorldPride) 申办首轮，与伦敦及巴塞罗那竞争",
     "summary_cn": "泰国官员表示，曼谷已正式进入 2030 年全球 LGBTQ+ 盛事“世界骄傲节” (WorldPride) 的首轮申办名单，与之竞争的城市包括伦敦和巴塞罗那。3 月 11 日，旅游体育部常务秘书纳特里亚 (Natthriya Thaweevong) 主持了统筹会议，协调旅游局及会展局 (TCEB) 等部门优化提案，旨在通过举办国际化大型多元文化活动，提升泰国的全球旅游竞争力及包容性形象。",
     "importance": "P2",
-    "section_hint": "bangkok",
-    "location_detail": "曼谷",
-    "tags": [
-      "#旅游",
-      "#经济",
-      "#基建"
-    ],
     "time_sensitive": true,
     "expires_date": "2026-03-31",
-    "event_id": "thailand_worldpride_2030_bid_2026_03",
-    "status": "pending",
     "origin": "rss",
     "added_date": "2026-03-16"
   }
