@@ -26,14 +26,27 @@ print(f"[Step 2] LAST_DATE = {LAST_DATE}")
 # Step 3: Fetch RSS
 print(f"[Step 3] Fetching RSS from {LAST_DATE} to {TODAY}...")
 result = subprocess.run(
-    [sys.executable, 'scripts/fetch_rss.py', '--start', LAST_DATE, '--end', TODAY, 
+    [sys.executable, 'scripts/fetch_rss.py', '--start', LAST_DATE, '--end', TODAY,
      '-o', f'data/issues/{TODAY}-raw.json'],
     capture_output=True,
     text=True
 )
-print(result.stdout)
+# fetch_rss 把所有诊断（[OK]/[WARN]）打到 stderr，必须显式打印
+if result.stdout:
+    print(result.stdout)
+if result.stderr:
+    print(result.stderr)
 if result.returncode != 0:
-    print(f"Error: {result.stderr}", file=sys.stderr)
+    print(f"Error: fetch_rss returncode={result.returncode}", file=sys.stderr)
+    sys.exit(1)
+
+# fetch_rss 即便 4 源全失败也 exit 0，必须自己校验 items 数
+with open(f'data/issues/{TODAY}-raw.json') as f:
+    raw_total = json.load(f).get('total', 0)
+print(f"[Step 3] Raw items fetched: {raw_total}")
+if raw_total == 0:
+    print("Error: fetch_rss returned 0 items — likely network/firewall blocked all RSS sources. "
+          "Check the [WARN] lines above.", file=sys.stderr)
     sys.exit(1)
 
 # Step 4: Flatten
