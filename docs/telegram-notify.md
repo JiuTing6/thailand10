@@ -44,12 +44,12 @@ TG_CHAT_ID=12345678
 ### 1. 写入 secrets 文件
 不进 git，权限 600：
 ```bash
-mkdir -p ~/.config/thailand10
-cat > ~/.config/thailand10/env <<'EOF'
+mkdir -p ~/.config/claude-notify
+cat > ~/.config/claude-notify/env <<'EOF'
 export TG_BOT_TOKEN=1234567890:ABC...
 export TG_CHAT_ID=12345678
 EOF
-chmod 600 ~/.config/thailand10/env
+chmod 600 ~/.config/claude-notify/env
 ```
 
 ### 2. 项目 `.gitignore` 加一条
@@ -90,7 +90,7 @@ if __name__ == "__main__":
 
 ### 4. 验证
 ```bash
-source ~/.config/thailand10/env
+source ~/.config/claude-notify/env
 python3 scripts/notify.py "test ping"
 ```
 Telegram 收到 `[Thailand10] test ping` → 配置成功。
@@ -120,12 +120,17 @@ except Exception as e:
 
 ---
 
-## 四、云端 Routine 注入 secrets
+## 四、本地 cron 注入 secrets
 
-云端 Claude Code Routine 跑 runner 时，需要把 `TG_BOT_TOKEN` / `TG_CHAT_ID` 注入环境。具体机制等 PLAN.md Step 6 首次创建 routine 时确认（与 `GH_TOKEN` 同样处理）。备选思路：
-1. Routine 配置里支持 env / secret 字段 → 直接填
-2. 不支持的话，把 secrets base64 编码后写在 routine prompt 里（次优，但 routine 配置本身已是 private）
-3. 兜底：在 GitHub repo 里加一个 `.github/secrets.enc`（gpg 加密），routine 启动时解密 → 不推荐，引入额外密钥管理
+> **Note 2026-05-04**：原本规划的"云端 Claude Code Routine 注入 secrets"方案已不适用——云端 routine 因 RSS 源 IP 屏蔽问题被弃用（详见 [`ingest-architecture.md`](ingest-architecture.md)）。Daily ingest 现在跑在 Mac mini 本地 cron。
+
+cron wrapper 脚本（如 `scripts/cron_ingest.sh`）只需 source 同一份共享 env：
+
+```bash
+[ -f ~/.config/claude-notify/env ] && source ~/.config/claude-notify/env
+```
+
+放在 `cd $REPO` 之后、跑主程序之前即可。所有 Claude Code 负责的项目都 source 这同一份文件，token/chat_id 全局唯一。
 
 ---
 
@@ -133,7 +138,7 @@ except Exception as e:
 
 未来其他 Claude Code 项目要发通知时**复用此 bot，不再申请新的**。规约：
 
-1. **共享 secrets 文件**：路径建议提升到 `~/.config/claude-notify/env`（Thailand10 落地后再迁移），各项目 source 同一份
+1. **共享 secrets 文件**：路径就是 `~/.config/claude-notify/env`，各项目 source 同一份
 2. **前缀必须区分**：每个项目调 `notify()` 时改 `project=` 参数
 3. **频率自律**：bot 是共享通道，单项目别一天发几十条；通知应该是"事件级"（成功/失败/异常），不是"日志级"
 4. **失败静音问题**：notify 本身不抛异常（见上面实现），所以通知挂了不影响主流程。代价是 token 失效你不会知道——建议每月手动 ping 一次确认还活着
@@ -179,7 +184,7 @@ Telegram 支持 `setWebhook`：消息进来 → POST 到指定 URL。
 ## 七、维护 & 故障排查
 
 ### 常用操作
-- **撤换 token**（疑似泄露）：BotFather → `/mybots` → 选 bot → API Token → Revoke current token → 拿新 token → 改 `~/.config/thailand10/env`
+- **撤换 token**（疑似泄露）：BotFather → `/mybots` → 选 bot → API Token → Revoke current token → 拿新 token → 改 `~/.config/claude-notify/env`
 - **改 bot 显示名/头像**：BotFather → `/mybots` → 选 bot → Edit Bot
 - **暂停通知**（不删 bot）：临时把 `TG_BOT_TOKEN` 改成空字符串，notify 会静默跳过
 - **彻底删 bot**：BotFather → `/mybots` → 选 bot → Delete Bot
@@ -200,10 +205,10 @@ Telegram 支持 `setWebhook`：消息进来 → POST 到指定 URL。
 - [ ] BotFather 创建新 bot，拿到 token
 - [ ] 给新 bot 发过至少一条消息
 - [ ] `getUpdates` 拿到 chat_id
-- [ ] token + chat_id 写入 `~/.config/thailand10/env`，权限 600
+- [ ] token + chat_id 写入 `~/.config/claude-notify/env`，权限 600
 - [ ] `.gitignore` 包含 `.env*`
 - [ ] `scripts/notify.py` 落地
 - [ ] 本机手动 `python3 scripts/notify.py test ping` 收到消息
 - [ ] runner 末尾调 `notify()` 集成完成
-- [ ] 云端 routine 创建时把 `TG_BOT_TOKEN` / `TG_CHAT_ID` 作为 secret 注入
-- [ ] 首次云端 routine 跑通，Telegram 收到一条 `[Thailand10] ✅ ingest done ...`
+- [ ] cron wrapper（如 `scripts/cron_ingest.sh`）开头 source `~/.config/claude-notify/env`
+- [ ] 首次本地 cron 跑通，Telegram 收到一条 `[Thailand10] ✅ ingest done ...`
