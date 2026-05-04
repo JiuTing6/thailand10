@@ -1,5 +1,11 @@
 # Thailand10 迁移计划
 
+> **UPDATE 2026-05-04**：本文档作为历史记录保留。原计划"由 Claude Code Routines（云端）调度"在 2026-05-04 试运行后**放弃**——Anthropic 数据中心出站 IP 被全部 4 个 RSS 源 403 屏蔽（Cloudflare ASN 黑名单）。
+>
+> **当前实际架构**：Mac mini 本地 cron 9:30am，详见 [`docs/ingest-architecture.md`](ingest-architecture.md)。
+
+---
+
 **目标**：将 `bangkok-news` 项目从 OpenClaw 环境完整搬迁到本机 Claude Code 环境，所有模型调用改用 Claude Max 订阅 token，由 Claude Code Routines（云端）调度。
 
 ## ⚠️ 成本铁律（最重要，绝对不能违反）
