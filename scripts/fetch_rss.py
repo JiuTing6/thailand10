@@ -99,7 +99,13 @@ def fetch_rss(source):
         # 使用 requests，自动处理 SSL 验证 + certifi 管理
         response = requests.get(
             source["url"],
-            headers={"User-Agent": "Bangkok-News-Bot/1.0"},
+            headers={
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                              "AppleWebKit/537.36 (KHTML, like Gecko) "
+                              "Chrome/126.0.0.0 Safari/537.36",
+                "Accept": "application/rss+xml, application/xml, text/xml, */*;q=0.8",
+                "Accept-Language": "en-US,en;q=0.9",
+            },
             timeout=10
         )
         response.raise_for_status()  # 抛出 HTTP 错误
