@@ -139,23 +139,31 @@ if result.returncode != 0:
 
 # Step 8.5: Push to GitHub
 print(f"[Step 8.5] Pushing to GitHub...")
-result = subprocess.run(
-    ['git', 'add', 'data/news_pool.json'],
-    capture_output=True,
-    text=True
-)
-result = subprocess.run(
-    ['git', 'commit', '-m', f'data: ingest {TODAY}'],
-    capture_output=True,
-    text=True
-)
-result = subprocess.run(
-    ['git', 'push'],
-    capture_output=True,
-    text=True
-)
-print(result.stdout)
-if result.returncode != 0:
-    print(f"Git Warning: {result.stderr}")
+
+def run_git(args, allow_empty_commit_skip=False):
+    r = subprocess.run(['git', *args], capture_output=True, text=True)
+    if r.stdout:
+        print(r.stdout)
+    if r.returncode != 0:
+        if allow_empty_commit_skip and 'nothing to commit' in (r.stdout + r.stderr):
+            print("[Step 8.5] Nothing to commit — skipping push.")
+            return None
+        print(f"Git Error ({' '.join(args)}): {r.stderr}", file=sys.stderr)
+        sys.exit(1)
+    return r
+
+# Configure identity (no-op locally if already set; required in fresh cloud container)
+run_git(['config', 'user.email', 'routine@thailand10.local'])
+run_git(['config', 'user.name', 'Thailand10 Routine'])
+
+run_git(['add',
+         'data/news_pool.json',
+         'data/last_ingest.txt',
+         f'data/issues/{TODAY}-translated.json'])
+
+commit_result = run_git(['commit', '-m', f'data: ingest {TODAY}'],
+                        allow_empty_commit_skip=True)
+if commit_result is not None:
+    run_git(['push', 'origin', 'HEAD:main'])
 
 print(f"\n✅ Pipeline completed successfully!")
