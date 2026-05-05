@@ -6,14 +6,14 @@
 
 Daily ingest 跑在 Ade 的 **Mac mini 本地**（24/7 不关机）。
 
-- **触发器**：launchd（macOS 原生），plist 在 `~/Library/LaunchAgents/com.thailand10.ingest.plist`
+- **触发器**：launchd（macOS 原生），plist 在 `~/Library/LaunchAgents/com.thailand10.daily-ingest.plist`，Label `com.thailand10.daily-ingest`
   - `StartCalendarInterval`：每天 09:30 本地时间
   - 关键属性：Mac 在 09:30 处于睡眠 → launchd **唤醒后自动补跑**（cron 不会，这是当初从 cron 迁过来的核心理由）
   - 装载/拆卸：`launchctl load -w <plist>` / `launchctl unload <plist>`
-  - 查看状态：`launchctl print gui/$(id -u)/com.thailand10.ingest`
-- **wrapper 脚本**：[`scripts/cron_ingest.sh`](../scripts/cron_ingest.sh) — 设置 PATH/locale，cd 到 repo，跑 `ingest_runner.py`，输出 tee 到日志（脚本名沿用 cron 时代命名，内容与触发器无关，没必要改名引入 churn）
+  - 查看状态：`launchctl print gui/$(id -u)/com.thailand10.daily-ingest`
+- **wrapper 脚本**：[`scripts/thailand10-daily-ingest.sh`](../scripts/thailand10-daily-ingest.sh) — 设置 PATH/locale，cd 到 repo，跑 `ingest_runner.py`，输出 tee 到日志
 - **日志位置**：
-  - 主日志：`logs/ingest-cron-YYYYMMDD-HHMMSS.log`（wrapper 内 tee 出，每次一份）
+  - 主日志：`logs/ingest-YYYYMMDD-HHMMSS.log`（wrapper 内 tee 出，每次一份）
   - launchd 自带 stdout/stderr：`logs/launchd-stdout.log` / `logs/launchd-stderr.log`（追加，主要兜底用）
   - 三类日志都 gitignored
 - **Pipeline 入口**：[`ingest_runner.py`](../ingest_runner.py) —— 抓 RSS → filter → dedup → translate → pool merge → git commit/push
@@ -90,7 +90,7 @@ log show --predicate '(process == "sandboxd")' ...
 
 ## launchd 注意事项
 
-1. **plist 改动后必须 reload**：`launchctl unload ~/Library/LaunchAgents/com.thailand10.ingest.plist && launchctl load -w ~/Library/LaunchAgents/com.thailand10.ingest.plist`
-2. **检查最近一次执行**：`launchctl print gui/$(id -u)/com.thailand10.ingest` 看 `last exit code`、`last exit reason`、`runs`
+1. **plist 改动后必须 reload**：`launchctl unload ~/Library/LaunchAgents/com.thailand10.daily-ingest.plist && launchctl load -w ~/Library/LaunchAgents/com.thailand10.daily-ingest.plist`
+2. **检查最近一次执行**：`launchctl print gui/$(id -u)/com.thailand10.daily-ingest` 看 `last exit code`、`last exit reason`、`runs`
 3. **launchd 自身的 stdout/stderr 日志**：在 `logs/launchd-stdout.log` / `logs/launchd-stderr.log`，与 wrapper 的主日志互补——wrapper 没启动时的失败信息会落在这里
 4. **不要把 plist 放进 git** —— 路径里硬编码了 `/Users/Ade/...`，对其他机器无意义。如需在另一台 Mac 部署，从此文档中模板化重新生成

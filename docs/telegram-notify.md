@@ -127,7 +127,7 @@ except Exception as e:
 
 > **Note 2026-05-04**：原本规划的"云端 Claude Code Routine 注入 secrets"方案已不适用——云端 routine 因 RSS 源 IP 屏蔽问题被弃用（详见 [`ingest-architecture.md`](ingest-architecture.md)）。Daily ingest 现在跑在 Mac mini 本地 cron。
 
-cron wrapper 脚本（如 `scripts/cron_ingest.sh`）只需 source 同一份共享 env：
+launchd/cron wrapper 脚本（如 `scripts/thailand10-daily-ingest.sh`）只需 source 同一份共享 env：
 
 ```bash
 [ -f ~/.config/claude-notify/env ] && source ~/.config/claude-notify/env
@@ -238,5 +238,5 @@ Telegram 支持 `setWebhook`：消息进来 → POST 到指定 URL。
 - [ ] `scripts/notify.py` 落地
 - [ ] 本机手动 `python3 scripts/notify.py test ping` 收到消息
 - [ ] runner 末尾调 `notify()` 集成完成
-- [ ] cron wrapper（如 `scripts/cron_ingest.sh`）开头 source `~/.config/claude-notify/env`
-- [ ] 首次本地 cron 跑通，Telegram 收到一条 `[Thailand10] ✅ ingest done ...`
+- [ ] launchd/cron wrapper（如 `scripts/thailand10-daily-ingest.sh`）开头 source `~/.config/claude-notify/env`
+- [ ] 首次本地触发跑通，Telegram 收到一条 `[Thailand10] ✅ ingest done ...`
