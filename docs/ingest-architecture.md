@@ -60,14 +60,25 @@ Daily ingest 跑在 Ade 的 **Mac mini 本地**（24/7 不关机）。
 
 短期内本地 cron 足够，不打算重新云化。
 
-## 未完成 TODO
+## 通知策略（2026-05-08 落地）
 
-- **监控 + 告警**（用户明确表示不会去看 log，自动化必须自己 alert）
-  - `scripts/monitor_ingest.sh`：cron 9:50am 跑（晚于 ingest 20 分钟）
-  - 检查当天 `logs/ingest-cron-YYYYMMDD-*.log` 是否存在 + 末尾是否含 `✅ Pipeline completed successfully!`
-  - 缺失或失败 → 发 Telegram 告警（用 [`docs/telegram-notify.md`](telegram-notify.md) 描述的 bot）
-  - 成功则静默
-  - 前置：Telegram bot token 应在 `~/.config/thailand10/env`，但 2026-05-04 检查时 mini 上该路径不存在，需先把配置补上
+极简两条：每次 ingest 跑完发一条 Telegram，成功 ✅ + 失败 ❌ 二选一。
+
+- **成功**：`[Thailand10] ✅ ingest done YYYY-MM-DD: +N 条，pool 共 M，耗时 Xm Ys`
+- **失败**：`[Thailand10] ❌ ingest FAILED YYYY-MM-DD: <ExceptionType>: <短消息>`
+
+实现位置：
+- 通知 helper：[`scripts/notify.py`](../scripts/notify.py)（urllib，零依赖）。配置见 [`docs/telegram-notify.md`](telegram-notify.md)。
+- Hook：[`ingest_runner.py`](../ingest_runner.py) 的 `if __name__ == "__main__"` 顶层 try/except。任何 step 抛 `RuntimeError` → except 发失败 ping → re-raise（保留非零退出码给 launchd）。`main()` 末尾发成功 ping。
+- Secrets 注入：[`scripts/thailand10-daily-ingest.sh`](../scripts/thailand10-daily-ingest.sh) 在 `cd $REPO` 之后 `source ~/.config/claude-notify/env`（launchd 的子进程默认 env 极少）。
+
+### 为什么不做 watchdog
+
+**不写** `monitor_ingest.sh`，**不加**第二个 launchd job。原因：
+
+- 每天必收一条 ✅ → "沉默 = 异常" 由用户自己识别。这就是终极告警层。
+- 加 watchdog 只能补"runner 根本没启动"这一类盲点，但它本身也跑在同一台 Mac 同一个 launchd 下——和 ingest 一起挂的概率不可忽略。再叠 watchdog2 是无尽递归。
+- 用户明确选择"不收到通知就主动来问 Claude"，把可靠性最后一层外包给人脑而不是再写一层代码。
 
 ## 为什么不用 cron（2026-05-05 教训）
 

@@ -19,6 +19,10 @@ mkdir -p "$REPO/logs"
 
 cd "$REPO" || { echo "cd $REPO failed" >&2; exit 1; }
 
+# Telegram notify secrets (TG_BOT_TOKEN / TG_CHAT_ID). Shared across all
+# Claude-managed projects. notify.py 在缺失时静默跳过，不会拖累主流程。
+[ -f "$HOME/.config/claude-notify/env" ] && source "$HOME/.config/claude-notify/env"
+
 {
   echo "=== daily ingest start: $(date) ==="
   echo "PATH=$PATH"
