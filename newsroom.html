@@ -456,14 +456,19 @@ const MONTH_LABELS = {
   "05": "五月", "06": "六月", "07": "七月", "08": "八月",
   "09": "九月", "10": "十月", "11": "十一月", "12": "十二月",
 };
+const MONTH_LABELS_EN = {
+  "01": "Jan", "02": "Feb", "03": "Mar", "04": "Apr",
+  "05": "May", "06": "Jun", "07": "Jul", "08": "Aug",
+  "09": "Sep", "10": "Oct", "11": "Nov", "12": "Dec",
+};
 
 function periodLabel(p) {
   if (p === "recent") return "最近30天";
-  // 'YYYY-MM' → '四月'（同年省年份）+ '2025年三月'（跨年加年份）
+  // 同年：中文月份（'四月'）；跨年：'YY MMM'（'26 Dec'，紧凑省空间）
   const [year, month] = p.split("-");
   const thisYear = new Date().getFullYear().toString();
-  const monthZh = MONTH_LABELS[month] || month;
-  return year === thisYear ? monthZh : `${year}年${monthZh}`;
+  if (year === thisYear) return MONTH_LABELS[month] || month;
+  return `${year.slice(2)} ${MONTH_LABELS_EN[month] || month}`;
 }
 
 function periodURL(p) {
