@@ -1,6 +1,6 @@
 # Daily Ingest 架构
 
-**最后更新**：2026-05-04
+**最后更新**：2026-05-10
 
 ## 当前架构（本地 launchd）
 
@@ -59,6 +59,24 @@ Daily ingest 跑在 Ade 的 **Mac mini 本地**（24/7 不关机）。
 3. **混合架构**：Mac mini 抓 RSS → push raw JSON 到 GitHub → cloud routine 读 GitHub raw URL 跑后续 LLM 处理。代价：架构复杂度 +1，仍有本地依赖
 
 短期内本地 cron 足够，不打算重新云化。
+
+## Pool / 月度归档（2026-05-10 重构）
+
+新闻数据有两份**平行的物化视图**：
+
+- **`data/news_pool.json`** — 滚动 30 天窗口（按 `added_date`）。前端默认看到的就是这个。
+- **`data/archive/YYYY-MM.json`** — 按自然月分桶，永不丢数据。每次 ingest 把当日新条目同时追加到当月归档。
+- **`data/archive/index.json`** — 可用月份列表（降序），前端用它生成时段 tab。
+
+两份视图自然重叠：4 月的条目今天既在 pool 里（在 30 天窗口内），也在 `archive/2026-04.json` 里。重叠是 feature 不是 bug——`最近30天` 是滚动窗口（跨月），`四月`是绝对自然月，两种视角都成立。
+
+旧机制（每条新闻按 `time_sensitive` 分配 15/30 天 `expires_date`，超期直接从 pool 删除）已废弃。`translate.py` 的 prompt 不再生成这两个字段；旧条目里残留的 `expires_date` / `time_sensitive` 不再被读取，会被时间稀释掉。
+
+实现位置：
+- 写入：[`scripts/pool_merge.py`](../scripts/pool_merge.py) — 每次 ingest 同时写 pool（滚动 30 天）和当月归档；维护 `index.json`
+- Prompt：[`scripts/translate.py`](../scripts/translate.py) — 输出字段 `id, title_cn, summary_cn, importance`（去掉 `time_sensitive`、`expires_date`）
+- 一次性迁移：[`scripts/migrate_pool_to_archive.py`](../scripts/migrate_pool_to_archive.py) — 把现有 pool 按 `added_date[:7]` 拆成 `archive/YYYY-MM.json`，幂等可重跑
+- 前端：[`newsroom.html`](../newsroom.html) — 顶部 "时段" tab `[最近30天 | 五月 | 四月 | ...]`，懒加载（点了才 fetch 对应文件，结果缓存内存里）
 
 ## 通知策略（2026-05-08 落地）
 

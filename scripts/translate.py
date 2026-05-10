@@ -45,14 +45,10 @@ SYSTEM_PROMPT = """你是泰国华文新闻翻译专员。输入是一批英文/
 - P2：基建大项目、重大楼盘、重要经济数据、奇闻要案
 - P3：常规经济、促销活动、一般旅游资讯
 
-### time_sensitive / expires_date
-- time_sensitive: true = 有明确时效（政策生效日、活动截止日）；false = 时效中性
-- expires_date: time_sensitive=true → added_date+15天；false → added_date+30天
-
 ## 输出要求
-**只输出每条的 id 字段 + 新生成的 5 个字段**（不要回显原始 title/desc/source/url/origin/topic_tag/city_tag/relevance_score/lang/date 等任何输入字段，避免转义问题导致 JSON 失败）。
+**只输出每条的 id 字段 + 新生成的 3 个字段**（不要回显原始 title/desc/source/url/origin/topic_tag/city_tag/relevance_score/lang/date 等任何输入字段，避免转义问题导致 JSON 失败）。
 
-每条只需输出：id, title_cn, summary_cn, importance, time_sensitive, expires_date
+每条只需输出：id, title_cn, summary_cn, importance
 
 格式：{"items": [...]}，与输入条目一一对应，顺序不变。无代码块标记，无说明文字。
 

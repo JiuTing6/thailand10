@@ -384,6 +384,10 @@
       <span class="nr-count">显示 <strong id="visible-count">402</strong> 条</span>
     </div>
     <div class="nr-filter-row">
+      <span class="nr-filter-label">时段</span>
+      <div class="nr-filter-tags" id="period-bar"></div>
+    </div>
+    <div class="nr-filter-row">
       <span class="nr-filter-label">城市</span>
       <div class="nr-filter-tags" id="city-bar"></div>
     </div>
@@ -441,11 +445,63 @@ let activeCityTag = "";   // 当前选中城市（空=全部）
 let activeTopicTag = "";  // 当前选中主题（空=全部）
 let searchQ = "";
 
-// ── 从 pool.json 动态加载数据 ──
-fetch('data/news_pool.json')
-  .then(r => r.json())
-  .then(data => {
-    ALL_ITEMS = data;
+// 时段（period）：'recent' = 最近30天 (data/news_pool.json)；
+// 'YYYY-MM' = 月度归档 (data/archive/YYYY-MM.json)
+let activePeriod = "recent";
+const PERIOD_CACHE = {};   // period → items[]，懒加载缓存
+let ARCHIVE_MONTHS = [];   // index.json 内容，启动时拉
+
+const MONTH_LABELS = {
+  "01": "一月", "02": "二月", "03": "三月", "04": "四月",
+  "05": "五月", "06": "六月", "07": "七月", "08": "八月",
+  "09": "九月", "10": "十月", "11": "十一月", "12": "十二月",
+};
+
+function periodLabel(p) {
+  if (p === "recent") return "最近30天";
+  // 'YYYY-MM' → '四月'（同年省年份）+ '2025年三月'（跨年加年份）
+  const [year, month] = p.split("-");
+  const thisYear = new Date().getFullYear().toString();
+  const monthZh = MONTH_LABELS[month] || month;
+  return year === thisYear ? monthZh : `${year}年${monthZh}`;
+}
+
+function periodURL(p) {
+  return p === "recent" ? "data/news_pool.json" : `data/archive/${p}.json`;
+}
+
+async function loadPeriod(p) {
+  if (PERIOD_CACHE[p]) return PERIOD_CACHE[p];
+  const r = await fetch(periodURL(p));
+  if (!r.ok) throw new Error(`HTTP ${r.status}: ${periodURL(p)}`);
+  const data = await r.json();
+  PERIOD_CACHE[p] = data;
+  return data;
+}
+
+async function switchPeriod(p) {
+  activePeriod = p;
+  // 切 period 时不重置城市/主题/搜索筛选——延续用户当前过滤意图
+  try {
+    const grid = document.getElementById("news-grid");
+    grid.innerHTML = `<div style="padding:40px;color:#888;font-family:sans-serif">加载中…</div>`;
+    ALL_ITEMS = await loadPeriod(p);
+    rebuildFilterCounts();
+    render();
+  } catch (err) {
+    document.getElementById("news-grid").innerHTML =
+      `<div style="padding:40px;color:#c00;font-family:sans-serif">⚠️ 加载失败：${err.message}</div>`;
+  }
+}
+
+// 启动：并行拉 pool + archive index
+Promise.all([
+  loadPeriod("recent"),
+  fetch("data/archive/index.json").then(r => r.ok ? r.json() : []).catch(() => []),
+])
+  .then(([poolData, archiveMonths]) => {
+    ALL_ITEMS = poolData;
+    ARCHIVE_MONTHS = archiveMonths;
     initUI();
     render();
   })
@@ -456,35 +512,71 @@ fetch('data/news_pool.json')
 
 // ── 初始化 UI ──
 function initUI() {
-  // 更新时间戳
+  // 更新时间戳（一次性）
   const now = new Date();
   const bkkStr = now.toLocaleString("zh-CN", {
     timeZone: "Asia/Bangkok",
     year: "numeric", month: "2-digit", day: "2-digit",
     hour: "2-digit", minute: "2-digit"
   }).replace(/\//g, "-");
-  document.querySelector(".nr-meta").innerHTML =
-    `共 <strong id="total-count">${ALL_ITEMS.length}</strong> 条新闻<br>更新于 ${bkkStr} BKK`;
 
-  // 统计城市分布（动态计数）
+  // 时段 bar：[最近30天 | 五月 | 四月 | ...]
+  const periodBar = document.getElementById("period-bar");
+  periodBar.innerHTML = "";
+  const periods = ["recent", ...ARCHIVE_MONTHS];
+  periods.forEach(p => {
+    const btn = document.createElement("button");
+    btn.className = "tag-btn city";  // 复用 city 配色（强调风格）
+    btn.textContent = periodLabel(p);
+    btn.dataset.period = p;
+    if (p === activePeriod) btn.classList.add("active");
+    btn.onclick = () => {
+      periodBar.querySelectorAll(".tag-btn").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      switchPeriod(p);
+    };
+    periodBar.appendChild(btn);
+  });
+
+  // 城市 + 主题 bar：依赖当前 ALL_ITEMS，period 切换时重建
+  rebuildFilterCounts();
+
+  // 清除按钮（一次性绑定）
+  document.getElementById("clear-tags").onclick = () => {
+    activeCityTag = "";
+    activeTopicTag = "";
+    const cb = document.getElementById("city-bar");
+    const tb = document.getElementById("topic-bar");
+    cb.querySelectorAll(".tag-btn").forEach(b => b.classList.remove("active"));
+    cb.querySelector("[data-city='']")?.classList.add("active");
+    tb.querySelectorAll(".tag-btn").forEach(b => b.classList.remove("active"));
+    updateClearBtn();
+    render();
+  };
+
+  // meta 时间戳（period 切换时也更新条数 → 见 render()）
+  document.querySelector(".nr-meta").innerHTML =
+    `<span id="meta-count">共 <strong id="total-count">${ALL_ITEMS.length}</strong> 条</span><br>更新于 ${bkkStr} BKK`;
+}
+
+// 切 period 时重建城市/主题筛选 bar 的计数；选中状态尽量保留
+function rebuildFilterCounts() {
   const cityCounts = {};
   ALL_ITEMS.forEach(item => {
     const c = normCity(item);
     cityCounts[c] = (cityCounts[c] || 0) + 1;
   });
 
-  // 城市 bar：全部 + 已知城市（有数据时显示）+ 更多地区
   const cityBar = document.getElementById("city-bar");
   cityBar.innerHTML = "";
   const allCities = ["全部", ...KNOWN_CITIES];
   if (cityCounts[MORE_CITY_LABEL]) allCities.push(MORE_CITY_LABEL);
-
   allCities.forEach(label => {
-    const btn = document.createElement("button");
-    btn.className = "tag-btn city";
     const cityKey = label === "全部" ? "" : label;
     const count = label === "全部" ? ALL_ITEMS.length : (cityCounts[label] || 0);
-    if (count === 0 && label !== "全部") return; // 无数据的城市不显示
+    if (count === 0 && label !== "全部") return;
+    const btn = document.createElement("button");
+    btn.className = "tag-btn city";
     btn.textContent = label === "全部" ? `全部 ${count}` : `${label} ${count}`;
     btn.dataset.city = cityKey;
     if (cityKey === activeCityTag) btn.classList.add("active");
@@ -496,17 +588,19 @@ function initUI() {
     };
     cityBar.appendChild(btn);
   });
+  // 当前选中城市在新数据里若无对应按钮，回退到"全部"
+  if (activeCityTag && !cityBar.querySelector(`[data-city="${activeCityTag}"]`)) {
+    activeCityTag = "";
+    cityBar.querySelector("[data-city='']")?.classList.add("active");
+  }
 
-  // 主题 bar：固定10个
-  const topicBar = document.getElementById("topic-bar");
-  topicBar.innerHTML = "";
-  // 统计主题计数
   const topicCounts = {};
   ALL_ITEMS.forEach(item => {
     const t = item.topic_tag || "";
     if (t) topicCounts[t] = (topicCounts[t] || 0) + 1;
   });
-
+  const topicBar = document.getElementById("topic-bar");
+  topicBar.innerHTML = "";
   TOPIC_TAGS.forEach(tag => {
     const btn = document.createElement("button");
     btn.className = "tag-btn topic";
@@ -529,19 +623,9 @@ function initUI() {
     topicBar.appendChild(btn);
   });
 
-  // 清除按钮
-  document.getElementById("clear-tags").onclick = () => {
-    activeCityTag = "";
-    activeTopicTag = "";
-    cityBar.querySelectorAll(".tag-btn").forEach(b => b.classList.remove("active"));
-    cityBar.querySelector("[data-city='']")?.classList.add("active");
-    topicBar.querySelectorAll(".tag-btn").forEach(b => b.classList.remove("active"));
-    updateClearBtn();
-    render();
-  };
-
-  // 初始激活"全部"城市
-  cityBar.querySelector("[data-city='']")?.classList.add("active");
+  // 同步 meta 总数
+  const totalEl = document.getElementById("total-count");
+  if (totalEl) totalEl.textContent = ALL_ITEMS.length;
 }
 
 function updateClearBtn() {
