@@ -44,10 +44,26 @@ MAX_DESC = 1200
 
 RSS_SOURCES = [
     # 方案A精简 (2026-04-21): 保留核心3源 + 加 Pattaya Mail
+    # Bangkok Post 三源 (2026-05-31 扩覆盖)：各栏目最新 10 条，互相几乎不重叠
+    # （实测重合 0-1），合并约 28 条独立全高相关。RSS 无图，统一 og:image 补图。
+    # 跳过 news.xml —— 实测是国际/体育/旧闻 wire feed，泰国相关性极低。
     {
         "id": "bangkokpost_top",
         "name": "Bangkok Post",
-        "url": "https://www.bangkokpost.com/rss/data/topstories.xml"
+        "url": "https://www.bangkokpost.com/rss/data/topstories.xml",
+        "og_fallback": True  # RSS 无图，抓文章页 og:image 补图
+    },
+    {
+        "id": "bangkokpost_thailand",
+        "name": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/rss/data/thailand.xml",
+        "og_fallback": True
+    },
+    {
+        "id": "bangkokpost_business",
+        "name": "Bangkok Post",
+        "url": "https://www.bangkokpost.com/rss/data/business.xml",
+        "og_fallback": True
     },
     {
         "id": "thaiger",
@@ -149,6 +165,34 @@ def extract_image(item, desc_raw, content_raw):
                 return m.group(1)
     return ""
 
+
+# Bangkok Post RSS 不带任何图片字段（全站极简 feed），但文章页有标准
+# og:image。对 BKK 条目额外抓一次原文页补图。失败静默返回 ""，不影响主流程。
+_OG_IMAGE_RE = re.compile(
+    r'<meta[^>]+property=["\']og:image["\'][^>]+content=["\']([^"\']+)', re.I)
+_OG_IMAGE_RE2 = re.compile(
+    r'<meta[^>]+content=["\']([^"\']+)["\'][^>]+property=["\']og:image', re.I)
+
+
+def fetch_og_image(url):
+    """抓文章页的 og:image。仅用于 RSS 本身无图的源（如 Bangkok Post）。"""
+    try:
+        r = requests.get(
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                              "AppleWebKit/537.36 (KHTML, like Gecko) "
+                              "Chrome/126.0.0.0 Safari/537.36",
+            },
+            timeout=10,
+        )
+        if r.status_code != 200:
+            return ""
+        m = _OG_IMAGE_RE.search(r.text) or _OG_IMAGE_RE2.search(r.text)
+        return m.group(1) if m else ""
+    except Exception:
+        return ""
+
 def fetch_rss(source):
     items = []
     try:
@@ -204,6 +248,9 @@ def fetch_rss(source):
             desc = strip_html(content_raw) if content_raw else strip_html(desc_raw)
 
             image = extract_image(item, desc_raw, content_raw)
+            # RSS 无图的源（Bangkok Post）回退到抓原文页 og:image
+            if not image and source.get("og_fallback"):
+                image = fetch_og_image(link)
 
             items.append({
                 "id":      make_hash(title, link),
