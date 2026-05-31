@@ -39,6 +39,9 @@ else:
     DAYS_BACK = args.days if args.days else 4
     end_date = None
 
+# 正文最大保留长度（content:encoded / description 去 HTML 后截断）
+MAX_DESC = 1200
+
 RSS_SOURCES = [
     # 方案A精简 (2026-04-21): 保留核心3源 + 加 Pattaya Mail
     {
@@ -61,6 +64,33 @@ RSS_SOURCES = [
         "id": "pattayamail",
         "name": "Pattaya Mail",
         "url": "https://www.pattayamail.com/feed"
+    },
+    # Thairath 泰文大众媒体 (2026-05-31 加入)：分类滚动 feed，每个 20 条。
+    # business/money/scoop 慢速高价值低噪音；news 高速噪音多但补最近热点。
+    # 多 feed 间同 URL 文章由 main() 的 id 去重自动合并。
+    {
+        "id": "thairath_news",
+        "name": "Thairath",
+        "url": "https://www.thairath.co.th/rss/news",
+        "lang": "th"
+    },
+    {
+        "id": "thairath_business",
+        "name": "Thairath",
+        "url": "https://www.thairath.co.th/rss/business",
+        "lang": "th"
+    },
+    {
+        "id": "thairath_money",
+        "name": "Thairath",
+        "url": "https://www.thairath.co.th/rss/money",
+        "lang": "th"
+    },
+    {
+        "id": "thairath_scoop",
+        "name": "Thairath",
+        "url": "https://www.thairath.co.th/rss/scoop",
+        "lang": "th"
     },
 ]
 
@@ -91,7 +121,33 @@ def strip_html(text):
         return ""
     text = re.sub(r'<[^>]+>', ' ', text)
     text = re.sub(r'\s+', ' ', text)
-    return text.strip()[:600]
+    return text.strip()[:MAX_DESC]
+
+
+# Media RSS 命名空间（部分源用 media:content / media:thumbnail 给图）
+MEDIA_NS = "{http://search.yahoo.com/mrss/}"
+
+
+def extract_image(item, desc_raw, content_raw):
+    """从 RSS item 提取一张配图 URL（不下载，只取 URL）。
+    优先级：enclosure(image) → media:content/thumbnail → 正文首个 <img src>。
+    """
+    # 1. <enclosure type="image/*">（Thairath 用这个）
+    for enc in item.findall("enclosure"):
+        if (enc.get("type") or "").startswith("image") and enc.get("url"):
+            return enc.get("url")
+    # 2. media:content / media:thumbnail
+    for tag in (f"{MEDIA_NS}content", f"{MEDIA_NS}thumbnail"):
+        el = item.find(tag)
+        if el is not None and el.get("url"):
+            return el.get("url")
+    # 3. content:encoded / description 里的首个 <img src>（Thaiger/Pattaya Mail/头条）
+    for blob in (content_raw, desc_raw):
+        if blob:
+            m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', blob)
+            if m:
+                return m.group(1)
+    return ""
 
 def fetch_rss(source):
     items = []
@@ -140,12 +196,14 @@ def fetch_rss(source):
             if pub_date and pub_date < cutoff:
                 continue
 
-            desc = ""
-            if desc_el is not None and desc_el.text:
-                desc = strip_html(desc_el.text)
+            desc_raw = desc_el.text if (desc_el is not None and desc_el.text) else ""
             content_el = item.find("content:encoded", ns)
-            if content_el is not None and content_el.text:
-                desc = strip_html(content_el.text)[:600]
+            content_raw = content_el.text if (content_el is not None and content_el.text) else ""
+
+            # 正文：优先 content:encoded（全文），退到 description（摘要）
+            desc = strip_html(content_raw) if content_raw else strip_html(desc_raw)
+
+            image = extract_image(item, desc_raw, content_raw)
 
             items.append({
                 "id":      make_hash(title, link),
@@ -156,6 +214,7 @@ def fetch_rss(source):
                 "url":     link,
                 "date":    pub_date.isoformat() if pub_date else "",
                 "desc":    desc,
+                "image":   image,
                 "tags":    cats[:5]
             })
 

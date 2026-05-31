@@ -122,7 +122,7 @@ def main():
             if tid and tid in batch_by_id:
                 orig = batch_by_id[tid]
                 orig_clean = {k: v for k, v in orig.items() if k not in DEAD_FIELDS}
-                desc_original = (orig.get("desc") or "")[:500]
+                desc_original = (orig.get("desc") or "")[:1200]
                 merged = {**orig_clean, **new_fields, "desc_original": desc_original, "added_date": args.date}
                 results.append(merged)
             else:

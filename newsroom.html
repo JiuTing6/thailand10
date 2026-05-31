@@ -178,6 +178,15 @@
       box-shadow: 0 4px 16px rgba(0,0,0,0.1);
       border-color: #ccc;
     }
+    .nr-card-img {
+      width: calc(100% + 32px);
+      margin: -16px -16px 0;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px 8px 0 0;
+      background: var(--bg);
+      display: block;
+    }
     .nr-card-meta {
       display: flex;
       align-items: center;
@@ -301,6 +310,14 @@
     .modal-body {
       padding: 20px 24px 24px;
     }
+    .modal-image {
+      width: 100%;
+      max-height: 320px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 16px;
+      display: block;
+    }
     .modal-meta {
       font-family: var(--font-ui);
       font-size: 12px;
@@ -412,6 +429,7 @@
       <button class="modal-close" id="modal-close">✕</button>
     </div>
     <div class="modal-body">
+      <img class="modal-image" id="modal-image" alt="" referrerpolicy="no-referrer" style="display:none">
       <div class="modal-meta" id="modal-meta"></div>
       <div class="modal-summary" id="modal-summary"></div>
       <div class="modal-desc" id="modal-desc"></div>
@@ -697,7 +715,11 @@ function render() {
       cityTag ? `<span class="nr-card-tag city">${cityTag}</span>` : "",
       topicTag ? `<span class="nr-card-tag">${topicTag}</span>` : "",
     ].filter(Boolean).join("");
+    const imgHtml = item.image
+      ? `<img class="nr-card-img" src="${item.image}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'">`
+      : "";
     card.innerHTML = `
+      ${imgHtml}
       <div class="nr-card-meta">
         <span class="nr-card-source">${item.source || ""}</span>
         <span>${fmtDate(item.date, item.added_date)}</span>
@@ -715,6 +737,15 @@ function render() {
 // ── Modal ──
 function openModal(item) {
   document.getElementById("modal-title").textContent = item.title_cn || item.title || "";
+  const imgEl = document.getElementById("modal-image");
+  if (item.image) {
+    imgEl.src = item.image;
+    imgEl.style.display = "block";
+    imgEl.onerror = () => { imgEl.style.display = "none"; };
+  } else {
+    imgEl.removeAttribute("src");
+    imgEl.style.display = "none";
+  }
   document.getElementById("modal-meta").innerHTML = `
     <span><strong>${item.source || ""}</strong></span>
     <span>${fmtDate(item.date, item.added_date)}</span>
