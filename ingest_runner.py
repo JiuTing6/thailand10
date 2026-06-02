@@ -79,10 +79,12 @@ def main():
         pool = json.load(f)
     recent = [item for item in pool if item.get('added_date', '') >= cutoff]
     recent.sort(key=lambda x: x.get('added_date', ''), reverse=True)
-    excerpt = recent[:100]
+    # 窗口帽放大到 200：旧的 [:100] 会把名义"10天"砍到 ~2 天，跟进报道比不中。
+    # 200 ≈ 覆盖 ~4 天（50条/天），兼顾跨天去重命中率与 token 成本。
+    excerpt = recent[:200]
     with open(f'data/issues/{TODAY}-pool-excerpt.json', 'w') as f:
         json.dump(excerpt, f, ensure_ascii=False, indent=2)
-    print(f'Pool 摘录: {len(excerpt)} 条（10天内）')
+    print(f'Pool 摘录: {len(excerpt)} 条（10天内，上限200）')
 
     # Step 6a: Filter
     print(f"[Step 6a] Running Filter (Layer 1)...")
