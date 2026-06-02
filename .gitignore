@@ -13,3 +13,6 @@ data/issues/*-pool-excerpt.json
 data/issues/*-filtered.json
 data/issues/*-deduped.json
 # 注意：translated.json 和 news_pool.json 必须 commit
+
+# Claude Code 本地会话/worktree 缓存
+.claude/
