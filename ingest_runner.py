@@ -146,6 +146,7 @@ def main():
     run_git(['add',
              'data/news_pool.json',
              'data/last_ingest.txt',
+             'data/archive/',  # 月度归档物化文件，跨月时会新增/更新，必须一并提交
              f'data/issues/{TODAY}-translated.json'])
     commit_result = run_git(['commit', '-m', f'data: ingest {TODAY}'],
                             allow_empty_commit_skip=True)
