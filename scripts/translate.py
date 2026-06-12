@@ -9,7 +9,7 @@ Usage:
 import argparse
 import json
 import sys
-import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import date
 from pathlib import Path
 
@@ -21,6 +21,10 @@ from claude_call import call_claude, ClaudeCallError
 
 MODEL = "claude-haiku-4-5"
 BATCH_SIZE = 5
+MAX_WORKERS = 4  # 并发翻译批次数（底层并发 spawn claude -p；撞速率限制就调小）
+
+# 从原条目透传时剔除的死字段（避免 RSS 源的 tags 等渗入 pool）
+DEAD_FIELDS = {"section_hint", "location_detail", "event_id", "status", "tags"}
 
 
 SYSTEM_PROMPT = """你是泰国华文新闻翻译专员。输入是一批英文/泰文新闻条目（JSON数组），输出每条对应的中文字段。
@@ -84,12 +88,53 @@ def call_translate(items: list, added_date: str) -> list:
     sys.exit(f"❌ Unexpected response shape: {type(parsed).__name__} {str(parsed)[:200]}")
 
 
+def merge_batch(batch: list, translated: list, added_date: str) -> list:
+    """把模型回的新字段（id + title_cn/summary_cn/importance）merge 回原 batch 条目。
+
+    desc_original 由 python 机械截取（避免模型回显引号导致 JSON 失败）。
+    translated 为空（该批翻译失败/降级）时，原条目原样透传，靠 title_cn fallback 兜底。
+    """
+    out = []
+    batch_by_id = {it["id"]: it for it in batch}
+    matched_ids = set()
+    for new_fields in translated:
+        tid = new_fields.get("id") if isinstance(new_fields, dict) else None
+        if tid and tid in batch_by_id:
+            orig = batch_by_id[tid]
+            orig_clean = {k: v for k, v in orig.items() if k not in DEAD_FIELDS}
+            desc_original = (orig.get("desc") or "")[:1200]
+            out.append({**orig_clean, **new_fields, "desc_original": desc_original, "added_date": added_date})
+            matched_ids.add(tid)
+        else:
+            out.append({**new_fields, "added_date": added_date})
+    # 降级/漏译：模型没返回的原条目原样保留（title_cn fallback 会用 title 兜底）
+    for it in batch:
+        if it["id"] not in matched_ids:
+            orig_clean = {k: v for k, v in it.items() if k not in DEAD_FIELDS}
+            desc_original = (it.get("desc") or "")[:1200]
+            out.append({**orig_clean, "desc_original": desc_original, "added_date": added_date})
+    return out
+
+
+def process_batch(idx: int, batch: list, added_date: str) -> list:
+    """翻译一批 + merge，返回该批的 merged 条目列表。单批失败降级为原文透传。"""
+    try:
+        translated = call_translate(batch, added_date)
+    except ClaudeCallError as e:
+        print(f"⚠️  Batch {idx} 翻译失败，降级保留原文: {e}", file=sys.stderr)
+        translated = []
+    if translated and len(translated) != len(batch):
+        print(f"⚠️  Batch {idx} count mismatch: sent {len(batch)}, got {len(translated)}")
+    return merge_batch(batch, translated, added_date)
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", required=True, help="Path to deduped JSON")
     parser.add_argument("--output", required=True, help="Path to write translated JSON")
     parser.add_argument("--date", default=str(date.today()), help="YYYY-MM-DD (default: today)")
     parser.add_argument("--batch", type=int, default=BATCH_SIZE, help="Items per API call")
+    parser.add_argument("--workers", type=int, default=MAX_WORKERS, help="并发批次数")
     args = parser.parse_args()
 
     with open(args.input) as f:
@@ -97,37 +142,23 @@ def main():
 
     print(f"📥 Loaded {len(items)} items from {args.input}")
 
-    results = []
     batches = [items[i:i+args.batch] for i in range(0, len(items), args.batch)]
+    n = len(batches)
+    print(f"🚀 {n} 批 × batch={args.batch}，并发 workers={args.workers}")
 
-    for i, batch in enumerate(batches, 1):
-        print(f"🔄 Batch {i}/{len(batches)} ({len(batch)} items)...", end=" ", flush=True)
-        try:
-            translated = call_translate(batch, args.date)
-        except ClaudeCallError as e:
-            sys.exit(f"❌ Translate API failed on batch {i}: {e}")
+    # 并发跑批次，按 idx 回填以保持原顺序（as_completed 乱序完成不影响最终序）
+    batch_results = [None] * n
+    done = 0
+    with ThreadPoolExecutor(max_workers=args.workers) as ex:
+        futures = {ex.submit(process_batch, i + 1, b, args.date): i
+                   for i, b in enumerate(batches)}
+        for fut in as_completed(futures):
+            idx = futures[fut]
+            batch_results[idx] = fut.result()
+            done += 1
+            print(f"✅ Batch {idx + 1}/{n} 完成 ({done}/{n})", flush=True)
 
-        if len(translated) != len(batch):
-            print(f"⚠️  count mismatch: sent {len(batch)}, got {len(translated)}")
-        else:
-            print("✅")
-
-        # Model 只回新字段 + id，按 id 查回原 batch item 并 merge 原始字段
-        # desc_original 由 python 机械截取（避免模型回显引号导致 JSON 失败）
-        # DEAD_FIELDS 从 orig 透传剔除（避免 RSS 源的 tags 等死字段渗入 pool）
-        DEAD_FIELDS = {"section_hint", "location_detail", "event_id", "status", "tags"}
-        batch_by_id = {it["id"]: it for it in batch}
-        for new_fields in translated:
-            tid = new_fields.get("id") if isinstance(new_fields, dict) else None
-            if tid and tid in batch_by_id:
-                orig = batch_by_id[tid]
-                orig_clean = {k: v for k, v in orig.items() if k not in DEAD_FIELDS}
-                desc_original = (orig.get("desc") or "")[:1200]
-                merged = {**orig_clean, **new_fields, "desc_original": desc_original, "added_date": args.date}
-                results.append(merged)
-            else:
-                results.append({**new_fields, "added_date": args.date})
-        time.sleep(1)
+    results = [item for br in batch_results for item in br]
 
     # Fallback: title_cn 为空则用 title 兜底
     fallback_count = 0
