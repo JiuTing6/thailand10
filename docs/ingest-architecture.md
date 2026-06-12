@@ -1,6 +1,6 @@
 # Daily Ingest 架构
 
-**最后更新**：2026-05-10
+**最后更新**：2026-06-12
 
 ## 当前架构（本地 launchd）
 
@@ -16,21 +16,66 @@ Daily ingest 跑在 Ade 的 **Mac mini 本地**（24/7 不关机）。
   - 主日志：`logs/ingest-YYYYMMDD-HHMMSS.log`（wrapper 内 tee 出，每次一份）
   - launchd 自带 stdout/stderr：`logs/launchd-stdout.log` / `logs/launchd-stderr.log`（追加，主要兜底用）
   - 三类日志都 gitignored
-- **Pipeline 入口**：[`ingest_runner.py`](../ingest_runner.py) —— 抓 RSS → filter → dedup → translate → pool merge → git commit/push
+- **Pipeline 入口**：[`ingest_runner.py`](../ingest_runner.py) —— 抓 RSS → filter（L1 相关性）→ dedup（L2 两阶段去重）→ translate（L3 翻译标注，**并行**）→ pool merge → git commit/push
+- **数据流起点 `LAST_DATE`**：抓取窗口 `[LAST_DATE, TODAY]`，`LAST_DATE` 读自 `data/last_ingest.txt`。**该文件只在 pool_merge（最后一步）成功后才写**，所以任何一步失败都不会推进它 → 下次跑自动从上次**成功**之日重抓（天然 catch-up）。
 - **Push 凭证**：用 Mac 上日常 `~/.gitconfig` + macOS keychain，`git push` 直接走
+- **自动提交清单**（Step 8.5 `git add`）：`news_pool.json` / `last_ingest.txt` / `data/archive/` / 当日 `*-translated.json`。**`data/archive/` 必须在内**（2026-06-12 补上），否则跨月物化的归档大文件会一直堆在工作区不提交。
 
-### 性能基线
+### 性能基线（2026-06-12 更新）
 
-完整 ingest（约 39 条 RSS / day）耗时 **~12.5 分钟**：
+源从 4→**8 feed**（Thairath 泰文 4 + Bangkok Post 3 + 头条/Thaiger/Pattaya），原始抓取 **~90 条/天**，filter 后 ~67、入库 ~60。完整 ingest **~17 分钟**（translate 并行化后）。耗时已不是 translate 一家独大，而是**三分天下**：
 
-| Step | 耗时占比 |
-|---|---|
-| Step 7 Translation（7 batches × 5 items via Haiku CLI） | **~85%（~10 分钟）** |
-| Step 6a Filter | ~5% |
-| Step 6b Dedup | ~5% |
-| Fetch RSS / Pool merge / Git push | <5% |
+| Step | 耗时 | 说明 |
+|---|---|---|
+| Step 6a Filter | ~8.6 分钟 | 串行 ~14 批 × 5 |
+| Step 6b Dedup | ~5.9 分钟 | 阶段1 全量聚类(1调用) + 阶段2 vs-pool ~7 批 |
+| Step 7 Translate | **~2.9 分钟** | **并行**（ThreadPoolExecutor，4 workers）；并行化前是串行 ~10 分钟 |
+| Fetch / Pool merge / Git push | <1 分钟 | |
 
-**警戒线**：突然超过 20 分钟应排查（API 慢 / batch 卡死 / RSS 站点改版导致重试）。如果想加速，最直接的方向是 Translation 批次并行化。
+**警戒线**：超过 20 分钟应排查。**每步在 `run_step` 里有独立 timeout**（translate=600s 等）——单步超时即 `TimeoutExpired` 整条挂掉。translate 串行版曾在 2026-06-11/12 撞 600s（见下「失败模式」）；并行化后远离红线，600s 反成健康兜底。
+**下一个提速对象**：filter / dedup 仍串行，量再涨可用与 translate 相同的 `ThreadPoolExecutor` 模式并行（批次互相独立）。
+
+## 去重架构：dedup 两阶段（2026-06-02 改造）
+
+源从 4→8 后同事件多源报道激增，[`scripts/dedup.py`](../scripts/dedup.py) 改为两阶段：
+
+1. **阶段1 — 当天候选互比**（新增）：LLM **单次全量**聚类当天所有候选里「同事件 + 同角度 + 零新信息」的组，Python 按确定性规则每组选 1 个幸存者。
+   - 选谁：`SOURCE_PRIORITY[topic]` 源优先级表 → desc 长者 → 有图者 → id 字典序兜底（**LLM 只聚类，留谁由 Python 定，可复现零额外 token**）。
+   - 默认优先级 `泰国头条 > Thaiger > Bangkok Post > Thairath > Pattaya Mail`（头条中文原生无翻译损耗）；按主题翻转（#治安/芭提雅→Pattaya Mail、#旅居→Thaiger、#经济/#时政→Bangkok Post、#社会→Thairath、#中泰→头条）。
+   - **防错杀**：聚类标准从严，不同角度（如政策「启动」vs「使用指南」vs「首日效果」）判为不同条目全保留；只 collapse 真冗余。
+2. **阶段2 — 幸存者 vs pool**（跨天去重）：按批比对 pool 摘录，prompt 强化「多日反复报道=发展信号，有新进展/数据/表态一律 keep」。
+
+**pool 参照窗口**：Step 5 取 `data/news_pool.json` 近 10 天、按 `added_date` 降序 `recent[:200]`（旧版 `[:100]` 在量涨后把名义 10 天砍到 ~2 天，跟进报道比不中；只传 id/title/url，token 代价小）。
+
+## Translate 并行化（2026-06-12）
+
+[`scripts/translate.py`](../scripts/translate.py) 把串行 for 改成 `ThreadPoolExecutor(max_workers=4)`，批次互相独立天然可并行（底层并发 spawn `claude -p` 子进程，**非 multi-agent**）。
+
+- **保序**：`batch_results[idx]` 按索引回填，`as_completed` 乱序完成不影响最终顺序。
+- **单批失败降级**：`merge_batch` 对翻译失败/漏译的批**原文透传**（靠 `title_cn` 用 `title` 兜底），一批失败不再 `sys.exit` 拖垮整条 pipeline。
+- `--workers` 可调（撞 Max 订阅速率限制就调小；`claude_call.py` 已有指数退避重试兜底）。
+
+## 失败模式与补跑恢复（2026-06-10/11/12 三天事故教训）
+
+三天连续失败，**两个完全独立的根因**：
+
+- **06-10 — 瞬时网络故障**：09:30 那刻本机所有 socket 报 `[Errno 49] Can't assign requested address`，5 个 RSS 源全连不上 → `raw=0` → runner 按设计硬失败（`fetch_rss returned 0 items`）。**同一网络问题让 notify 也发不出**（连 Telegram API 都连不上）→ 当天**零通知**。孤立事件，次日自愈（前后 raw 量 77/90/**0**/94/92）。非代码 bug。
+- **06-11/12 — translate 串行撞 600s**：量涨到 66/65 条（13-14 批），串行翻译 >10 分钟 → 撞 `run_step(timeout=600)` 被 kill → `TimeoutExpired` → 整条挂、`translated.json` 没产出。这两天网络正常，失败告警正常发到 Telegram。→ 直接催生 translate 并行化。
+
+**补跑恢复要点**：
+- **RSS 是滚动窗口**（只留最近一两天、几十条）。失败几天后，靠加大 `LAST_DATE` 窗口重抓**补不全**旧日新闻——源里已经滚走了。
+- 但 pipeline 中间产物落盘：`data/issues/{date}-{flat,filtered,deduped,translated}.json`。**只要 `deduped.json` 在**（抓取/过滤/去重已完成、只差翻译入库），就能**精确**补跑：
+  ```bash
+  # 对每个待补日期（用真实日期保留 added_date）：
+  python3 scripts/translate.py --input data/issues/{D}-deduped.json \
+      --output data/issues/{D}-translated.json --date {D} --workers 4
+  python3 scripts/pool_merge.py --new-items data/issues/{D}-translated.json \
+      --pool data/news_pool.json --out data/news_pool.json --today {D}
+      # 不传 --update-last-ingest：保留 last_ingest 让次日自动跑撒大网，
+      # pool_merge 按 URL 去重 + dedup 幂等，重叠不会双份
+  ```
+  - `06-10` 因 `raw=0` 无任何中间产物 → 无法恢复。
+  - 实例：2026-06-12 用此法补回 06-11(+66)/06-12(+57，8 条跨天 URL 重复自动跳过)。
 
 ## 为什么不走云端
 
