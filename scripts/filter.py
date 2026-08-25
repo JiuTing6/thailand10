@@ -17,6 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from claude_call import call_claude, ClaudeCallError
+from feedback import load_votes, build_feedback_examples, adjusted_thresholds
 
 
 # ── Config ──────────────────────────────────────────────────────────────────
@@ -109,13 +110,20 @@ SYSTEM_PROMPT = """你是泰国新闻分类过滤器。输入是一批新闻条�
 """
 
 
-def call_filter(items: list) -> list:
-    """对一批条目调 Haiku 打 topic_tag + relevance_score。"""
+def call_filter(items: list, feedback_block: str = "") -> list:
+    """对一批条目调 Haiku 打 topic_tag + relevance_score。
+
+    feedback_block：可选的「用户偏好」few-shot 文本（见 feedback.build_feedback_examples），
+    非空时拼进 prompt 作为软信号。
+    """
     user_prompt = (
         f"请对以下 {len(items)} 条新闻进行分类评分，返回JSON（字段名 items）：\n\n"
         + json.dumps(items, ensure_ascii=False)
     )
-    full_prompt = SYSTEM_PROMPT + "\n\n" + user_prompt
+    full_prompt = SYSTEM_PROMPT
+    if feedback_block:
+        full_prompt += "\n\n" + feedback_block
+    full_prompt += "\n\n" + user_prompt
 
     parsed = call_claude(full_prompt, model=MODEL, expect_json=True, timeout=180)
 
@@ -143,13 +151,23 @@ def main():
     total_input = len(items)
     print(f"📥 Loaded {total_input} items from {args.input}")
 
+    # 用户反馈（👍/👎）：① few-shot 软信号 ② topic 门槛微调。缺失/空则零影响。
+    votes = load_votes()
+    feedback_block = build_feedback_examples(votes)
+    eff_thresholds = adjusted_thresholds(votes, TOPIC_THRESHOLDS, RELEVANCE_THRESHOLD)
+    if votes:
+        bumped = {t: v for t, v in eff_thresholds.items() if TOPIC_THRESHOLDS.get(t) != v}
+        print(f"🗳️  用户反馈：{len(votes)} 票"
+              + (f"，few-shot 注入 prompt" if feedback_block else "")
+              + (f"，门槛微调 {bumped}" if bumped else ""))
+
     all_scored = []
     batches = [items[i:i+args.batch] for i in range(0, len(items), args.batch)]
 
     for i, batch in enumerate(batches, 1):
         print(f"🔄 Batch {i}/{len(batches)} ({len(batch)} items)...", end=" ", flush=True)
         try:
-            scored = call_filter(batch)
+            scored = call_filter(batch, feedback_block)
         except ClaudeCallError as e:
             sys.exit(f"❌ Filter API failed on batch {i}: {e}")
         # Backfill missing fields from original batch input
@@ -186,8 +204,8 @@ def main():
         if not isinstance(ctag, str) or not ctag.startswith("#"):
             item["city_tag"] = "#泰国"
 
-        # 差异化门槛：#治安 等高噪音 topic 用更高的 bar
-        threshold = TOPIC_THRESHOLDS.get(topic, RELEVANCE_THRESHOLD)
+        # 差异化门槛：#治安 等高噪音 topic 用更高的 bar；叠加用户反馈微调
+        threshold = eff_thresholds.get(topic, RELEVANCE_THRESHOLD)
 
         if score < threshold or not topic:
             if not topic:

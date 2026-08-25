@@ -16,10 +16,10 @@ Daily ingest 跑在 Ade 的 **Mac mini 本地**（24/7 不关机）。
   - 主日志：`logs/ingest-YYYYMMDD-HHMMSS.log`（wrapper 内 tee 出，每次一份）
   - launchd 自带 stdout/stderr：`logs/launchd-stdout.log` / `logs/launchd-stderr.log`（追加，主要兜底用）
   - 三类日志都 gitignored
-- **Pipeline 入口**：[`ingest_runner.py`](../ingest_runner.py) —— 抓 RSS → filter（L1 相关性）→ dedup（L2 两阶段去重）→ translate（L3 翻译标注，**并行**）→ pool merge → git commit/push
+- **Pipeline 入口**：[`ingest_runner.py`](../ingest_runner.py) —— 抓 RSS → pull 用户反馈（Step 5.5，非致命）→ filter（L1 相关性，**消费反馈**）→ dedup（L2 两阶段去重）→ translate（L3 翻译标注，**并行**）→ pool merge → git commit/push
 - **数据流起点 `LAST_DATE`**：抓取窗口 `[LAST_DATE, TODAY]`，`LAST_DATE` 读自 `data/last_ingest.txt`。**该文件只在 pool_merge（最后一步）成功后才写**，所以任何一步失败都不会推进它 → 下次跑自动从上次**成功**之日重抓（天然 catch-up）。
 - **Push 凭证**：用 Mac 上日常 `~/.gitconfig` + macOS keychain，`git push` 直接走
-- **自动提交清单**（Step 8.5 `git add`）：`news_pool.json` / `last_ingest.txt` / `data/archive/` / 当日 `*-translated.json`。**`data/archive/` 必须在内**（2026-06-12 补上），否则跨月物化的归档大文件会一直堆在工作区不提交。
+- **自动提交清单**（Step 8.5 `git add`）：`news_pool.json` / `last_ingest.txt` / `data/archive/` / `data/user_feedback.json` / 当日 `*-translated.json`。**`data/archive/` 必须在内**（2026-06-12 补上），否则跨月物化的归档大文件会一直堆在工作区不提交。`data/user_feedback.json`（2026-06-19 加入）是 👍/👎 反馈快照，提交它让反馈状态进版本库、新机 checkout 也有兜底。
 
 ### 性能基线（2026-06-12 更新）
 
@@ -46,6 +46,25 @@ Daily ingest 跑在 Ade 的 **Mac mini 本地**（24/7 不关机）。
 2. **阶段2 — 幸存者 vs pool**（跨天去重）：按批比对 pool 摘录，prompt 强化「多日反复报道=发展信号，有新进展/数据/表态一律 keep」。
 
 **pool 参照窗口**：Step 5 取 `data/news_pool.json` 近 10 天、按 `added_date` 降序 `recent[:200]`（旧版 `[:100]` 在量涨后把名义 10 天砍到 ~2 天，跟进报道比不中；只传 id/title/url，token 代价小）。
+
+## 用户反馈闭环：newsroom 👍/👎 → filter（2026-06-19）
+
+newsroom 卡片上每条新闻有 👍/👎：👍=喜欢这类继续保持，👎=不关心这类下次别收录。
+因为 newsroom 是 GitHub Pages 静态站、ingest 跑在本地 Mac mini，反馈靠一个 **Hostinger 端点**回流：
+
+```
+浏览器卡片 ──POST(Bearer token)──▶ Hostinger feedback.php ──append──▶ votes.jsonl
+Mac mini ingest（Step 5.5 pull_feedback）◀──GET 聚合每 id 最新票──┘
+   └─▶ data/user_feedback.json ──▶ filter.py 消费
+```
+
+- **前端**（[newsroom.html](../newsroom.html)）：卡片 meta 行 + 模态框各一组 👍/👎。投票写 `localStorage`（`t10_votes`，即时高亮、可撤销、刷新保留），同时异步 POST 端点（失败静默，localStorage 留底）。`FEEDBACK_URL`/`FEEDBACK_TOKEN` 为页面常量，未配置端点时退化为纯本地记录。
+- **端点**（[scripts/hostinger/feedback.php](../scripts/hostinger/feedback.php)）：单文件 PHP，POST 写 `votes.jsonl`、GET 按 id 聚合最新票；Bearer token 鉴权 + CORS + body 上限。部署见 [scripts/hostinger/README.md](../scripts/hostinger/README.md)（三处共享 secret 必须一致）。
+- **拉取**（[ingest_runner.py](../ingest_runner.py) `pull_feedback()`，Step 5.5，filter 前）：curl 端点 → 写 `data/user_feedback.json`。**非致命**——`T10_FEEDBACK_URL`/`T10_FEEDBACK_TOKEN` 未配置或拉取失败只 log 警告，沿用上次提交的文件，绝不拖垮 pipeline。
+- **消费**（[scripts/feedback.py](../scripts/feedback.py) + [filter.py](../scripts/filter.py)）：两层影响下一次收录——
+  1. **软信号 few-shot**：`build_feedback_examples()` 取最近各 ≤8 条 👍/👎 拼成「用户偏好」prompt 块，注入 filter 的 LLM prompt。**次日生效**，~3–5 次同类后稳定泛化。明确边界：不得推翻「纯全球新闻/非新闻丢弃」硬规则、发展中重要新闻不误杀。
+  2. **阈值微调**：`adjusted_thresholds()` 按 topic 聚合净 👎（👎−👍），某 topic 净 👎 ≥3 则在其门槛上 +0.15（封顶 0.8），复用现有 `TOPIC_THRESHOLDS`（#治安=0.7）机制。确定性 Python，零额外 token。
+- **投票 key**：用 item `id`（`make_hash(title,url)` 稳定 MD5）。但 filter 泛化靠示例**内容/topic**，不是 id 精确匹配（未来文章 id 不同）。
 
 ## Translate 并行化（2026-06-12）
 

@@ -208,6 +208,29 @@
     .imp-P1 { background: #fee; color: var(--accent); }
     .imp-P2 { background: #fef5e7; color: #e67e22; }
     .imp-P3 { background: #f0f8f0; color: #27ae60; }
+    /* ── 👍/👎 反馈按钮 ── */
+    .nr-vote {
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      margin-left: auto;
+    }
+    .nr-vote-btn {
+      border: 1px solid var(--border);
+      background: #fff;
+      border-radius: 6px;
+      padding: 1px 6px;
+      font-size: 13px;
+      line-height: 1.4;
+      cursor: pointer;
+      opacity: 0.55;
+      transition: opacity .15s, background .15s, border-color .15s;
+    }
+    .nr-vote-btn:hover { opacity: 1; }
+    .nr-vote-btn.up.active   { opacity: 1; background: #eaf7ee; border-color: #27ae60; }
+    .nr-vote-btn.down.active { opacity: 1; background: #fdeeee; border-color: var(--accent); }
+    .modal-vote { display: flex; align-items: center; gap: 8px; margin: 10px 0; }
+    .modal-vote .label { font-size: 12px; color: var(--text-muted); font-family: var(--font-ui); }
     .nr-card-title {
       font-size: 15px;
       font-weight: 700;
@@ -434,6 +457,7 @@
       <div class="modal-summary" id="modal-summary"></div>
       <div class="modal-desc" id="modal-desc"></div>
       <div class="modal-tags" id="modal-tags"></div>
+      <div class="modal-vote" id="modal-vote"></div>
       <a class="modal-link" id="modal-link" href="#" target="_blank" rel="noopener">阅读原文 →</a>
     </div>
   </div>
@@ -456,6 +480,65 @@ function normCity(item) {
 
 // 固定主题 tag 顺序
 const TOPIC_TAGS = ["#时政", "#经济", "#治安", "#旅居", "#社会", "#房产", "#科技", "#中泰", "#健康"];
+
+// ── 👍/👎 反馈 ──
+// 投票回流到 Hostinger 端点（见 scripts/hostinger/feedback.php）。
+// FEEDBACK_TOKEN 客户端可见，仅作轻量防滥用；与端点 $TOKEN、ingest 的 T10_FEEDBACK_TOKEN 一致。
+const FEEDBACK_URL = "";   // 部署后填：如 "https://rusabiru.com/t10/feedback.php"
+const FEEDBACK_TOKEN = "CHANGE_ME_SHARED_SECRET";
+const VOTES_KEY = "t10_votes";   // localStorage：{ id: {vote, ts} }
+
+function loadVotes() {
+  try { return JSON.parse(localStorage.getItem(VOTES_KEY) || "{}"); }
+  catch (e) { return {}; }
+}
+function getVote(id) { return (loadVotes()[id] || {}).vote || ""; }
+
+// 点 👍/👎：写 localStorage（再点同向=撤销），异步 POST 端点（失败静默，localStorage 留底）
+function castVote(item, vote) {
+  const votes = loadVotes();
+  const cur = (votes[item.id] || {}).vote || "";
+  const next = cur === vote ? "none" : vote;   // 同向再点 → 撤销
+  if (next === "none") delete votes[item.id]; else votes[item.id] = { vote: next, ts: new Date().toISOString() };
+  try { localStorage.setItem(VOTES_KEY, JSON.stringify(votes)); } catch (e) {}
+  syncVote(item, next);
+  return next === "none" ? "" : next;
+}
+
+function syncVote(item, vote) {
+  if (!FEEDBACK_URL) return;   // 未部署端点：仅本地记录
+  fetch(FEEDBACK_URL, {
+    method: "POST",
+    headers: { "Content-Type": "application/json", "Authorization": "Bearer " + FEEDBACK_TOKEN },
+    body: JSON.stringify({
+      id: item.id, vote: vote, title_cn: item.title_cn || item.title || "",
+      topic_tag: item.topic_tag || "", source: item.source || "",
+    }),
+  }).catch(() => {});   // 失败静默：UI 不回滚，localStorage 已留底
+}
+
+// 构造一组 👍/👎 按钮（card / modal 共用），点击切换 active 态
+function voteButtonsHtml(id, extraClass) {
+  const v = getVote(id);
+  return `<span class="nr-vote ${extraClass || ""}" data-vote-id="${id}">`
+    + `<button class="nr-vote-btn up${v === "up" ? " active" : ""}" data-dir="up" title="喜欢这类，继续保持">👍</button>`
+    + `<button class="nr-vote-btn down${v === "down" ? " active" : ""}" data-dir="down" title="不关心这类，下次别收录">👎</button>`
+    + `</span>`;
+}
+
+// 给一组 .nr-vote 容器绑定点击（事件委托到容器，stopPropagation 避免触发卡片打开）
+function wireVoteButtons(container, item) {
+  container.querySelectorAll(".nr-vote-btn").forEach(btn => {
+    btn.onclick = (e) => {
+      e.stopPropagation();
+      const newVote = castVote(item, btn.dataset.dir);
+      // 同步该 id 所有副本（card + modal）的高亮
+      document.querySelectorAll(`.nr-vote[data-vote-id="${item.id}"] .nr-vote-btn`).forEach(b => {
+        b.classList.toggle("active", b.dataset.dir === newVote);
+      });
+    };
+  });
+}
 
 // ── 状态 ──
 let ALL_ITEMS = [];
@@ -724,12 +807,14 @@ function render() {
         <span class="nr-card-source">${item.source || ""}</span>
         <span>${fmtDate(item.date, item.added_date)}</span>
         ${imp ? `<span class="nr-card-importance imp-${imp}">${imp}</span>` : ""}
+        ${voteButtonsHtml(item.id)}
       </div>
       <div class="nr-card-title">${item.title_cn || item.title || ""}</div>
       <div class="nr-card-summary">${item.summary_cn || item.desc_original || ""}</div>
       ${tagHtml ? `<div class="nr-card-tags">${tagHtml}</div>` : ""}
     `;
     card.onclick = () => openModal(item);
+    wireVoteButtons(card, item);
     grid.appendChild(card);
   });
 }
@@ -766,6 +851,9 @@ function openModal(item) {
     cityTag ? `<span class="modal-tag" style="color:var(--primary);background:#eef2ff;border-color:#c7d2fe">${cityTag}</span>` : "",
     topicTag ? `<span class="modal-tag">${topicTag}</span>` : "",
   ].filter(Boolean).join("");
+  const voteEl = document.getElementById("modal-vote");
+  voteEl.innerHTML = `<span class="label">这类新闻：</span>` + voteButtonsHtml(item.id, "modal");
+  wireVoteButtons(voteEl, item);
   const link = document.getElementById("modal-link");
   link.href = item.url || "#";
   link.style.display = item.url ? "inline-block" : "none";

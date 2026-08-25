@@ -6,6 +6,7 @@ import sys
 import json
 import os
 import time
+import urllib.request
 from datetime import datetime, timedelta
 from pathlib import Path
 
@@ -13,6 +14,35 @@ os.chdir(Path(__file__).resolve().parent)
 
 sys.path.insert(0, str(Path(__file__).resolve().parent / 'scripts'))
 from notify import notify  # noqa: E402
+
+
+def pull_feedback():
+    """从 Hostinger 端点拉取 👍/👎 投票 → data/user_feedback.json。
+
+    非致命：URL/token 未配置或拉取失败时只 log 警告，沿用仓库里上次提交的文件，
+    绝不拖垮 pipeline（端点挂了/离线也要能正常 ingest）。
+    端点配置走环境变量（由 wrapper 脚本 source ~/.config/claude-notify/env 注入）。
+    """
+    url = os.environ.get("T10_FEEDBACK_URL")
+    token = os.environ.get("T10_FEEDBACK_TOKEN")
+    if not url:
+        print("[Feedback] T10_FEEDBACK_URL 未配置，跳过拉取（沿用已提交的 user_feedback.json）")
+        return
+    try:
+        req = urllib.request.Request(url)
+        if token:
+            req.add_header("Authorization", f"Bearer {token}")
+        with urllib.request.urlopen(req, timeout=20) as resp:
+            raw = resp.read().decode("utf-8")
+        data = json.loads(raw)  # 校验是合法 JSON 再落盘
+        n = len(data.get("votes", [])) if isinstance(data, dict) else len(data)
+        Path("data").mkdir(exist_ok=True)
+        with open("data/user_feedback.json", "w", encoding="utf-8") as f:
+            json.dump(data, f, ensure_ascii=False, indent=2)
+        print(f"[Feedback] 拉取成功：{n} 票 → data/user_feedback.json")
+    except Exception as e:
+        print(f"[Feedback] ⚠️ 拉取失败（非致命，沿用已提交文件）：{type(e).__name__}: {str(e)[:150]}",
+              file=sys.stderr)
 
 
 def run_step(name: str, argv, timeout=None):
@@ -86,6 +116,10 @@ def main():
         json.dump(excerpt, f, ensure_ascii=False, indent=2)
     print(f'Pool 摘录: {len(excerpt)} 条（10天内，上限200）')
 
+    # Step 5.5: Pull user feedback (👍/👎) — filter 在下一步消费它
+    print(f"[Step 5.5] Pulling user feedback...")
+    pull_feedback()
+
     # Step 6a: Filter
     print(f"[Step 6a] Running Filter (Layer 1)...")
     run_step('filter', [
@@ -147,6 +181,7 @@ def main():
              'data/news_pool.json',
              'data/last_ingest.txt',
              'data/archive/',  # 月度归档物化文件，跨月时会新增/更新，必须一并提交
+             'data/user_feedback.json',  # 用户 👍/👎 反馈快照（pull_feedback 拉取，filter 消费）
              f'data/issues/{TODAY}-translated.json'])
     commit_result = run_git(['commit', '-m', f'data: ingest {TODAY}'],
                             allow_empty_commit_skip=True)

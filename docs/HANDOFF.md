@@ -3,6 +3,9 @@
 > 写于 2026-05-31，更新于 2026-06-01（用户指定起点）。
 > 读完这份 + 跑下面的验证命令，就能无缝接上。完事后可删本文件或归档。
 
+**进度（2026-06-19 更新）**：
+- 🆕 **newsroom 👍/👎 反馈闭环已落地代码**（待部署 Hostinger 端点）：卡片/模态加 👍/👎，投票走 Hostinger `feedback.php` 回流 → ingest Step 5.5 `pull_feedback` 拉取 → filter 两层消费（few-shot 软信号 + topic 阈值微调）。详见 `docs/ingest-architecture.md` 新增「用户反馈闭环」节 + `scripts/hostinger/README.md`。**部署待办**：传 feedback.php 上 Hostinger、三处填同一 secret、newsroom.html 填 `FEEDBACK_URL`。未部署时前端退化为纯本地 localStorage、ingest 跳过拉取（零影响）。
+
 **进度（2026-06-12 更新）**：
 - ✅ **§B dedup 改造已上线**（06-03 起生效）：两阶段去重（当天互比聚类 + 源优先级 tie-break；vs-pool 窗口 100→200 + 防错杀 prompt）。
 - ✅ **§A translate 并行化已上线**（06-12）：串行→ThreadPoolExecutor(4)，修了 06-11/12 撞 600s 超时。回放 171s vs >600s。新 pipeline ~17min。
