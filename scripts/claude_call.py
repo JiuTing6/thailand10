@@ -69,8 +69,27 @@ def call_claude(
             raise ClaudeCallError(f"timeout after {max_retries} attempts: {e}") from e
 
         if proc.returncode != 0:
-            last_err = ClaudeCallError(f"CLI exit {proc.returncode}: {proc.stderr.strip()}")
-            print(f"[claude_call] CLI exit {proc.returncode} (attempt {attempt}/{max_retries})", file=sys.stderr)
+            # CLI 非零退出时，真正的原因通常在 stdout 的 JSON envelope（result 字段）里，
+            # stderr 往往是空的 —— 只读 stderr 会得到 "CLI exit 1: " 这种零信息量报错。
+            detail = proc.stderr.strip()
+            try:
+                detail = str(json.loads(proc.stdout).get("result") or detail).strip()
+            except (json.JSONDecodeError, AttributeError):
+                pass
+            if not detail:
+                detail = "<stdout/stderr 均无错误信息>"
+
+            last_err = ClaudeCallError(f"CLI exit {proc.returncode}: {detail}")
+            print(f"[claude_call] CLI exit {proc.returncode} (attempt {attempt}/{max_retries}): {detail}",
+                  file=sys.stderr)
+
+            # 登录态/额度问题不是瞬时故障，重试纯属浪费 —— 直接抛，并把修复动作写进报错
+            if any(k in detail for k in ("authenticate", "OAuth", "Invalid API key", "credit balance")):
+                raise ClaudeCallError(
+                    f"CLI exit {proc.returncode}: {detail}\n"
+                    f"→ 本机 claude CLI 登录态失效，需在终端跑 `claude login` 重新授权，ingest 才能恢复"
+                ) from last_err
+
             if attempt < max_retries:
                 time.sleep(2 ** attempt)
                 continue
