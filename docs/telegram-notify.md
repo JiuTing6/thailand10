@@ -6,6 +6,21 @@
 >
 > （文档当前位置在 Thailand10 repo 下；如果未来有第二个 Claude Code 项目接入，可考虑迁到项目无关的共享位置——但现在不用提前迁。）
 
+## 当前配置（2026-10 起）
+
+所有项目共用**同一个 bot**（与 happiemail 项目共用），实际的 token / chat_id 只存在本机配置里，不进任何 repo。
+
+| 使用方 | 读哪份配置 | 改了配置后要不要重启 |
+|---|---|---|
+| Thailand10 每日任务（`[Thailand10]` 前缀） | `~/.config/claude-notify/env` | 不用，每次运行都重新 source |
+| TA `com.ade.purser-ibkr` | `~/.config/claude-notify/env` | **要**，只在启动时读一次 |
+| happiemail 的 `funnel-keeper.sh` / `incident_handler.py` | `~/.config/claude-notify/env` | 不用，每次运行都重新读 |
+| happiemail 的 webhook 服务 | happiemail 自己的 `.env`（`TELEGRAM_BOT_TOKEN`） | **要**，`to.agentmail.happie.webhook` |
+
+⚠️ **token 存了两份**：共享文件 `~/.config/claude-notify/env`（`TG_BOT_TOKEN`）和 happiemail 的 `.env`（`TELEGRAM_BOT_TOKEN`）。**撤换 token 时两处都要改**，然后按上表重启。happiemail 的 chat_id 还写死在它的代码里，换账户时见 happiemail 的 `ARCHITECTURE.md` §7。
+
+⚠️ **chat_id 会随账户变**：Telegram 用户 ID 跟账户绑定、本身不变；但如果账户被删除后用同一手机号重新注册，得到的是**新账户、新 ID**，而旧账户名下创建的 bot 也会一起消失。表现是所有 bot 的 token 都变成 401。处理：新建 bot（§一）、重新拿 chat_id、更新上表所有配置。
+
 ---
 
 ## 一、申请新 Bot（一次性，由用户完成）
